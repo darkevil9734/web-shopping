@@ -8,10 +8,10 @@
 		<meta charset="UTF-8">
 		<title>Đăng ký làm nhà cung cấp</title>
 		<link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-		<link rel="stylesheet" href="css/nhacungcap.css">
+		<link rel="stylesheet" href="/Views/css/nhacungcap.css">
 		<%
 			String user = "", pass="", brand = "" , name ="", email ="";
-			if(request.getParameter("btnDangNhap") != null){
+			if(request.getParameter("btnDangKy") != null){
 				user = request.getParameter("txtUserNCC");
 				pass = request.getParameter("txtPassNCC");
 				brand = request.getParameter("txtBrand");
@@ -44,7 +44,7 @@
 				<input type="text" name="txtEmail" value="<%= email %>" placeholder="Email"/>
 				<br>
 				<br/><br/>
-				<input type="button" name="btnDangNhap" value="Login" class="login-button"/>
+				<input type="button" name="btnDangKy" value="Đăng ký" class="login-button"/>
 				<br>
 			</form>	
 		</div>

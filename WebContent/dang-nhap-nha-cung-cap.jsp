@@ -8,7 +8,7 @@
 		<meta charset="UTF-8">
 		<title>Nhà cung cấp đăng nhập</title>
 		<link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-		<link rel="stylesheet" href="css/nhacungcap.css">
+		<link rel="stylesheet" href="/Views/css/nhacungcap.css">
 		<%
 			String user = "", pass="";
 			if(request.getParameter("btnDangNhap") != null){
@@ -33,7 +33,7 @@
 				<input type="password" name="txtPassNCC" value="<%= pass %>" placeholder="Mật khẩu"/>
 				<br>
 				<br/><br/>
-				<input type="button" name="btnDangNhap" value="Login" class="login-button"/>
+				<input type="button" name="btnDangNhap" value="Đăng nhập" class="login-button"/>
 				<br>
 			</form>	
 		</div>
