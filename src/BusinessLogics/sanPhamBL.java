@@ -18,7 +18,8 @@ public class sanPhamBL {
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
-				sp.setTinhTrang("tinh_trang");
+				sp.setTinhTrang(rs.getString("tinh_trang"));
+				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
 				dsSanPham.add(sp);
 			}
 		} catch (SQLException e) {
@@ -40,7 +41,8 @@ public class sanPhamBL {
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
-				sp.setTinhTrang("tinh_trang");
+				sp.setTinhTrang(rs.getString("tinh_trang"));
+				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
 				dsSanPham.add(sp);
 				
 			}
