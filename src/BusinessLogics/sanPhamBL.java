@@ -17,6 +17,7 @@ public class sanPhamBL {
 			while(rs.next()){
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
 				sp.setTinhTrang(rs.getString("tinh_trang"));
 				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
@@ -40,6 +41,7 @@ public class sanPhamBL {
 			while(rs.next()){
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
 				sp.setTinhTrang(rs.getString("tinh_trang"));
 				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
@@ -47,7 +49,7 @@ public class sanPhamBL {
 				
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
@@ -65,6 +67,7 @@ public class sanPhamBL {
 			while(rs.next()){
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
 				sp.setTinhTrang(rs.getString("tinh_trang"));
 				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
@@ -72,7 +75,7 @@ public class sanPhamBL {
 				
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
@@ -90,6 +93,7 @@ public class sanPhamBL {
 			while(rs.next()){
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
 				sp.setTinhTrang(rs.getString("tinh_trang"));
 				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
@@ -97,7 +101,7 @@ public class sanPhamBL {
 				
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
@@ -115,6 +119,7 @@ public class sanPhamBL {
 			while(rs.next()){
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
 				sp.setTinhTrang(rs.getString("tinh_trang"));
 				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
@@ -122,7 +127,7 @@ public class sanPhamBL {
 				
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
@@ -140,6 +145,7 @@ public class sanPhamBL {
 			while(rs.next()){
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
 				sp.setTinhTrang(rs.getString("tinh_trang"));
 				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
@@ -147,7 +153,7 @@ public class sanPhamBL {
 				
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
@@ -165,6 +171,7 @@ public class sanPhamBL {
 			while(rs.next()){
 				sanPham sp = new sanPham();
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
 				sp.setTinhTrang(rs.getString("tinh_trang"));
 				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
@@ -172,11 +179,35 @@ public class sanPhamBL {
 				
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
 		return dsSanPham;
 		
+	}
+	
+	public static List<sanPham> timKiemTheoHang(String hang_sxuat){
+		List<sanPham> dsSanPham = null;
+		try {
+			Connection db = Database.connect();
+			Statement stm = db.createStatement();
+			ResultSet rs = stm.executeQuery("select * from san_pham where hang_san_xuat like '%"+hang_sxuat+"%'");
+			dsSanPham = new ArrayList<>();
+			while(rs.next()){
+				sanPham sp = new sanPham();
+				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
+				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
+				sp.setTinhTrang(rs.getString("tinh_trang"));
+				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
+				dsSanPham.add(sp);
+				
+			}
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		}
+		return dsSanPham;
 	}
 }

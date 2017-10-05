@@ -2,10 +2,17 @@ package JavaBeans;
 
 public class sanPham {
 	private String tenSanPham;
+	private String hangSanXuat;
 	private int giaSanPham;
 	private String tinhTrang;
 	private String hinh_dai_dien;
 	
+	public String getHangSanXuat() {
+		return hangSanXuat;
+	}
+	public void setHangSanXuat(String hangSanXuat) {
+		this.hangSanXuat = hangSanXuat;
+	}
 	public String getTenSanPham() {
 		return tenSanPham;
 	}
