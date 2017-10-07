@@ -25,8 +25,8 @@
                      <div class="col-md-3">
                         <h4 class="title">Nhận Tin Tức Từ <strong>Email </strong></h4>
                         <p>Để nhận được thêm nhiều khuyến mãi</p>
-                        <form class="newsletter">
-							<input type="text" name="" placeholder="Nhập email....">
+                        <form action="ThanksServlet" method="post" class="newsletter">
+							<input type="email" name="email" placeholder="Nhập email....">
 							<input type="submit" value="Gửi" class="button">
 						</form>
                      </div>
