@@ -1,12 +1,21 @@
 package JavaBeans;
 
-public class khachHang {
+import java.io.Serializable;
+
+public class khachHang implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String ho_khach_hang;
 	private String ten_khach_hang;
 	private String dia_chi;
 	private int sdt;
 	
+	
+
 	public khachHang() {
+		super();
 		
 	}
 
