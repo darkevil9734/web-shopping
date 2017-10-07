@@ -25,6 +25,8 @@ public class ThanksServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
 		String email = request.getParameter("email");
 		if (email != null) {
 			final String username = "testmailbaitap@gmail.com";
@@ -49,9 +51,10 @@ public class ThanksServlet extends HttpServlet {
 				message.setFrom(new InternetAddress("testmailbaitap@gmail.com"));
 				message.setRecipients(Message.RecipientType.TO,
 					InternetAddress.parse(email));
-				message.setSubject("Cảm ơn bạn đã ủng hộ chúng tôi");
-				message.setText("Cảm ơn bạn đã ủng hộ chúng tôi,"
-					+ "\n\n Admin!");
+				message.setSubject("Thanks for subscribe us");
+				message.setText("Dear " + email 
+					+ " Thank you for your attention, we hope you enjoy this website!"
+					+ "\n\n Admin, VHN!");
 
 				Transport.send(message);
 
