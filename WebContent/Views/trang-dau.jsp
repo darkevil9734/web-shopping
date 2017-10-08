@@ -43,8 +43,8 @@
                            </div>
                            <div class="col-md-3">
                               <ul class="usermenu">
-                                 <li><a href="checkout.html" class="log">Đăng Nhập</a></li>
-                                 <li><a href="checkout2.html" class="reg">Đăng Ký</a></li>
+                                 <li><a href="dangnhap.jsp" class="log">Đăng Nhập</a></li>
+                                 <li><a href="dangky.jsp" class="reg">Đăng Ký</a></li>
                               </ul>
                            </div>
                         </div>
