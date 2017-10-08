@@ -4,6 +4,8 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
       <meta name="description" content="Hệ Thống bàn hàng trực tuyến hàng đầu VN hay đến với chúng tôi để sở hữu những sản phẩm chất lượng với giá hấp dẫn">
+      <meta name="author" content="Nhóm phát triển, Back-End: Nguyên">
+      <meta name="keywords" content="apple, iphone, samsung, dien thoai, gia re, mua hang, phu kien">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="images/favicon.png">
       <title>Welcome to Dienthoaionline.com - Hệ thống bán điện thoại trực tuyến toàn quốc</title>
