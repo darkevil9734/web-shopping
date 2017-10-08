@@ -25,10 +25,25 @@
                      <div class="col-md-3">
                         <h4 class="title">Nhận Tin Tức Từ <strong>Email </strong></h4>
                         <p>Để nhận được thêm nhiều khuyến mãi</p>
-                        <form action="ThanksServlet" method="post" class="newsletter">
+                        <form name="formEmail" action="ThanksServlet" method="post" class="newsletter" onsubmit="return xacThuc()">
 							<input type="email" name="email" placeholder="Nhập email....">
 							<input type="submit" value="Gửi" class="button">
 						</form>
+						<script>
+							function xacThuc() {
+							    var email_input = document.forms["formEmail"]["email"].value;
+							    var check_email = email_input.indexOf("@");
+							    var check_email_dot = email_input.lastIndexOf(".");
+							    if (check_email<1 || check_email_dot<check_email+2 || check_email_dot+2 >= email_input.length) {
+							        alert("Email bạn không hợp lệ");
+							        return false;
+							    }
+							    else if (email_input == "") {
+							        alert("Không được để trống");
+							        return false;
+							    }
+							}
+						</script>
                      </div>
                   </div>
                </div>
