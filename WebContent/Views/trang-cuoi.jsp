@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>    
 <div class="footer">
             <div class="footer-info">
                <div class="container">
@@ -59,7 +67,7 @@
                            <li><a href="#" class="linkedin"></a></li>
                            <li><a href="#" class="google-plus"></a></li>
                            <li><a href="#" class="twitter"></a></li>
-                           <li><a href="#" class="facebook"></a></li>
+                           <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fweb-mobile%2Ftrang-chu.jsp&amp;src=sdkpreparse" class="facebook"></a></li>
                         </ul>
                      </div>
                   </div>
