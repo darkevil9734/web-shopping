@@ -51,7 +51,9 @@
                      <div class="header_bottom">
                         <ul class="option">
                            <li id="search" class="search">
-                              <form><input class="search-submit" type="submit" value=""><input class="search-input" placeholder="Nhập sản phẩm bạn muốn tìm?" type="text" value="" name="search"></form>
+                              <form action="TimKiem" method="POST">
+                              	<input class="search-submit" type="submit" value=""><input class="search-input" placeholder="Nhập sản phẩm bạn muốn tìm?" type="text" value="" name="search">
+                              </form>
                            </li>
                            <li class="option-cart">
                               <a href="#" class="cart-icon">cart <span class="cart_no">02</span></a>
