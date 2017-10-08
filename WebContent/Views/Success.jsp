@@ -10,13 +10,15 @@
 	</head>
 	<body>
 		<div class="jumbotron text-xs-center">
-			<h1 class="display-3">Cảm ơn</h1>
-			<p class="lead"><strong>Please check your email</strong> </p>
+			<h1 class="display-3">Cảm ơn bạn đang ủng hộ chúng tôi</h1>
+			<p class="lead">Chúng tôi đã gửi email tới bạn. </p>
+			<p class="lead"><strong>Hãy kiểm tra hộp thư để biết thêm chi tiết</strong> </p>
 			<hr>
 			<p class="lead">
 				<a class="btn btn-primary btn-sm" href="trang-chu.jsp" role="button">Quay về trang chủ</a>
 			</p>
 		</div>
-	  	
+	  	<div class="jumbotron text-xs-center">
+	  	</div>
 	</body>
 </html>
