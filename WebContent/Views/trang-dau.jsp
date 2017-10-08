@@ -35,7 +35,7 @@
                                  <li><a href="contact.html">Giới Thiệu</a></li>
                                  <li><a href="https://tinhte.vn/">Tin Tức</a></li>
                                  <li><a href="contact.html">Bảo Hành</a></li>
-                                 <li><a href="contact.html">Góp Ý</a></li>
+                                 <li><a href="contact.jsp">Góp Ý</a></li>
                                  <li><a href="contact.html">Hỗ Trợ</a></li>
                               </ul>
                            </div>
@@ -117,7 +117,7 @@
                               <li><a href="Oppo.html">Oppo</a></li>
                               <li><a href="xiaomi.html">Xiaomi</a></li> 
                               <li><a href="samsung.html">Samsung</a></li>
-                              <li><a href="contact.html">Liên hệ chúng tôi</a></li>
+                              <li><a href="contact.jsp">Liên hệ chúng tôi</a></li>
                            </ul>
                         </div>
                      </div>
