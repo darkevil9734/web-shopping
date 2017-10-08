@@ -57,9 +57,9 @@
                      </div>
                      <div class="col-md-6">
                         <ul class="social-icon">
-                           <li><a href="#" class="linkedin"></a></li>
+                           <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//localhost%3A8080/web-mobile/trang-chu.jsp&title=&summary=&source=" class="linkedin"></a></li>
                            <li><a href="https://plus.google.com/share?url=http://localhost:8080/web-mobile/trang-chu.jsp" class="google-plus"></a></li>
-                           <li><a href="#" class="twitter"></a></li>
+                           <li><a href="http://www.twitter.com/share?url=http://localhost:8080/web-mobile/trang-chu.jsp" class="twitter"></a></li>
                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fweb-mobile%2Ftrang-chu.jsp&amp;src=sdkpreparse" class="facebook"></a></li>
                         </ul>
                      </div>
