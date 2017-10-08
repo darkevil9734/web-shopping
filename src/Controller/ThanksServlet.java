@@ -53,7 +53,8 @@ public class ThanksServlet extends HttpServlet {
 					InternetAddress.parse(email));
 				message.setSubject("Thanks for subscribe us");
 				message.setText("Dear " + email 
-					+ " Thank you for your attention, we hope you enjoy this website!"
+					+ "\n\n Thank you for your attention, we hope you enjoy this website!"
+					+ "\n\n We will send to your mail our new products soon!"
 					+ "\n\n Admin, VHN!");
 
 				Transport.send(message);
@@ -61,8 +62,13 @@ public class ThanksServlet extends HttpServlet {
 				System.out.println("Done");
 				request.getRequestDispatcher("Views/Success.jsp").forward(request, response);
 			} catch (MessagingException e) {
+				request.getRequestDispatcher("Views/loi.jsp").forward(request, response);
+
 				throw new RuntimeException(e);
 			}
+		}
+		else {
+			request.getRequestDispatcher("Views/loi.jsp").forward(request, response);
 		}
 	}
 
