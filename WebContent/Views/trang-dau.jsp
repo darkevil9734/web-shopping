@@ -22,7 +22,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-2 col-sm-2">
-                     <div class="logo"><a href="index.html"><img src="images/logo2.png" alt="DTO" "=""></a></div>
+                     <div class="logo"><a href="trang-chu.jsp"><img src="images/logo2.png" alt="DTO" "=""></a></div>
                   </div>
                   <div class="col-md-10 col-sm-10">
                      <div class="header_top">
@@ -93,7 +93,7 @@
                         <div class="navbar-collapse collapse">
                            <ul class="nav navbar-nav">
                               <li class="active dropdown">
-                                 <a href="index.html">Home</a>
+                                 <a href="trang-chu.jsp">Home</a>
                                  
                               </li>
                               <li><a href="apple.html">Apple</a></li>
