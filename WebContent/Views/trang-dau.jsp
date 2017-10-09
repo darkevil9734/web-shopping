@@ -43,8 +43,8 @@
                            </div>
                            <div class="col-md-3">
                               <ul class="usermenu">
-                                 <li><a href="dangnhap.jsp" class="log">Đăng Nhập</a></li>
-                                 <li><a href="dangky.jsp" class="reg">Đăng Ký</a></li>
+                                 <li><a href="dang-nhap.jsp" class="log">Đăng Nhập</a></li>
+                                 <li><a href="dang-ky.jsp" class="reg">Đăng Ký</a></li>
                               </ul>
                            </div>
                         </div>

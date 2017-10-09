@@ -5,7 +5,7 @@
 <div class="page-index">
 	<div class="container">
 	    <p>
-	      Trang chủ - Đăng Ký
+	      <a style="color:white;" href="trang-chu.jsp">Trang chủ</a> - <a style="color:white;" href="dangky.jsp"> Đăng Ký</a> 
 	    </p>
   	</div>
 </div>

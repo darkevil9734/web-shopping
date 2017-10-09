@@ -5,7 +5,7 @@
 <div class="page-index">
 	<div class="container">
 	    <p>
-	      Trang chủ - Đăng nhập
+	      <a style="color:white;" href="trang-chu.jsp">Trang chủ</a> - <a style="color:white;" href="dangnhap.jsp"> Đăng Nhập</a> 
 	    </p>
   	</div>
 </div>
