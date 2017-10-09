@@ -6,6 +6,7 @@
 	<head>
 	  <meta charset="UTF-8">
 	  <title>Cảm ơn</title>
+	  <link rel="shortcut icon" href="img_success/icon_thank_you.png" />
 	  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css'> 
 	</head>
 	<body>
