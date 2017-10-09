@@ -7,85 +7,81 @@
                 </h3>
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="xiaomi.html">
                       2 SIM
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="sony.html">
                       Nghe nhạc
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="oppo.html">
                       Chụp Ảnh
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="apple.html">
                       Giải Trí
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="samsung.html">
                       Trên 8 MP
                     </a>
                   </li>
                   
                   <li>
-                    <a href="#">
+                    <a href="xiaomi.html">
                       hỗ trợ 4G
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="sony.html">
                       Xem Phim
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="samsung.html">
                       Màn hình lớn
                     </a>
                   </li>
                   
                   
                   <li>
-                    <a href="#">
+                    <a href="sony.html">
                       Sạc pin nhanh
                     </a>
                   </li>
                   <li>
                     </li><li>
-                    <a href="#">
+                    <a href="apple.html">
                       Bảo mật vân tay
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="samsung.html">
                        Chống nước, bụi
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="apple.html">
                       Viền màn hình mỏng
                     </a>
                   </li>                  
                   <li>
-                    <a href="#">
+                    <a href="xiaomi.html">
                       Pin khủng (&gt;3000 mAh)
                     </a>
                   </li>
                   
                   <li>
-                    <a href="#">
+                    <a href="apple.html">
                       Bảo mật vân tay
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      Khác
-                    </a>
-                  </li>
+                
                 </ul>
               </div>
               

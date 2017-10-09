@@ -9,11 +9,13 @@
                 <ol class="checkout-steps">
                   <li class="steps">
                     <div class="step-title">
-                      01. Bạn đã có tài khoản ?
+                    	<a href="dang-nhap.jsp" class="step-title">
+                      		01. Bạn đã có tài khoản ?
+                      	</a>
                     </div>
                   </li>
                   <li class="steps active">
-                    <a href="checkout.html" class="step-title">
+                    <a href="dang-ky.jsp" class="step-title">
                       02. Thành viên mới ?
                     </a>
                     <div class="step-description">
@@ -31,7 +33,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" style="padding-left: 130px;" class="input namefild" name="">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -49,7 +51,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="password" class="input namefild" name="">
+                                <input style="padding-left: 190px;"  type="password" class="input namefild" name="">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -76,7 +78,9 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input style="
+    								padding-left: 160px;
+                                "	 type="text" class="input namefild" name="">
                               </div>
                               <div class="pass-wrap">
                                 <div class="form-row">
@@ -113,7 +117,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input style="padding-left: 140px" type="text" class="input namefild" name="">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -122,7 +126,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input style="padding-left: 130px" type="text" class="input namefild" name="">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -131,7 +135,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input style="padding-left: 120px" type="text" class="input namefild" name="">
                               </div>
                               
                               <button>
