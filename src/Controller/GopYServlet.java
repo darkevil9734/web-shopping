@@ -58,9 +58,10 @@ public class GopYServlet extends HttpServlet {
 				message.setSubject("Góp ý");
 				message.setText("Chào admin,"
 					+ "\n\n Tôi tên là: " + name
-					+ "\n\n Góp ý: " + comment
+					+ "\n\n Email: " + email
+					+ "\n\n Góp ý của tôi: " + comment
 					+ "\n\n Mong admin kiểm tra góp ý của tôi"
-					+ "\n\n Thân "
+					+ "\n\n Thân! "
 					+ "\n\n" + name);
 
 				Transport.send(message);
