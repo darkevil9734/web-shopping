@@ -2,4 +2,5 @@
     pageEncoding="UTF-8"%>
 <jsp:include page="Views/trang-dau.jsp"></jsp:include>
 <jsp:include page="Views/headerFormDangKy.jsp"></jsp:include>
+<jsp:include page="Views/formDangKy.jsp"></jsp:include>
 <jsp:include page="Views/trang-cuoi.jsp"></jsp:include>
