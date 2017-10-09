@@ -72,7 +72,7 @@
                     <h5>
                       Liên Hệ
                     </h5>
-                    <form action="GopYServlet" method="POST">
+                    <form name="formGopY" action="GopYServlet" method="POST" onsubmit="return xacThucGopY()">
                       <div class="row">
                         <div class="col-md-6">
                           <label>
@@ -108,7 +108,24 @@
                       <button class="pull-right">
                         Gửi
                       </button>
+                      
                     </form>
+                    <script type="text/javascript">
+	                      function xacThucGopY() {
+	                      		var name_input = document.forms["formGopY"]["name"].value;
+							    var email_input = document.forms["formGopY"]["email"].value;
+							    var message_input = document.forms["formGopY"]["message"].value;
+							   	if (email_input == "" || name_input == "" || message_input == "") {
+							        alert("Không được để trống");
+							        return false;
+							    }
+							    if (check_email<1 || check_email_dot<check_email+2 || check_email_dot+2 >= email_input.length) {
+							        alert("Email bạn không hợp lệ");
+							        return false;
+							    }
+							    
+							}
+                      </script>
                   </div>
                 </div>
               </div>
