@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <div class="container_fullwidth">
-<div class="container">
+	<div class="container">
 	<div class="row">
 		<jsp:include page="/Views/menu-ben-trai.jsp"></jsp:include>
 		<div class="col-md-9">
@@ -155,3 +155,4 @@
           <jsp:include page="/Views/lien-ket-thuong-hieu.jsp"></jsp:include>
         </div>
       </div>
+     </div>

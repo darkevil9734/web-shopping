@@ -119,7 +119,7 @@
 							        alert("Không được để trống");
 							        return false;
 							    }
-							    if (check_email<1 || check_email_dot<check_email+2 || check_email_dot+2 >= email_input.length) {
+							    if (check_email<1 || check_email_dot<(check_email+2) || (check_email_dot+2) >= email_input.length) {
 							        alert("Email bạn không hợp lệ");
 							        return false;
 							    }

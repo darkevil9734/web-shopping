@@ -32,7 +32,7 @@
                             <h5>
                               Đăng nhập
                             </h5>
-                            <form action="" method="post">
+                            <form name="form-Dang-Nhap" onsubmit="return xacThucDangNhap()" action="dangNhapServlet" method="post">
                               <div class="form-row">
                                 <label class="lebel-abs">
                                   Email 
@@ -40,7 +40,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="email" class="input namefild" name="email">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -49,7 +49,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="password" class="input namefild" name="password">
                               </div>
                               <p class="forgoten">
                                 <a href="#">
@@ -60,6 +60,26 @@
                                 Đăng nhập
                               </button>
                             </form>
+                            <script type="text/javascript">
+                            	function xacThucDangNhap() {
+                	            		var email_input = document.forms["form-Dang-Nhap"]["email"].value;
+        							    var password_input = document.forms["form-Dang-Nhap"]["password"].value;
+        							    var check_email = email_input.indexOf("@");
+        							    var check_email_dot = email_input.lastIndexOf(".");
+        							   	if (email_input == "" || password_input == "") {
+        							        alert("Không được để trống");
+        							        return false;
+        							    }
+        							   	if (check_email<1 || check_email_dot<(check_email+2) || (check_email_dot+2) >= email_input.length) {
+        							        alert("Email bạn không hợp lệ");
+        							        return false;
+        							    }
+        							    
+        							    
+        							}
+								
+                            
+                            </script>
                           </div>
                         </div>
                       </div>
