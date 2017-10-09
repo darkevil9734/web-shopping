@@ -9,14 +9,11 @@
                 <ol class="checkout-steps">
                   <li class="steps">
                     <div class="step-title">
-	                    <a href="dang-nhap.jsp" class="step-title">
-	                      01. Bạn đã có tài khoản ?
-	                    </a>
-                      
+                      01. Bạn đã có tài khoản ?
                     </div>
                   </li>
                   <li class="steps active">
-                    <a href="dang-ky.jsp" class="step-title">
+                    <a href="checkout.html" class="step-title">
                       02. Thành viên mới ?
                     </a>
                     <div class="step-description">
@@ -149,10 +146,11 @@
                   
                 </ol>
               </div>
-            </div>	</div>
+            </div>
+		</div>
           <div class="clearfix">
           </div>
           <jsp:include page="/Views/lien-ket-thuong-hieu.jsp"></jsp:include>
         </div>
       </div>
-     </div>
+     
