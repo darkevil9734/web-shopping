@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="javax.*" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
  <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
@@ -36,16 +38,23 @@
                            <div class="col-md-6">
                               <ul class="topmenu">
                                  <li><a href="contact.html">Giới Thiệu</a></li>
-                                 <li><a href="https://tinhte.vn/">Tin Tức</a></li>
-                                 <li><a href="contact.html">Bảo Hành</a></li>
                                  <li><a href="contact.jsp">Góp Ý</a></li>
-                                 <li><a href="contact.html">Hỗ Trợ</a></li>
+                                 <li><a href="#">Xin chào ${sessionScope.member.ten_user}</a></li>
+
                               </ul>
                            </div>
                            <div class="col-md-3">
                               <ul class="usermenu">
-                                 <li><a href="dang-nhap.jsp" class="log">Đăng Nhập</a></li>
-                                 <li><a href="dang-ky.jsp" class="reg">Đăng Ký</a></li>
+                              	<%
+                              		session = request.getSession();
+                              		if(session == null){
+                              			out.print("<li><a href='dang-nhap.jsp' class='log'>Đăng Nhập</a></li>");
+           	                            out.print("<li><a href='dang-ky.jsp' class='reg'>Đăng Ký</a></li>");
+                              		
+                              	%>	                                 
+                                <%} else{%>
+                                	<li><a href='dangXuatServlet' class='reg'>Đăng xuất</a></li>
+                                <%}%>	
                               </ul>
                            </div>
                         </div>

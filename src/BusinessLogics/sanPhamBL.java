@@ -210,4 +210,33 @@ public class sanPhamBL {
 		}
 		return dsSanPham;
 	}
+	
+	public static List<sanPham> SanPhamMoi(int top){
+		List<sanPham> dssp_new = new ArrayList<sanPham>();
+		Connection db= Database.connect();
+		String sql = "SELECT * FROM hthong_muaban.san_pham order by ma_san_pham asc limit 0,"+top;
+		Statement stm;
+		
+		try {
+			stm = db.createStatement();
+			ResultSet rs = stm.executeQuery(sql);
+			
+			while(rs.next()){
+				sanPham sp = new sanPham();
+				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
+				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
+				sp.setTinhTrang(rs.getString("tinh_trang"));
+				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
+				dssp_new.add(sp);
+				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return dssp_new;
+	}
 }

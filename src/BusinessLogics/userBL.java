@@ -32,4 +32,36 @@ public class userBL {
 		
 		return status;
 	}
+	
+	// login
+	public static user DocTheoUsernamePassword(String username, String password) {
+		user thanhVienDangNhap = null;
+		Connection db = Database.connect();
+		Statement stm;
+		
+		try {
+			stm = db.createStatement();
+			ResultSet rs = stm.executeQuery("SELECT * FROM hthong_muaban.user where username = '"+username+"'  and password = '"+password+"';");
+			
+			
+			if (rs.next()) {
+				thanhVienDangNhap = new user();
+				thanhVienDangNhap.setIduser(rs.getInt("iduser"));
+				thanhVienDangNhap.setPassword(rs.getString("password"));
+				thanhVienDangNhap.setHo_user(rs.getString("ho_user"));
+				thanhVienDangNhap.setTen_user(rs.getString("ten_user"));
+				thanhVienDangNhap.setSdt(rs.getInt("sdt"));
+				thanhVienDangNhap.setEmail(rs.getString("email"));
+				thanhVienDangNhap.setDia_chi(rs.getString("dia_chi"));
+				thanhVienDangNhap.setThanh_pho(rs.getString("thanh_pho"));
+				thanhVienDangNhap.setNuoc(rs.getString("nuoc"));
+				thanhVienDangNhap.setZip_code(rs.getString("zip_code"));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return thanhVienDangNhap;
+	}
 }

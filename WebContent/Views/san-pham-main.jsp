@@ -1,86 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="container_fullwidth">
             <div class="container">
                <div class="hot-products">
                   <h3 class="title"><strong>Sản Phẩm Hot</strong></h3>
                   <div class="control"><a id="prev_hot" class="prev" href="#" style="display: block;">&lt;</a><a id="next_hot" class="next" href="#" style="display: block;">&gt;</a></div>
                   <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: left; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 940px; height: 533px; margin: 0px; overflow: hidden;"><ul id="hot" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4700px; height: 533px;">
+                     
                      <li style="width: 940px;">
                         <div class="row">
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="offer">- %20</div>
-                                 <div class="thumbnail"><a href="details1.html"><img src="images/products/small/products-01.png" alt="Product Name"></a></div>
-                                 <div class="productname">Iphone 5s Gold 32 Gb</div>
-                                 <h4 class="price">5.000.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details2.html"><img src="images/products/small/products-02.png" alt="Product Name"></a></div>
-                                 <div class="productname">Samsung Galaxy S8</div>
-                                 <h4 class="price">17.500.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="offer">New</div>
-                                 <div class="thumbnail"><a href="details3.html"><img src="images/products/small/products-03.png" alt="Product Name"></a></div>
-                                 <div class="productname">Sony Xperia XZ Premium</div>
-                                 <h4 class="price">17.000.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details4.html"><img src="images/products/small/products-04.png" alt="Product Name"></a></div>
-                                 <div class="productname">Xiaomi Mi A1</div>
-                                 <h4 class="price">4.000.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                        </div>
-                     </li>
-                     <li style="width: 940px;">
-                        <div class="row">
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="offer">Trả góp 0%</div>
-                                 <div class="thumbnail"><a href="details5.html"><img src="images/products/small/products-08.png" alt="Product Name"></a></div>
-                                 <div class="productname">iPhone 7 Plus Red 128GB</div>
-                                 <h4 class="price">22.490.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="offer">Sale</div>
-                                 <div class="thumbnail"><a href="details7.html"><img src="images/products/small/products-05.png" alt="Product Name"></a></div>
-                                 <div class="productname">iPhone 6 32GB</div>
-                                 <h4 class="price">7.690.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 
-                                 <div class="thumbnail"><a href="details6.html"><img src="images/products/small/products-06.png" alt="Product Name"></a></div>
-                                 <div class="productname">OPPO F3</div>
-                                 <h4 class="price">10.690.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details8.html"><img src="images/products/small/products-07.png" alt="Product Name"></a></div>
-                                 <div class="productname">Samsung Galaxy J7 Prime</div>
-                                 <h4 class="price">5.990.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
+	                        <c:forEach items="${dssp}" var="sp">
+	                           <div class="col-md-3 col-sm-6">
+	                           
+	                              <div class="products">
+	                                 <div class="offer">Trả góp 0%</div>
+	                                 <div class="thumbnail"><a href="#"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
+	                                 <div class="productname">${sp.tenSanPham }</div>
+	                                 <h4 class="price">${sp.giaSanPham}₫</h4>
+	                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+	                              </div>
+	                           
+	                           </div>
+	                        </c:forEach>   
                         </div>
                      </li>
                   </ul></div>

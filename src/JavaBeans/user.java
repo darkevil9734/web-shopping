@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class user implements Serializable{
 	private static final long serialVersionUID = 1L;
+	private int iduser;
 	private String username;
 	private String password;
 	private String ho_user;
@@ -18,6 +19,19 @@ public class user implements Serializable{
 	public user() {
 		super();
 	}
+	
+	
+	public int getIduser() {
+		return iduser;
+	}
+
+
+
+	public void setIduser(int iduser) {
+		this.iduser = iduser;
+	}
+
+
 
 	public String getUsername() {
 		return username;
