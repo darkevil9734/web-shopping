@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="javax.*" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
  <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
@@ -45,16 +46,13 @@
                            </div>
                            <div class="col-md-3">
                               <ul class="usermenu">
-                              	<%
-                              		session = request.getSession();
-                              		if(session == null){
-                              			out.print("<li><a href='dang-nhap.jsp' class='log'>Đăng Nhập</a></li>");
-           	                            out.print("<li><a href='dang-ky.jsp' class='reg'>Đăng Ký</a></li>");
-                              		
-                              	%>	                                 
-                                <%} else{%>
+                              	<c:if test="${sessionScope.member == null}">
+                              		<li><a href='dang-nhap.jsp' class='log'>Đăng Nhập</a></li>
+           	                        <li><a href='dang-ky.jsp' class='reg'>Đăng Ký</a></li>
+                              	</c:if>
+                              	<c:if test="${sessionScope.member != null}">
                                 	<li><a href='dangXuatServlet' class='reg'>Đăng xuất</a></li>
-                                <%}%>	
+                                </c:if>	
                               </ul>
                            </div>
                         </div>

@@ -12,10 +12,67 @@ public class sanPham implements Serializable {
 	private int giaSanPham;
 	private String tinhTrang;
 	private String hinh_dai_dien;
+	private String camera_truoc;
+	private String camera_sau;
+	private String dung_luong_pin;
+	private String tinh_nang;
+	private String bao_mat;
 	
 	public sanPham() {
 		super();
 	}
+	
+	
+	public String getCamera_truoc() {
+		return camera_truoc;
+	}
+
+
+	public void setCamera_truoc(String camera_truoc) {
+		this.camera_truoc = camera_truoc;
+	}
+
+
+	public String getCamera_sau() {
+		return camera_sau;
+	}
+
+
+	public void setCamera_sau(String camera_sau) {
+		this.camera_sau = camera_sau;
+	}
+
+
+	public String getDung_luong_pin() {
+		return dung_luong_pin;
+	}
+
+
+	public void setDung_luong_pin(String dung_luong_pin) {
+		this.dung_luong_pin = dung_luong_pin;
+	}
+
+
+	public String getTinh_nang() {
+		return tinh_nang;
+	}
+
+
+	public void setTinh_nang(String tinh_nang) {
+		this.tinh_nang = tinh_nang;
+	}
+
+
+	public String getBao_mat() {
+		return bao_mat;
+	}
+
+
+	public void setBao_mat(String bao_mat) {
+		this.bao_mat = bao_mat;
+	}
+
+
 	public String getHangSanXuat() {
 		return hangSanXuat;
 	}
