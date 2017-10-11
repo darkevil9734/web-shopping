@@ -9,7 +9,7 @@
                 <ol class="checkout-steps">
                   <li class="steps">
                     <div class="step-title">
-                    	<a href="dang-nhap.jsp" class="step-title">
+                    	<a href="dang-nhap.jsp">
                       		01. Bạn đã có tài khoản ?
                       	</a>
                     </div>
@@ -19,7 +19,7 @@
                       02. Thành viên mới ?
                     </a>
                     <div class="step-description">
-                      <form>
+                      <form name="form-dang-ky" action="dangKyServlet" method="POST" onsubmit="return xacThucDangKy()">
                         <div class="row">
                           <div class="col-md-6 col-sm-6">
                             <div class="your-details">
@@ -33,7 +33,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" style="padding-left: 130px;" class="input namefild" name="">
+                                <input type="text" style="padding-left: 130px;" class="input namefild" name="txtUsername">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -42,7 +42,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="password" class="input namefild" name="">
+                                <input type="password" class="input namefild" name="txtPassword">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -51,7 +51,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input style="padding-left: 190px;"  type="password" class="input namefild" name="">
+                                <input style="padding-left: 190px;"  type="password" class="input namefild" name="txtPasswordRepeat">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -60,7 +60,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" class="input namefild" name="txtHo">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -69,7 +69,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" class="input namefild" name="txtTen">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -80,7 +80,7 @@
                                 </label>
                                 <input style="
     								padding-left: 160px;
-                                "	 type="text" class="input namefild" name="">
+                                "	 type="text" class="input namefild" name="txtSDT">
                               </div>
                               <div class="pass-wrap">
                                 <div class="form-row">
@@ -90,7 +90,7 @@
                                       *
                                     </strong>
                                   </label>
-                                  <input type="text" class="input namefild" name="">
+                                  <input type="email" class="input namefild" name="txtEmail">
                                 </div>
                               </div>
                               
@@ -108,7 +108,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" class="input namefild" name="txtDiaChi">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -117,7 +117,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input style="padding-left: 140px" type="text" class="input namefild" name="">
+                                <input style="padding-left: 140px" type="text" class="input namefild" name="txtThanhPho">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -126,7 +126,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input style="padding-left: 130px" type="text" class="input namefild" name="">
+                                <input style="padding-left: 130px" type="text" class="input namefild" name="txtQuocGia">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -135,16 +135,26 @@
                                     *
                                   </strong>
                                 </label>
-                                <input style="padding-left: 120px" type="text" class="input namefild" name="">
+                                <input style="padding-left: 120px" type="text" class="input namefild" name="txtZipCode">
                               </div>
                               
-                              <button>
+                              <button class="enviar">
                                 Đăng ký
                               </button>
                             </div>
                           </div>
                         </div>
                       </form>
+                      <script type="text/javascript">
+                      		function xacThucDangKy() {
+                      			var username_input = document.forms["form-dang-ky"]["txtUsername"].value;
+								var password_input = document.forms["form-dang-ky"]["txtPassword"].value;
+							    if (username_input == "" || password_input == "") {
+						        	alert("Không được để trống");
+							        return false;
+							    }
+							}
+					  </script>
                     </div>
                   </li>
                   
