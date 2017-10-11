@@ -42,6 +42,6 @@
             </div>
           <div class="clearfix">
           </div>
-          <jsp:include page="/Views/lien-ket-thuong-hieu.jsp"></jsp:include>
+          
         </div>
       
