@@ -13,11 +13,14 @@
 	                        <c:forEach items="${dssp}" var="sp">
 	                           <div class="col-md-3 col-sm-6">	                           
 	                              <div class="products">
-	                                 <div class="offer">Trả góp 0%</div>
-	                                 <div class="thumbnail"><a href="#"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
-	                                 <div class="productname">${sp.tenSanPham }</div>
-	                                 <h4 class="price">${sp.giaSanPham}₫</h4>
-	                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+	                              	<form action="themGioHang?id=${sp.ma_san_pham}" method="post">
+		                                 <div class="offer">Trả góp 0%</div>
+		                                 <div class="thumbnail"><a href="#"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
+		                                 <div class="productname">${sp.tenSanPham }</div>
+		                                 <h4 class="price">${sp.giaSanPham}₫</h4>
+	                                 
+	                                 	<div class="button_group"><button class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+	                              	 </form>
 	                              </div>
 	                           
 	                           </div>

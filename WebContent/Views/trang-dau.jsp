@@ -61,7 +61,7 @@
                      <div class="header_bottom">
                         <ul class="option">
                            <li id="search" class="search">
-                              <form name="formTimKiem" action="TimKiem" method="POST" onsubmit="return xacThucTimKiem()">
+                              <form name="formTimKiem" action="timKiemSanPham" method="POST" onsubmit="return xacThucTimKiem()">
                               	<input class="search-submit" type="submit" value="">
                               	<input class="search-input" placeholder="Nhập sản phẩm bạn muốn tìm?" type="text" value="" name="txtSanPham">
                               </form>
@@ -76,8 +76,9 @@
 							 </script>
                            </li>
                            <li class="option-cart">
-                              <a href="#" class="cart-icon">cart <span class="cart_no">02</span></a>
+                              <a href="#" class="cart-icon">cart <span class="cart_no">${sessionScope.gioHang.tongTien()}</span></a>
                               <ul class="option-cart-item">
+                              
                                  <li>
                                     <div class="cart-item">
                                        <div class="image"><img src="images/products/thum/products-01.png" alt=""></div>
@@ -91,19 +92,7 @@
                                        </div>
                                     </div>
                                  </li>
-                                 <li>
-                                    <div class="cart-item">
-                                       <div class="image"><img src="images/products/thum/products-02.jpg" alt=""></div>
-                                       <div class="item-description">
-                                          <p class="name">SamSung galaxy S8</p>
-                                          <p>Số Lượng: <span class="light-red">01</span></p>
-                                       </div>
-                                       <div class="right">
-                                          <p class="price">$500</p>
-                                          <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
-                                       </div>
-                                    </div>
-                                 </li>
+                               
                                  <li><span class="total">Total <strong>$1.100</strong></span><button class="checkout" onclick="location.href='checkout.html'">Thanh Toán</button></li>
                               </ul>
                            </li>

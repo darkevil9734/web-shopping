@@ -3,6 +3,8 @@ package BusinessLogics;
 import java.sql.*;
 import java.util.*;
 
+import com.sun.corba.se.spi.orbutil.fsm.Guard.Result;
+
 import JavaBeans.sanPham;
 
 public class sanPhamBL {
@@ -16,6 +18,7 @@ public class sanPhamBL {
 			
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -46,6 +49,7 @@ public class sanPhamBL {
 			dsSanPham = new ArrayList<>();
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -78,6 +82,7 @@ public class sanPhamBL {
 			dsSanPham = new ArrayList<>();
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -110,6 +115,7 @@ public class sanPhamBL {
 			dsSanPham = new ArrayList<>();
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -142,6 +148,7 @@ public class sanPhamBL {
 			dsSanPham = new ArrayList<>();
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -174,6 +181,7 @@ public class sanPhamBL {
 			dsSanPham = new ArrayList<>();
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -205,6 +213,7 @@ public class sanPhamBL {
 			dsSanPham = new ArrayList<>();
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -237,6 +246,7 @@ public class sanPhamBL {
 			dsSanPham = new ArrayList<>();
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -270,6 +280,7 @@ public class sanPhamBL {
 			
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -305,6 +316,7 @@ public class sanPhamBL {
 			
 			while(rs.next()){
 				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
 				sp.setTenSanPham(rs.getString("ten_san_pham"));
 				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
 				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
@@ -326,5 +338,38 @@ public class sanPhamBL {
 		}
 		
 		return dssp_bottom;
+	}
+	
+	public static sanPham docTheoID(int id) {
+		sanPham sp = null;
+		Connection db = Database.connect();
+		String sql = "SELECT * FROM hthong_muaban.san_pham WHERE ma_san_pham =" + id;
+		Statement stm;
+		
+		try {
+			stm = db.createStatement();
+			ResultSet rs = stm.executeQuery(sql);
+			
+			while(rs.next()) {
+				sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
+				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
+				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
+				sp.setTinhTrang(rs.getString("tinh_trang"));
+				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
+				sp.setCamera_truoc(rs.getString("camera_truoc"));
+				sp.setCamera_sau(rs.getString("camera_sau"));
+				sp.setDung_luong_pin(rs.getString("dung_luong_pin"));
+				sp.setTinh_nang(rs.getString("tinh_nang"));
+				sp.setBao_mat(rs.getString("bao_mat"));
+				sp.setMau_sac(rs.getString("mau_sac"));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return sp;
 	}
 }

@@ -7,6 +7,7 @@ public class sanPham implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private int ma_san_pham;
 	private String tenSanPham;
 	private String hangSanXuat;
 	private int giaSanPham;
@@ -25,6 +26,22 @@ public class sanPham implements Serializable {
 	
 	
 	
+
+
+	public int getMa_san_pham() {
+		return ma_san_pham;
+	}
+
+
+
+
+
+	public void setMa_san_pham(int ma_san_pham) {
+		this.ma_san_pham = ma_san_pham;
+	}
+
+
+
 
 
 	public String getMau_sac() {
