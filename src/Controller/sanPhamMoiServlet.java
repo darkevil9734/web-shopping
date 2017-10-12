@@ -24,7 +24,13 @@ public class sanPhamMoiServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		List<sanPham> dssp_new = sanPhamBL.SanPhamMoi(4);
+		List<sanPham> dssp_bottom = sanPhamBL.SanPhamBottom(4);
+		List<sanPham> dssp_giaRe = sanPhamBL.timTheoGiaDuoi1Trieu();
+		List<sanPham> dssp_giaRe1TrieuDen3Trieu = sanPhamBL.timTheoGia1TrieuDen3Trieu();
 		request.setAttribute("dssp",dssp_new);
+		request.setAttribute("dssp_bottom", dssp_bottom);
+		request.setAttribute("dssp_Re",dssp_giaRe);
+		request.setAttribute("dssp_ReTren1Trieu", dssp_giaRe1TrieuDen3Trieu);
 		request.getRequestDispatcher("Views/san-pham-main.jsp").include(request, response);
 
 	}

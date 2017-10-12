@@ -17,12 +17,32 @@ public class sanPham implements Serializable {
 	private String dung_luong_pin;
 	private String tinh_nang;
 	private String bao_mat;
+	private String mau_sac;
 	
 	public sanPham() {
 		super();
 	}
 	
 	
+	
+
+
+	public String getMau_sac() {
+		return mau_sac;
+	}
+
+
+
+
+
+	public void setMau_sac(String mau_sac) {
+		this.mau_sac = mau_sac;
+	}
+
+
+
+
+
 	public String getCamera_truoc() {
 		return camera_truoc;
 	}

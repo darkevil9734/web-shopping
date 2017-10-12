@@ -11,8 +11,7 @@
                      <li style="width: 940px;">
                         <div class="row">
 	                        <c:forEach items="${dssp}" var="sp">
-	                           <div class="col-md-3 col-sm-6">
-	                           
+	                           <div class="col-md-3 col-sm-6">	                           
 	                              <div class="products">
 	                                 <div class="offer">Trả góp 0%</div>
 	                                 <div class="thumbnail"><a href="#"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
@@ -25,6 +24,21 @@
 	                        </c:forEach>   
                         </div>
                      </li>
+                     <li style="width: 940px;">
+                        <div class="row">
+	                        <c:forEach items="${dssp_bottom}" var="bottom">
+		                           <div class="col-md-3 col-sm-6">
+		                              <div class="products">
+		                                 <div class="thumbnail"><a href="details9.html"><img src="Views/productIMG/${bottom.hinh_dai_dien}" alt="Product Name"></a></div>
+		                                 <div class="productname">${bottom.tenSanPham}</div>
+		                                 <h4 class="price">${bottom.giaSanPham}₫</h4>
+		                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+		                              </div>
+		                           </div>
+	                         </c:forEach>  
+                         </div>
+                      </li>
+                     
                   </ul></div>
                </div>
                <div class="clearfix"></div>
@@ -34,75 +48,30 @@
                   <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: left; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 940px; height: 533px; margin: 0px; overflow: hidden;"><ul id="featured" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4700px; height: 550px;">
                      <li style="width: 940px;">
                         <div class="row">
+                        <c:forEach items="${dssp_Re}" var="spre">
                            <div class="col-md-3 col-sm-6">
                               <div class="products">
-                                 <div class="thumbnail"><a href="details9.html"><img src="images/products/small/products-12.png" alt="Product Name"></a></div>
-                                 <div class="productname">iPad Wifi 32GB</div>
-                                 <h4 class="price">8.990.000₫</h4>
+                                 <div class="thumbnail"><a href="details9.html"><img src="Views/productIMG/${spre.hinh_dai_dien}" alt="Product Name"></a></div>
+                                 <div class="productname">${spre.tenSanPham}</div>
+                                 <h4 class="price">${spre.giaSanPham}₫</h4>
                                  <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
                               </div>
                            </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details10.html"><img src="images/products/small/products-09.png" alt="Product Name"></a></div>
-                                 <div class="productname">Samsung Galaxy Tab A 8.0</div>
-                                 <h4 class="price">6.490.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="offer">Trả góp 0%</div>
-                                 <div class="thumbnail"><a href="details11.html"><img src="images/products/small/products-10.png" alt="Product Name"></a></div>
-                                 <div class="productname">Bkav BPhone</div>
-                                 <h4 class="price">Free</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details12.html"><img src="images/products/small/products-11.png" alt="Product Name"></a></div>
-                                 <div class="productname">Bphone 2017 Gold</div>
-                                 <h4 class="price">20.000.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
+                         </c:forEach>  
                         </div>
                      </li>
                      <li style="width: 940px;">
                         <div class="row">
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details13.html"><img src="images/products/small/products-13.png" alt="Product Name"></a></div>
-                                 <div class="productname"> Samsung Gear VR2</div>
-                                 <h4 class="price">2.190.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details14.html"><img src="images/products/small/products-14.jpg" alt="Product Name"></a></div>
-                                 <div class="productname">Gậy chụp ảnh Bluetooth</div>
-                                 <h4 class="price">90.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details15.html"><img src="images/products/small/products-15.jpg" alt="Product Name"></a></div>
-                                 <div class="productname">sạc dự phòng 10.000 mAh</div>
-                                 <h4 class="price">300.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details16.html"><img src="images/products/small/products-16.jpg" alt="Product Name"></a></div>
-                                 <div class="productname">Micro SD 32 GB Class 10</div>
-                                 <h4 class="price">400.000₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Add To Cart</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
+	                        <c:forEach items="${dssp_ReTren1Trieu}" var="spre">
+		                           <div class="col-md-3 col-sm-6">
+		                              <div class="products">
+		                                 <div class="thumbnail"><a href="details13.html"><img src="Views/productIMG/${spre.hinh_dai_dien}" alt="Product Name"></a></div>
+		                                 <div class="productname">${spre.tenSanPham}</div>
+		                                 <h4 class="price">${spre.giaSanPham}₫</h4>
+		                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+		                              </div>
+		                           </div>
+	                         </c:forEach>  
                         </div>
                      </li>
                   </ul></div>
