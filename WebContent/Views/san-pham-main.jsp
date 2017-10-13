@@ -13,7 +13,7 @@
 	                        <c:forEach items="${dssp}" var="sp">
 	                           <div class="col-md-3 col-sm-6">	                           
 	                              <div class="products">
-	                              	<form action="themGioHang?id=${sp.ma_san_pham}" method="post">
+	                              	<form action="/themGioHang?id=${sp.ma_san_pham}" method="post">
 		                                 <div class="offer">Trả góp 0%</div>
 		                                 <div class="thumbnail"><a href="#"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
 		                                 <div class="productname">${sp.tenSanPham }</div>

@@ -37,7 +37,7 @@ public class themGioHang extends HttpServlet {
 		}
 		
 		HttpSession session = request.getSession();
-		gioHangBL gioHang = (gioHangBL) session.getAttribute("soLuongMua");
+		gioHangBL gioHang = (gioHangBL) session.getAttribute("id");
 		
 		if(gioHang == null) {
 			gioHang = new gioHangBL();
@@ -46,6 +46,8 @@ public class themGioHang extends HttpServlet {
 		
 		gioHang.them(id, soLuongMua);
 		response.sendRedirect("trang-chu.jsp");
+		
+		System.out.println(gioHang.countSoLuongMua());
 	}
 
 	/**

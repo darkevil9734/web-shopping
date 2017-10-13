@@ -76,7 +76,7 @@
 							 </script>
                            </li>
                            <li class="option-cart">
-                              <a href="#" class="cart-icon">cart <span class="cart_no">${sessionScope.gioHang.tongTien()}</span></a>
+                              <a href="#" class="cart-icon">cart <span class="cart_no">${sessionScope.gioHang.countSoLuongMua()}</span></a>
                               <ul class="option-cart-item">
                               
                                  <li>

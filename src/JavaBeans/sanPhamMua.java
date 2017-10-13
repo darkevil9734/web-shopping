@@ -1,6 +1,10 @@
 package JavaBeans;
 
 public class sanPhamMua extends sanPham {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int soLuongMua;
 
 	public int getSoLuongMua() {

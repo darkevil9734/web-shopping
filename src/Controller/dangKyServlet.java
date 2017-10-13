@@ -53,7 +53,7 @@ public class dangKyServlet extends HttpServlet {
 			request.getRequestDispatcher("Views/dang-ky-thanh-cong.jsp").forward(request, response);
 		}
 		else {
-			request.getRequestDispatcher("Views/dang-ky-loi.jsp").forward(request, response);
+			request.getRequestDispatcher("dang-ky-loi.jsp").forward(request, response);
 
 		}
 	}
