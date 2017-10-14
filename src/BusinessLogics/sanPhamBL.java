@@ -6,6 +6,7 @@ import java.util.*;
 import com.sun.corba.se.spi.orbutil.fsm.Guard.Result;
 
 import JavaBeans.sanPham;
+import JavaBeans.sanPhamMua;
 
 public class sanPhamBL {
 	public static List<sanPham> DocTatCa(){
@@ -371,5 +372,33 @@ public class sanPhamBL {
 		}
 		
 		return sp;
+	}
+
+	public static int themMoi(sanPham sanPhamMoi) {
+		int status = 0;
+		
+		String sql = "INSERT INTO `hthong_muaban`.`san_pham` (ten_san_pham, hang_san_xuat, gia_san_pham, tinh_Trang, hinh_anh_mo_phong, camera_truoc, camera_sau, dung_luong_pin, tinh_nang, bao_mat, mau_sau) VALUES (?,?,?,?,?,?,?,?,?,?,?);";
+		try {
+			Connection db = Database.connect();
+			PreparedStatement pst = db.prepareStatement(sql);
+			pst.setString(1, sanPhamMoi.getTenSanPham());
+			pst.setString(2, sanPhamMoi.getHangSanXuat());
+			pst.setInt(3, sanPhamMoi.getGiaSanPham());
+			pst.setString(4, sanPhamMoi.getTinhTrang());
+			pst.setString(5, sanPhamMoi.getHinh_dai_dien());
+			pst.setString(6, sanPhamMoi.getCamera_truoc());
+			pst.setString(7, sanPhamMoi.getCamera_sau());
+			pst.setString(8, sanPhamMoi.getDung_luong_pin());
+			pst.setString(9, sanPhamMoi.getTinh_nang());
+			pst.setString(10, sanPhamMoi.getBao_mat());
+			pst.setString(11, sanPhamMoi.getMau_sac());
+		
+			status = pst.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return status;
 	}
 }

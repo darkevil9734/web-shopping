@@ -30,7 +30,7 @@ public class quenMatKhauServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        	request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
-		
+		response.setContentType("text/html;charset=UTF-8");
 		String username = request.getParameter("txtUsername");
 		String email = request.getParameter("txtEmail");
 		
@@ -57,6 +57,7 @@ public class quenMatKhauServlet extends HttpServlet {
 			try {
 
 				Message message = new MimeMessage(session);
+				message.setHeader("Content-Type", "text/plain; charset=UTF-8");
 				message.setFrom(new InternetAddress("testmailbaitap@gmail.com"));
 				message.setRecipients(Message.RecipientType.TO,
 					InternetAddress.parse(email));
@@ -88,5 +89,5 @@ public class quenMatKhauServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-
+	 	
 }
