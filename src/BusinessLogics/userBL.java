@@ -64,4 +64,35 @@ public class userBL {
 		
 		return thanhVienDangNhap;
 	}
+	
+	// reset password
+	public static user ResetPassword(String username, String email) {
+		user thanhVienQuenMatKhau = null;
+		Connection db = Database.connect();
+		Statement stm;
+		
+		try {
+			stm = db.createStatement();
+			ResultSet rs = stm.executeQuery("select*from hthong_muaban.user where username = '"+username+"' and email = '"+email+"'");
+			
+			while(rs.next()) {
+				thanhVienQuenMatKhau = new user();
+				thanhVienQuenMatKhau.setIduser(rs.getInt("iduser"));
+				thanhVienQuenMatKhau.setPassword(rs.getString("password"));
+				thanhVienQuenMatKhau.setHo_user(rs.getString("ho_user"));
+				thanhVienQuenMatKhau.setTen_user(rs.getString("ten_user"));
+				thanhVienQuenMatKhau.setSdt(rs.getInt("sdt"));
+				thanhVienQuenMatKhau.setEmail(rs.getString("email"));
+				thanhVienQuenMatKhau.setDia_chi(rs.getString("dia_chi"));
+				thanhVienQuenMatKhau.setThanh_pho(rs.getString("thanh_pho"));
+				thanhVienQuenMatKhau.setNuoc(rs.getString("nuoc"));
+				thanhVienQuenMatKhau.setZip_code(rs.getString("zip_code"));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return thanhVienQuenMatKhau;		
+	}
+
 }

@@ -14,7 +14,7 @@
 							<input type="password" name="txtPassword" title="Password required" placeholder="Mật Khẩu" data-icon="x">
 							<div class="olvido">
 								<div class="col"><a href="dang-ky.jsp" title="Ver Carásteres">Đăng Ký</a></div>
-								<div class="col"><a href="#" title="Recuperar Password">Quên mật khẩu</a></div>
+								<div class="col"><a href="quen-mat-khau.jsp" title="Recuperar Password">Quên mật khẩu</a></div>
 							</div>
 							<button class="enviar">Đăng Nhập</button>
 						</form>
