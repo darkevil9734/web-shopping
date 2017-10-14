@@ -23,7 +23,6 @@ html {
 .input-txt {
   width: 100%;
   padding: 20px 10px;
-  background: #5D92BA;
   border: none;
   font-size: 1em;
   color: white;
@@ -54,6 +53,9 @@ html {
   overlow: hidden;
   float: left;
   width: 100%;
+}
+.btn:hover{
+	background-color: #9fdfbe;
 }
 
 .btn {

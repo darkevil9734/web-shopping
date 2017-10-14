@@ -158,6 +158,9 @@
 								var thanhPho_input = document.forms["form-dang-ky"]["txtThanhPho"].value;
 								var quocGia_input = document.forms["form-dang-ky"]["txtQuocGia"].value;
 								var zipCode_input = document.forms["form-dang-ky"]["txtZipCode"].value;
+								// variable telephone regex: 
+								var regEx = /^0(1\d{9}|9\d{8})$/;
+                      			
 								// check empty 
 								var check_email = email_input.indexOf("@");
 							    var check_email_dot = email_input.lastIndexOf(".");
@@ -179,6 +182,11 @@
 							    else if (check_email<1 || check_email_dot<check_email+2 || check_email_dot+2 >= email_input.length) {
 							        alert("Email bạn không hợp lệ");
 							        return false;
+							    }
+							    // check phone regex
+							    else if(regEx.test(soDienThoai_input) == false){
+							    	alert("Số điện thoại không hợp lệ");
+							    	return false;
 							    }
 							}
 					  </script>
