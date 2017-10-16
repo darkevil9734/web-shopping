@@ -8,7 +8,7 @@ public class nhanVienBL {
 	public static int dangKyNhanVien(nhanVien nv) {
 		int status =0;
 		
-		String sql = "INSERT INTO `hthong_muaban`.`nhan_vien` (`username`, `password`, `ho_nhan_vien`, `ten_nhan_vien`, `sdt`) VALUES (?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO `hthong_muaban`.`nhan_vien` (`username`, `password`, `ho_nhan_vien`, `ten_nhan_vien`,`email` ,`sdt`) VALUES (?, ?, ?, ?, ?, ?)";
 		try {
 			Connection db = Database.connect();
 			PreparedStatement pst = db.prepareStatement(sql);

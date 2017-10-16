@@ -26,6 +26,7 @@
          <input type="password" name="txtpassword" placeholder="Lặp lại password" required="required" class="input-txt" />
          <input type="text" name="hoNhanVien" placeholder="Họ" required="required" class="input-txt" />
          <input type="text" name="nameNhanVien" placeholder="Tên" required="required" class="input-txt" />
+         <input type="email" name="emailNhanVien" placeholder="Email" required="required" class="input-txt" />
          <input type="text" name="sdtNhanVien" placeholder="Số điện thoại" required="required" class="input-txt" />
           <div class="login-footer">
              

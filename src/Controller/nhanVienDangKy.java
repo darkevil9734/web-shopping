@@ -27,6 +27,7 @@ public class nhanVienDangKy extends HttpServlet {
 		String password = request.getParameter("password");
 		String ho_nhan_vien = request.getParameter("hoNhanVien");
 		String ten_nhan_vien = request.getParameter("nameNhanVien");
+		String email = request.getParameter("emailNhanVien");
 		int sdt = Integer.parseInt(request.getParameter("sdtNhanVien"));
 		
 		nhanVien nv_dangky = new nhanVien();
@@ -34,6 +35,7 @@ public class nhanVienDangKy extends HttpServlet {
 		nv_dangky.setPassword(password);
 		nv_dangky.setHo_nhan_vien(ho_nhan_vien);
 		nv_dangky.setTen_nhan_vien(ten_nhan_vien);
+		nv_dangky.setEmail(email);
 		nv_dangky.setSdt(sdt);
 		
 		int dki_nhanvien = nhanVienBL.dangKyNhanVien(nv_dangky);
