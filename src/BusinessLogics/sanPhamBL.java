@@ -3,7 +3,6 @@ package BusinessLogics;
 import java.sql.*;
 import java.util.*;
 
-import com.sun.corba.se.spi.orbutil.fsm.Guard.Result;
 
 import JavaBeans.sanPham;
 import JavaBeans.sanPhamMua;
@@ -430,6 +429,38 @@ public class sanPhamBL {
 			e.printStackTrace();
 		}
 		
+		
+		return dssp;
+	}
+
+	public static List<sanPham> timTheoMauSac(String mauSac){
+		List<sanPham> dssp = new ArrayList<sanPham>();
+		
+		try {
+			Connection db = Database.connect();
+			Statement stm = db.createStatement();
+			ResultSet rs = stm.executeQuery(" select*from hthong_muaban.san_pham where mau_sac like '%"+mauSac+"%'");
+			
+			while(rs.next()) {
+				sanPham sp = new sanPham();
+				sp.setMa_san_pham(rs.getInt("ma_san_pham"));
+				sp.setTenSanPham(rs.getString("ten_san_pham"));
+				sp.setHangSanXuat(rs.getString("hang_san_xuat"));
+				sp.setGiaSanPham(rs.getInt("gia_san_pham"));
+				sp.setTinhTrang(rs.getString("tinh_trang"));
+				sp.setHinh_dai_dien(rs.getString("hinh_anh_mo_phong"));
+				sp.setCamera_truoc(rs.getString("camera_truoc"));
+				sp.setCamera_sau(rs.getString("camera_sau"));
+				sp.setDung_luong_pin(rs.getString("dung_luong_pin"));
+				sp.setTinh_nang(rs.getString("tinh_nang"));
+				sp.setBao_mat(rs.getString("bao_mat"));
+				sp.setMau_sac(rs.getString("mau_sac"));
+				dssp.add(sp);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		return dssp;
 	}
