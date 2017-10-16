@@ -164,7 +164,7 @@
                 </h3>
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="timTheoGiaSanPhamServlet?options=1">
                       Dưới 1 triệu
                     </a>
                   </li>
