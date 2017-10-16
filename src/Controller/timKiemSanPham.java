@@ -23,10 +23,10 @@ public class timKiemSanPham extends HttpServlet {
   
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		String ten_input = request.getParameter("txtTen");
 		List<sanPham> dssp_theoTen = sanPhamBL.timTheoTen(ten_input);
 		if(dssp_theoTen != null) {
+			System.out.println(dssp_theoTen.size());
 			request.setAttribute("dssp_ten", dssp_theoTen);
 			request.getRequestDispatcher("Views/san-pham-tim-kiem.jsp").forward(request, response);
 		}

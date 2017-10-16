@@ -45,7 +45,7 @@ public class sanPhamBL {
 		try {
 			Connection db = Database.connect();
 			Statement stm = db.createStatement();
-			ResultSet rs = stm.executeQuery("select * from san_pham where ten_san_pham like '%"+tenSanPhamCanTim+"%'");
+			ResultSet rs = stm.executeQuery("select*from hthong_muaban.san_pham where ten_san_pham like '%"+tenSanPhamCanTim+"%'");
 			dsSanPham = new ArrayList<>();
 			while(rs.next()){
 				sanPham sp = new sanPham();

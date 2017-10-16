@@ -63,11 +63,11 @@
                            <li id="search" class="search">
                               <form name="formTimKiem" action="timKiemSanPham" method="POST" onsubmit="return xacThucTimKiem()">
                               	<input class="search-submit" type="submit" value="">
-                              	<input class="search-input" placeholder="Nhập sản phẩm bạn muốn tìm?" type="text" value="" name="txtSanPham">
+                              	<input class="search-input" placeholder="Nhập sản phẩm bạn muốn tìm?" type="text" value="" name="txtTen">
                               </form>
                               <script text="text/javascript">
 									function xacThucTimKiem() {
-									    var san_pham = document.forms["formTimKiem"]["txtSanPham"].value;
+									    var san_pham = document.forms["formTimKiem"]["txtTen"].value;
 									    if (san_pham == "") {
 									        alert("Không được để trống");
 									        return false;
