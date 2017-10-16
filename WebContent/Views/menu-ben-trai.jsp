@@ -169,17 +169,17 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoGiaSanPhamServlet?options=2">
                       Từ 1 - 3 triệu
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoGiaSanPhamServlet?options=3">
                       Từ 3 - 7 triệu
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoGiaSanPhamServlet?options=4">
                       Từ 7 - 10 triệu
                     </a>
                   </li>
