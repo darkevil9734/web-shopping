@@ -184,22 +184,22 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoHangSanPham?hang=Apple">
                       iPhone (Apple)
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoHangSanPham?hang=Samsung">
                       Samsung
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoHangSanPham?hang=Sony">
                       Sony
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoHangSanPham?hang=Oppo">
                       OPPO
                     </a>
                   </li>
