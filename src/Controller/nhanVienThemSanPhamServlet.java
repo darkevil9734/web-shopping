@@ -33,7 +33,7 @@ public class nhanVienThemSanPhamServlet extends HttpServlet {
 		sanPham sanPhamMoi = new sanPham();
 		sanPhamMoi.setTenSanPham(ten_san_pham);
 		sanPhamMoi.setHangSanXuat(hang_san_xuat);
-		sanPhamMoi.set
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
