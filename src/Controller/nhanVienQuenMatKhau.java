@@ -85,7 +85,7 @@ public class nhanVienQuenMatKhau extends HttpServlet {
 		else{
 			response.sendRedirect("loi-reset.jsp");
 		}
-		}
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
