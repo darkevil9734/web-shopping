@@ -107,8 +107,8 @@
                                  <a href="trang-chu.jsp">Home</a>
                                  
                               </li>
-                              <li><a href="apple.html">Apple</a></li>
-                              <li><a href="sony.html">Sony</a></li>
+                              <li><a href="timTheoHangSanPham?hang=Apple">Apple</a></li>
+                              <li><a href="timTheoHangSanPham?hang=Sony">Sony</a></li>
                               <li class="dropdown">
                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Phụ Kiện</a>
                                  <div class="dropdown-menu mega-menu">
@@ -125,9 +125,9 @@
                                     </div>
                                  </div>
                               </li>
-                              <li><a href="Oppo.html">Oppo</a></li>
-                              <li><a href="xiaomi.html">Xiaomi</a></li> 
-                              <li><a href="samsung.html">Samsung</a></li>
+                              <li><a href="timTheoHangSanPham?hang=Oppo">Oppo</a></li>
+                              <li><a href="timTheoHangSanPham?hang=Nokia">Nokia</a></li> 
+                              <li><a href="timTheoHangSanPham?hang=Samsung">Samsung</a></li>
                               <li><a href="contact.jsp">Liên hệ chúng tôi</a></li>
                            </ul>
                         </div>
