@@ -37,7 +37,7 @@ public class themGioHang extends HttpServlet {
 		}
 		
 		HttpSession session = request.getSession();
-		gioHangBL gioHang = (gioHangBL) session.getAttribute("id");
+		gioHangBL gioHang = (gioHangBL) session.getAttribute("gioHang");
 		
 		if(gioHang == null) {
 			gioHang = new gioHangBL();
