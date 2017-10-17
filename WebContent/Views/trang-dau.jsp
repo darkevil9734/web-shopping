@@ -78,9 +78,9 @@
                            <li class="option-cart">
                               <a href="#" class="cart-icon">cart <span class="cart_no">${sessionScope.gioHang.countSoLuongMua()}</span></a>
                               <ul class="option-cart-item">
-                              
+                              <c:forEach items="${spm}" var="spham_mua">
                                  <li>
-                                 <c:forEach items="${spm}" var="spham_mua">
+                                 
 	                                    <div class="cart-item">
 	                                       <div class="image"><img src="./Views/productIMG/${spham_mua.hinh_dai_dien}" alt=""></div>
 			                                       <div class="item-description">
@@ -93,10 +93,10 @@
 			                                       </div>
 		                                       
 	                                    </div>
-                                  </c:forEach>
+                                  
                                  </li>
-                               
-                                 <li><span class="total">Tổng cộng <strong>${sessionScope.gioHang.tongTien()}</strong></span><button class="checkout" onclick="location.href='checkout.html'">Thanh Toán</button></li>
+                               </c:forEach>
+                                 <li><span class="total">Tổng cộng <strong>${sessionScope.gioHang.tongTien()}</strong></span><button class="checkout" onclick="location.href='xemGioHangServlet'">Thanh Toán</button></li>
                               </ul>
                            </li>
                         </ul>
