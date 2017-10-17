@@ -80,20 +80,23 @@
                               <ul class="option-cart-item">
                               
                                  <li>
-                                    <div class="cart-item">
-                                       <div class="image"><img src="images/products/thum/products-01.png" alt=""></div>
-                                       <div class="item-description">
-                                          <p class="name">IPhone 7Plus</p>
-                                          <p>Số Lượng: <span class="light-red">01</span></p>
-                                       </div>
-                                       <div class="right">
-                                          <p class="price">$600</p>
-                                          <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
-                                       </div>
-                                    </div>
+                                 <c:forEach items="${spm}" var="spham_mua">
+	                                    <div class="cart-item">
+	                                       <div class="image"><img src="./Views/productIMG/${spham_mua.hinh_dai_dien}" alt=""></div>
+			                                       <div class="item-description">
+			                                          <p class="name">${spham_mua.tenSanPham}</p>
+			                                          <p>Số Lượng: <span class="light-red">${spham_mua.soLuongMua}</span></p>
+			                                       </div>
+			                                       <div class="right">
+			                                          <p class="price">${spham_mua.getThanhTien()}</p>
+			                                          <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
+			                                       </div>
+		                                       
+	                                    </div>
+                                  </c:forEach>
                                  </li>
                                
-                                 <li><span class="total">Total <strong>$1.100</strong></span><button class="checkout" onclick="location.href='checkout.html'">Thanh Toán</button></li>
+                                 <li><span class="total">Tổng cộng <strong>${sessionScope.gioHang.tongTien()}</strong></span><button class="checkout" onclick="location.href='checkout.html'">Thanh Toán</button></li>
                               </ul>
                            </li>
                         </ul>

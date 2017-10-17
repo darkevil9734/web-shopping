@@ -35,6 +35,7 @@ public class gioHangServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		gioHangBL gioHang = (gioHangBL) session.getAttribute("gioHang");
 		List<sanPhamMua> listOfSp = gioHang.danhSachSanPhamMua();
+		
 		request.setAttribute("spm", listOfSp);
 		request.getRequestDispatcher("Views/trang-dau.jsp").include(request, response);
 	}
