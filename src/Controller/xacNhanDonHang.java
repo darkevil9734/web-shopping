@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import BusinessLogics.gioHangBL;
+import BusinessLogics.hoaDonBL;
 import JavaBeans.hoaDon;
 import JavaBeans.sanPhamMua;
 import JavaBeans.user;
@@ -29,12 +30,13 @@ public class xacNhanDonHang extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		user thanhVienMuaHang = (user) session.getAttribute("member");
-		//int id = thanhVienMuaHang.getIduser();
+		
 		
 		gioHangBL gioHang = (gioHangBL) session.getAttribute("gioHang");
 		List<sanPhamMua> listOfSp = gioHang.danhSachSanPhamMua();
-
-		/*
+		
+		
+		int id = thanhVienMuaHang.getIduser();
 		String email = request.getParameter("txtEmail");
 		String ho_user = request.getParameter("txtHo");
 		String ten_user = request.getParameter("txtHo");
@@ -43,11 +45,32 @@ public class xacNhanDonHang extends HttpServlet {
 		String thanhPho = request.getParameter("thanhPho");
 		String quan = request.getParameter("txtQuan");
 		String phuong = request.getParameter("txtPhuong");
-		*/
+		
 		// Kiểm thử Session
 		System.out.println(thanhVienMuaHang.getIduser());
+		String kq = null;
 		for(sanPhamMua spm: listOfSp) {
-			System.out.println(spm.getTenSanPham());
+			kq = spm.getTenSanPham() + " - Số lượng " +spm.getSoLuongMua() +" - Thành tiền" + spm.getThanhTien() + "\n";
+			System.out.println(kq);
+		}
+		hoaDon hd_mua = new hoaDon();
+		hd_mua.setId_user(id);
+		hd_mua.setEmail(email);
+		hd_mua.setHo_user(ho_user);
+		hd_mua.setTen_user(ten_user);
+		hd_mua.setSdt(sdt);
+		hd_mua.setDiaChi(diaChi);
+		hd_mua.setThanhPho(thanhPho);
+		hd_mua.setQuan(quan);
+		hd_mua.setPhuong(phuong);
+		hd_mua.setChiTiet(kq);
+		
+		int them = hoaDonBL.themHoaDon(hd_mua);
+		if(them != 0) {
+			request.getRequestDispatcher("mua-thanh-cong.jsp").forward(request, response);
+		}
+		else {
+			request.getRequestDispatcher("mua-bi-loi.jsp").forward(request, response);
 		}
 	}
 

@@ -116,7 +116,7 @@
 
                                 </div>
                               </div>
-                              <button>Xác nhận</button>
+                              <button formaction="xacNhanDonHang">Xác nhận</button>
                               </div> 
                             </div>
                           </div>

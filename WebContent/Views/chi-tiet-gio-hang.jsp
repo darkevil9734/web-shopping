@@ -51,7 +51,7 @@
     <td colspan="2" class="hidden-xs"> </td> 
     <td class="hidden-xs text-center"><strong>Tổng ${sessionScope.gioHang.tongTien()}</strong>
     </td> 
-    <td><a href="#" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+    <td><a href="xac-nhan-don-hang.jsp" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
     </td> 
    </tr> 
   </tfoot> 
