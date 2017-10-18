@@ -15,6 +15,8 @@ public class user implements Serializable{
 	private String thanh_pho;
 	private String nuoc;
 	private String zip_code;
+	private String quan;
+	private String phuong;
 	
 	public user() {
 		super();
@@ -88,6 +90,28 @@ public class user implements Serializable{
 	public void setDia_chi(String dia_chi) {
 		this.dia_chi = dia_chi;
 	}
+	
+	
+	
+	public String getQuan() {
+		return quan;
+	}
+
+
+	public void setQuan(String quan) {
+		this.quan = quan;
+	}
+
+
+	public String getPhuong() {
+		return phuong;
+	}
+
+
+	public void setPhuong(String phuong) {
+		this.phuong = phuong;
+	}
+
 
 	public String getThanh_pho() {
 		return thanh_pho;

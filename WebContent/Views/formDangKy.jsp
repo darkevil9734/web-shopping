@@ -112,6 +112,24 @@
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
+                                  Quận
+                                  <strong class="red">
+                                    *
+                                  </strong>
+                                </label>
+                                <input type="text" class="input namefild" name="txtQuan">
+                              </div>
+                              <div class="form-row">
+                                <label class="lebel-abs">
+                                  Phường
+                                  <strong class="red">
+                                    *
+                                  </strong>
+                                </label>
+                                <input type="text" class="input namefild" name="txtPhuong">
+                              </div>
+                              <div class="form-row">
+                                <label class="lebel-abs">
                                   Thành phố:
                                   <strong class="red">
                                     *

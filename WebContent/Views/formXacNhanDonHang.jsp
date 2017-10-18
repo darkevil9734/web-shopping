@@ -12,7 +12,7 @@
                 <ol class="checkout-steps">
                   <li class="steps">
                     <div class="step-title">
-                      <a href="giohang.html">
+                      <a href="xemGioHangServlet">
                       Thông tin đơn hàng
                     </a>
                     </div>
@@ -34,7 +34,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" class="input namefild" value="${sessionScope.member.email}" name="txtEmail">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -43,7 +43,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" class="input namefild" value="${sessionScope.member.ho_user}" name="txtHo">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -52,7 +52,7 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" class="input namefild" value="${sessionScope.member.ten_user}" name="txtTen">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -61,9 +61,8 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" class="input namefild" value="${sessionScope.member.sdt}" name="txtSDT">
                               </div>
-                              
                               
                               
                             </div>
@@ -73,22 +72,14 @@
                               
                               <div class="form-row">
                                 <label class="lebel-abs">
-                                  Đường
+                                  Địa chỉ:
                                   <strong class="red">
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" class="input namefild" value="${sessionScope.member.dia_chi}" name="txtDiaChi">
                               </div>
-                              <div class="form-row">
-                                <label class="lebel-abs">
-                                  Số nhà
-                                  <strong class="red">
-                                    *
-                                  </strong>
-                                </label>
-                                <input type="text" class="input namefild" name="">
-                              </div>
+                              
                               <div class="form-row">
                                 <label class="lebel-abs">
                                   Tỉnh/Thành phố
@@ -96,7 +87,9 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" style="
+								    padding-left: 180px;
+								" class="input namefild" value="${sessionScope.member.thanh_pho}" name="txtThanhPho">
                               </div>
                               <div class="form-row">
                                 <label class="lebel-abs">
@@ -105,7 +98,9 @@
                                     *
                                   </strong>
                                 </label>
-                                <input type="text" class="input namefild" name="">
+                                <input type="text" style="
+								    padding-left: 160px;
+								" class="input namefild" value="${sessionScope.member.quan}" name="txtQuan">
                               </div>
                               <div class="pass-wrap">
                                 <div class="form-row">
@@ -115,7 +110,9 @@
                                       *
                                     </strong>
                                   </label>
-                                  <input type="text" class="input namefild" name="">
+                                  <input type="text" class="input namefild" value="${sessionScope.member.phuong}" name="txtPhuong" style="
+									    padding-left: 160px;
+									">
 
                                 </div>
                               </div>

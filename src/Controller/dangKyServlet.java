@@ -31,6 +31,8 @@ public class dangKyServlet extends HttpServlet {
 		int sdt = Integer.parseInt(request.getParameter("txtSDT"));
 		String email = request.getParameter("txtEmail");
 		String dia_chi = request.getParameter("txtDiaChi");
+		String quan = request.getParameter("txtQuan");
+		String phuong = request.getParameter("txtPhuong");
 		String thanh_pho = request.getParameter("txtThanhPho");
 		String nuoc = request.getParameter("txtQuocGia");
 		String zip_code = request.getParameter("txtZipCode");
@@ -44,6 +46,8 @@ public class dangKyServlet extends HttpServlet {
 		thanhVien.setSdt(sdt);
 		thanhVien.setEmail(email);
 		thanhVien.setDia_chi(dia_chi);
+		thanhVien.setQuan(quan);
+		thanhVien.setPhuong(phuong);
 		thanhVien.setThanh_pho(thanh_pho);
 		thanhVien.setNuoc(nuoc);
 		thanhVien.setZip_code(zip_code);
