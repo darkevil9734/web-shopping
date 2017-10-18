@@ -35,9 +35,13 @@ public class xemGioHangServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		gioHangBL gioHang = (gioHangBL) session.getAttribute("gioHang");
 		List<sanPhamMua> listOfSp = gioHang.danhSachSanPhamMua();
-		
-		request.setAttribute("ds_spm", listOfSp);
-		request.getRequestDispatcher("gio-hang.jsp").forward(request, response);
+		if(listOfSp != null) {
+			request.setAttribute("ds_spm", listOfSp);
+			request.getRequestDispatcher("gio-hang.jsp").forward(request, response);
+		}
+		else if(listOfSp == null) {
+			request.getRequestDispatcher("loi-gio-hang.jsp").forward(request, response);
+		}
 	}
 
 	/**
