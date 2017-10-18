@@ -97,12 +97,14 @@ public class xacNhanDonHang extends HttpServlet {
 					message.setFrom(new InternetAddress("testmailbaitap@gmail.com"));
 					message.setRecipients(Message.RecipientType.TO,
 						InternetAddress.parse(email));
+					message.setHeader("Content-Type", "text/plain; charset=UTF-8");
 					message.setSubject("Thông tin đơn hàng");
-					message.setText("Chào bạn:  " + ten_user 
-						+ "\n\n Cảm ơn bạn đã mua hàng của chúng tôi"
-						+ "\n\n Sau đây là chi tiết đơn hàng bạn đã mua: "
-						+ "\n \n "+kq
-						+ "\n\n BQL, VHN!");
+					String noiDung = "Chào bạn, " + ten_user
+							+ "\n\n Cảm ơn bạn đã mua hàng của chúng tôi"
+							+ "\n\n Sau đây là chi tiết đơn hàng bạn đã mua: "
+							+ "\n\n " + kq
+							+ "\n\n BQL, VHN!";
+					message.setText(noiDung);
 
 					Transport.send(message);
 					request.getRequestDispatcher("mua-thanh-cong.jsp").forward(request, response);
