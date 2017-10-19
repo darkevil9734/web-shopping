@@ -15,7 +15,7 @@
 	                              <div class="products">
 	                              	<form action="themGioHang?id=${sp.ma_san_pham}" method="post">
 		                                 <div class="offer">Trả góp 0%</div>
-		                                 <div class="thumbnail"><a href="#"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
+		                                 <div class="thumbnail"><a href="xemChiTietSanPhamServlet?id=${sp.ma_san_pham}"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
 		                                 <div class="productname">${sp.tenSanPham }</div>
 		                                 <h4 class="price">${sp.giaSanPham}₫</h4>
 	                                 
