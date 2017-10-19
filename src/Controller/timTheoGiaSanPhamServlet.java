@@ -44,6 +44,7 @@ public class timTheoGiaSanPhamServlet extends HttpServlet {
 				}
 				else {
 					System.out.println(dssp_giaDuoi1Trieu.size());
+					
 				}
 				break;
 				
