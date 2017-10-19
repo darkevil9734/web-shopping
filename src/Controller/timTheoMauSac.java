@@ -12,28 +12,25 @@ import javax.servlet.http.HttpServletResponse;
 import BusinessLogics.sanPhamBL;
 import JavaBeans.sanPham;
 
-@WebServlet("/timTheoHangSanPham")
-public class timTheoHangSanPham extends HttpServlet {
+@WebServlet("/timTheoMauSac")
+public class timTheoMauSac extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-    public timTheoHangSanPham() {
+    public timTheoMauSac() {
         super();
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String brand = request.getParameter("hang");
-		List<sanPham> timKiemTheoHang = sanPhamBL.timKiemTheoHang(brand);
-		if(timKiemTheoHang != null) {
-			System.out.println(timKiemTheoHang.size());
-			request.setAttribute("dsach_theohang", timKiemTheoHang);
-			request.getRequestDispatcher("san-pham-theo-hang.jsp").forward(request, response);
-			
-		}
-		else{
-			request.getRequestDispatcher("loi.jsp").forward(request, response);
+		String mauSac = request.getParameter("mauSac");
+		List<sanPham> timTheoMauSac = sanPhamBL.timTheoMauSac(mauSac);
+		if(timTheoMauSac != null) {
+			System.out.println(timTheoMauSac.size());
+			request.setAttribute("timTheoMauSac", timTheoMauSac);
+			request.getRequestDispatcher("san-pham-mau.jsp").forward(request, response);
 		}
 	}
 
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
