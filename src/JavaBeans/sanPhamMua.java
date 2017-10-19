@@ -15,7 +15,7 @@ public class sanPhamMua extends sanPham {
 		this.soLuongMua = soLuongMua;
 	}
 	
-	public double getThanhTien() {
+	public int getThanhTien() {
 		return soLuongMua*getGiaSanPham();
 	}
 

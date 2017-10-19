@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:if test="${sessionScope.gioHang != null}">
 	<jsp:include page="/gioHangServlet"></jsp:include>
 </c:if>
@@ -90,7 +91,7 @@
 	                                <div class="offer">Trả Góp 0%</div>
 	                                <div class="thumbnail"><a href="details.html"><img src="Views/productIMG/${ds_7Den10Trieu.hinh_dai_dien}" alt="Product Name"></a></div>
 	                                <div class="productname">${ds_7Den10Trieu.tenSanPham}</div>
-	                                <h4 class="price">${ds_7Den10Trieu.giaSanPham}₫</h4>
+	                                <h4 class="price"><f:formatNumber type="number" value="${ds_7Den10Trieu.giaSanPham}" /> ₫</h4>
 	                                <div class="button_group"><button class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
 	                           	</div>
 		                  </div>

@@ -14,100 +14,9 @@
               <div class="products-details">
                 <div class="preview_image">
                   <div class="preview-small">
-                    <div style="height:378px;width:328px;" class="zoomWrapper"><img id="zoom_03" src="images/products/medium/products-08.png" data-zoom-image="images/products/Large/products-01.png" alt="" style="position: absolute; width: 328px; height: 378px;"><div style="background: url(&quot;images/loading.gif&quot;) center center no-repeat; height: 378px; width: 328px; z-index: 2000; position: absolute; display: none;"></div><div style="background: url(&quot;images/loading.gif&quot;) center center no-repeat; height: 378px; width: 328px; z-index: 2000; position: absolute; display: none;"></div><div style="background: url(&quot;images/loading.gif&quot;) center center no-repeat; height: 378px; width: 328px; z-index: 2000; position: absolute; display: none;"></div><div style="background: url(&quot;images/loading.gif&quot;) center center no-repeat; height: 378px; width: 328px; z-index: 2000; position: absolute; display: none;"></div></div>
+                    <div style="height:378px;width:328px;" class="zoomWrapper"><img id="zoom_03" src="Views/productIMG/${chitiet.hinh_dai_dien}" data-zoom-image="images/products/Large/products-01.png" alt="" style="position: absolute; width: 328px; height: 378px;"><div style="background: url(&quot;images/loading.gif&quot;) center center no-repeat; height: 378px; width: 328px; z-index: 2000; position: absolute; display: none;"></div><div style="background: url(&quot;images/loading.gif&quot;) center center no-repeat; height: 378px; width: 328px; z-index: 2000; position: absolute; display: none;"></div><div style="background: url(&quot;images/loading.gif&quot;) center center no-repeat; height: 378px; width: 328px; z-index: 2000; position: absolute; display: none;"></div><div style="background: url(&quot;images/loading.gif&quot;) center center no-repeat; height: 378px; width: 328px; z-index: 2000; position: absolute; display: none;"></div></div>
                   </div>
-                  <div class="thum-image">
-                    <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 240px; height: 55px; margin: 0px; overflow: hidden;"><ul id="gallery_01" class="prev-thum" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2160px; height: 55px; z-index: auto;"><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-08.png" data-zoom-image="images/products/Large/products-09.png" class="active">
-                          <img src="images/products/thum/products-08.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-09.png" data-zoom-image="images/products/Large/products-10.png" class="">
-                          <img src="images/products/thum/products-09.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-10.png" data-zoom-image="images/products/Large/products-11.png">
-                          <img src="images/products/thum/products-10.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-11.png" data-zoom-image="images/products/Large/products-12.png">
-                          <img src="images/products/thum/products-11.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-12.png" data-zoom-image="images/products/Large/products-13.png">
-                          <img src="images/products/thum/products-12.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-13.png" data-zoom-image="images/products/Large/products-14.png">
-                          <img src="images/products/thum/products-13.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-14.png" data-zoom-image="images/products/Large/products-15.png">
-                          <img src="images/products/thum/products-14.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-15.png" data-zoom-image="images/products/Large/products-16.png">
-                          <img src="images/products/thum/products-15.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-16.png" data-zoom-image="images/products/Large/products-16.png">
-                          <img src="images/products/thum/products-16.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-01.png" data-zoom-image="images/products/Large/products-01.png">
-                          <img src="images/products/thum/products-01.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-02.png" data-zoom-image="images/products/Large/products-02.png">
-                          <img src="images/products/thum/products-02.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-03.png" data-zoom-image="images/products/Large/products-03.png">
-                          <img src="images/products/thum/products-03.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-04.png" data-zoom-image="images/products/Large/products-04.png">
-                          <img src="images/products/thum/products-04.png" alt="">
-                        </a>
-                      </li><li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-05.png" data-zoom-image="images/products/Large/products-06.png">
-                          <img src="images/products/thum/products-05.png" alt="">
-                        </a>
-                      </li>
-                      
-                      
-                      
-                      
-                      
-                      <li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-06.png" data-zoom-image="images/products/Large/products-07.png">
-                          <img src="images/products/thum/products-06.png" alt="">
-                        </a>
-                      </li>
-                      <li style="width: 60px;">
-                        <a href="#" data-image="images/products/medium/products-07.png" data-zoom-image="images/products/Large/products-08.png" class="">
-                          <img src="images/products/thum/products-07.png" alt="">
-                        </a>
-                      </li>
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                      
-                    </ul></div>
-                    <a class="control-left" id="thum-prev" href="javascript:void(0);" style="display: block;">
-                      <i class="fa fa-chevron-left">
-                      </i>
-                    </a>
-                    <a class="control-right" id="thum-next" href="javascript:void(0);" style="display: block;">
-                      <i class="fa fa-chevron-right">
-                      </i>
-                    </a>
-                  </div>
+                  
                 </div>
                 <div class="products-description">
                   <h5 class="name">
@@ -117,14 +26,16 @@
                     <img alt="" src="images/star.png">
                     
                   </p>
-                  <p>
+                  <br/>	<br/><br/>
+                  <p style="font-size: 16px;">
                     Tình trạng:
                     <span class=" light-red">
                       ${chitiet.tinhTrang}
                     </span>
                   </p>
-                  <p>
-                    ${chitiet.hangSanXuat}
+                  <br/>	<br/>
+                  <p style="font-size: 16px;">
+                    Hãng:  ${chitiet.hangSanXuat}
                   </p>
                   <hr class="border">
                   <div class="price">
@@ -148,9 +59,11 @@
                       </select>
                     </div>
                     <div class="button_group">
-                      <button class="button">
-                        Mua
-                      </button>
+                    	<form action='themGioHang?id=${chitiet.ma_san_pham}' method="post">
+	                      <button  class="button" type="submit">
+	                        Mua
+	                      </button>
+                      </form>
                       <button class="button compare">
                         <i class="fa fa-exchange">
                         </i>
@@ -185,7 +98,7 @@
                 </ul></div>
                 <div class="tab-content-wrap">
                   <div class="tab-content" id="Descraption" style="display: block;">
-                    <p>
+                    <p style="font-size: 16px;">
                       ${chitiet.tinh_nang}
                     </p>
                     <p>

@@ -76,7 +76,7 @@ public class timTheoGiaSanPhamServlet extends HttpServlet {
 								
 			//  giá từ 7-10 triệu
 			case 4:
-				List<sanPham> dssp_giaTu7Den10Trieu = sanPhamBL.timTheoGia3TrieuDen7Trieu();
+				List<sanPham> dssp_giaTu7Den10Trieu = sanPhamBL.timTheoGia7TrieuDen10Trieu();
 				request.setAttribute("dssp_7Den10Trieu", dssp_giaTu7Den10Trieu);
 				request.getRequestDispatcher("san-pham-7-den-10-trieu.jsp").forward(request, response);
 				if(dssp_giaTu7Den10Trieu.isEmpty() == true) {

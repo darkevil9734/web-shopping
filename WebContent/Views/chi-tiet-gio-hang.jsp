@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <div class="container_fullwidth">
         <div class="container">
           <div class="row">
@@ -32,10 +33,10 @@
 	     </div> 
 	    </div> 
 	   </td> 
-	   <td data-th="Price">${dssp.giaSanPham}₫</td> 
+	   <td data-th="Price"><f:formatNumber type="number" value="${dssp.giaSanPham}" /> ₫</td> 
 	   <td data-th="Quantity"><input class="form-control text-center" value="${dssp.soLuongMua}" type="number">
 	   </td> 
-	   <td data-th="Subtotal" class="text-center">${dssp.getThanhTien()}₫</td> 
+	   <td data-th="Subtotal" class="text-center"><f:formatNumber type="number" value="${dssp.getThanhTien()}" /> ₫</td> 
 	   <td class="actions" data-th="">
 	    <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
 	    </button> 
@@ -49,7 +50,7 @@
     <td><a href="trang-chu.jsp" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
     </td> 
     <td colspan="2" class="hidden-xs"> </td> 
-    <td class="hidden-xs text-center"><strong>Tổng ${sessionScope.gioHang.tongTien()}</strong>
+    <td class="hidden-xs text-center"><strong>Tổng:  <f:formatNumber type="number" value="${sessionScope.gioHang.tongTien()}"/> </strong>
     </td> 
     <td><a href="xac-nhan-don-hang.jsp" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
     </td> 

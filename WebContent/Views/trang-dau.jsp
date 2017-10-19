@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="javax.*" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
  <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
@@ -88,7 +88,7 @@
 			                                          <p>Số Lượng: <span class="light-red">${spham_mua.soLuongMua}</span></p>
 			                                       </div>
 			                                       <div class="right">
-			                                          <p class="price">${spham_mua.getThanhTien()}</p>
+			                                          <p class="price"><f:formatNumber type="number" value="${spham_mua.getThanhTien()}" /> ₫</p>
 			                                          <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
 			                                       </div>
 		                                       
@@ -96,7 +96,7 @@
                                   
                                  </li>
                                </c:forEach>
-                                 <li><span class="total">Tổng cộng <strong>${sessionScope.gioHang.tongTien()}</strong></span><button class="checkout" onclick="location.href='<c:if test='${sessionScope.gioHang != null}'>xemGioHangServlet</c:if>'">Thanh Toán</button></li>
+                                 <li><span class="total">Tổng cộng <strong><f:formatNumber type="number" value="${sessionScope.gioHang.tongTien()}"/>₫</strong></span><button class="checkout" onclick="location.href='<c:if test='${sessionScope.gioHang != null}'>xemGioHangServlet</c:if>'">Thanh Toán</button></li>
                               </ul>
                            </li>
                         </ul>

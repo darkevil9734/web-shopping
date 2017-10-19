@@ -57,7 +57,7 @@ public class xacNhanDonHang extends HttpServlet {
 		System.out.println(thanhVienMuaHang.getIduser());
 		String kq = "";
 		for(sanPhamMua spm: listOfSp) {
-			kq += spm.getTenSanPham() + " - Số lượng " +spm.getSoLuongMua() +" - Thành tiền " + spm.getThanhTien() + "\n";
+			kq += spm.getTenSanPham() + " - Số lượng " +spm.getSoLuongMua() +" - Thành tiền " + String.format("%,3d", spm.getThanhTien()) + "\n";
 			System.out.println(kq);
 		}
 		hoaDon hd_mua = new hoaDon();
