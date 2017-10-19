@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "f" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <div class="container_fullwidth">
             <div class="container">
                <div class="hot-products">
@@ -17,8 +18,8 @@
 		                                 <div class="offer">Trả góp 0%</div>
 		                                 <div class="thumbnail"><a href="xemChiTietSanPhamServlet?id=${sp.ma_san_pham}"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
 		                                 <div class="productname">${sp.tenSanPham }</div>
-		                                 <h4 class="price">${sp.giaSanPham}₫</h4>
-	                                 
+		                                 <h4 class="price"><f:formatNumber type="number" value="${sp.giaSanPham}"/>₫</h4>
+	                                 		
 	                                 	<div class="button_group"><button class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
 	                              	 </form>
 	                              </div>
@@ -35,7 +36,7 @@
 		                              <div class="products">
 		                                 <div class="thumbnail"><a href="details9.html"><img src="Views/productIMG/${bottom.hinh_dai_dien}" alt="Product Name"></a></div>
 		                                 <div class="productname">${bottom.tenSanPham}</div>
-		                                 <h4 class="price">${bottom.giaSanPham}₫</h4>
+		                                 <h4 class="price"><f:formatNumber type="number" value="${bottom.giaSanPham}"/> ₫</h4>
 		                                 <div class="button_group"><button class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
 		                              </div>
 		                           </div>
