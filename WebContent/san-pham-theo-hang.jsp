@@ -85,15 +85,17 @@
                 </div>
                 <div class="row">
                 	<c:forEach items="${dsach_theohang }" var="dsh">
-	                  <div class="col-md-4 col-sm-6">
-	                    	<div class="products">
-                                <div class="offer">Trả Góp 0%</div>
-                                <div class="thumbnail"><a href="details.html"><img src="Views/productIMG/${dsh.hinh_dai_dien}" alt="Product Name"></a></div>
-                                <div class="productname">${dsh.tenSanPham}</div>
-                                <h4 class="price">${dsh.giaSanPham}₫</h4>
-                                <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                           	</div>
-	                  </div>
+	                  <form action="themGioHang?id=${dsh.ma_san_pham}" method="post">
+		                  <div class="col-md-4 col-sm-6">
+		                    	<div class="products">
+	                                <div class="offer">Trả Góp 0%</div>
+	                                <div class="thumbnail"><a href="details.html"><img src="Views/productIMG/${dsh.hinh_dai_dien}" alt="Product Name"></a></div>
+	                                <div class="productname">${dsh.tenSanPham}</div>
+	                                <h4 class="price">${dsh.giaSanPham}₫</h4>
+	                                <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+	                           	</div>
+		                  </div>
+	                  </form>
                   </c:forEach>
                   </div>
                 </div>

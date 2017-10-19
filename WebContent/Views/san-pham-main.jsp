@@ -30,14 +30,16 @@
                      <li style="width: 940px;">
                         <div class="row">
 	                        <c:forEach items="${dssp_bottom}" var="bottom">
+	                        	<form action="themGioHang?id=${bottom.ma_san_pham}" method="post">
 		                           <div class="col-md-3 col-sm-6">
 		                              <div class="products">
 		                                 <div class="thumbnail"><a href="details9.html"><img src="Views/productIMG/${bottom.hinh_dai_dien}" alt="Product Name"></a></div>
 		                                 <div class="productname">${bottom.tenSanPham}</div>
 		                                 <h4 class="price">${bottom.giaSanPham}₫</h4>
-		                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+		                                 <div class="button_group"><button class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
 		                              </div>
 		                           </div>
+		                          </form>
 	                         </c:forEach>  
                          </div>
                       </li>
@@ -52,28 +54,32 @@
                      <li style="width: 940px;">
                         <div class="row">
                         <c:forEach items="${dssp_Re}" var="spre">
-                           <div class="col-md-3 col-sm-6">
-                              <div class="products">
-                                 <div class="thumbnail"><a href="details9.html"><img src="Views/productIMG/${spre.hinh_dai_dien}" alt="Product Name"></a></div>
-                                 <div class="productname">${spre.tenSanPham}</div>
-                                 <h4 class="price">${spre.giaSanPham}₫</h4>
-                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
-                              </div>
-                           </div>
+	                       <form action="themGioHang?id=${spre.ma_san_pham}" method="post">    
+	                           <div class="col-md-3 col-sm-6">
+	                              <div class="products">
+	                                 <div class="thumbnail"><a href="details9.html"><img src="Views/productIMG/${spre.hinh_dai_dien}" alt="Product Name"></a></div>
+	                                 <div class="productname">${spre.tenSanPham}</div>
+	                                 <h4 class="price">${spre.giaSanPham}₫</h4>
+	                                 <div class="button_group"><button class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+	                              </div>
+	                           </div>
+                           </form>
                          </c:forEach>  
                         </div>
                      </li>
                      <li style="width: 940px;">
                         <div class="row">
 	                        <c:forEach items="${dssp_ReTren1Trieu}" var="spre">
+		                        <form action="themGioHang?id=${spre.ma_san_pham}" method="post">   
 		                           <div class="col-md-3 col-sm-6">
 		                              <div class="products">
 		                                 <div class="thumbnail"><a href="details13.html"><img src="Views/productIMG/${spre.hinh_dai_dien}" alt="Product Name"></a></div>
 		                                 <div class="productname">${spre.tenSanPham}</div>
 		                                 <h4 class="price">${spre.giaSanPham}₫</h4>
-		                                 <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+		                                 <div class="button_group"><button class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
 		                              </div>
 		                           </div>
+		                        </form>   
 	                         </c:forEach>  
                         </div>
                      </li>
