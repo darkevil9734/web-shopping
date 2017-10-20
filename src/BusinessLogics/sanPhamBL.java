@@ -31,6 +31,7 @@ public class sanPhamBL {
 				sp.setBao_mat(rs.getString("bao_mat"));
 				sp.setMau_sac(rs.getString("mau_sac"));
 				dsSanPham.add(sp);
+				
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -62,8 +63,8 @@ public class sanPhamBL {
 				sp.setBao_mat(rs.getString("bao_mat"));
 				sp.setMau_sac(rs.getString("mau_sac"));
 				dsSanPham.add(sp);
-				
 			}
+			db.close();
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -97,6 +98,7 @@ public class sanPhamBL {
 				dsSanPham.add(sp);
 				
 			}
+			db.close();
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -130,6 +132,7 @@ public class sanPhamBL {
 				dsSanPham.add(sp);
 				
 			}
+			db.close();
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -163,6 +166,7 @@ public class sanPhamBL {
 				dsSanPham.add(sp);
 				
 			}
+			db.close();
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -195,6 +199,7 @@ public class sanPhamBL {
 				sp.setMau_sac(rs.getString("mau_sac"));
 				dsSanPham.add(sp);
 			}
+			db.close();
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -228,6 +233,7 @@ public class sanPhamBL {
 				dsSanPham.add(sp);
 				
 			}
+			db.close();
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -261,6 +267,7 @@ public class sanPhamBL {
 				dsSanPham.add(sp);
 				
 			}
+			db.close();
 		} catch (SQLException e) {
 			
 			e.printStackTrace();
@@ -295,7 +302,7 @@ public class sanPhamBL {
 				dssp_new.add(sp);
 				
 			}
-			
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -331,7 +338,7 @@ public class sanPhamBL {
 				dssp_bottom.add(sp);
 				
 			}
-			
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -365,6 +372,7 @@ public class sanPhamBL {
 				sp.setBao_mat(rs.getString("bao_mat"));
 				sp.setMau_sac(rs.getString("mau_sac"));
 			}
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -377,8 +385,9 @@ public class sanPhamBL {
 		int status = 0;
 		
 		String sql = "INSERT INTO `hthong_muaban`.`san_pham` (ten_san_pham, hang_san_xuat, gia_san_pham, tinh_Trang, hinh_anh_mo_phong, camera_truoc, camera_sau, dung_luong_pin, tinh_nang, bao_mat, mau_sau) VALUES (?,?,?,?,?,?,?,?,?,?,?);";
+		Connection db = Database.connect();
 		try {
-			Connection db = Database.connect();
+			
 			PreparedStatement pst = db.prepareStatement(sql);
 			pst.setString(1, sanPhamMoi.getTenSanPham());
 			pst.setString(2, sanPhamMoi.getHangSanXuat());
@@ -393,6 +402,7 @@ public class sanPhamBL {
 			pst.setString(11, sanPhamMoi.getMau_sac());
 		
 			status = pst.executeUpdate();
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -424,6 +434,7 @@ public class sanPhamBL {
 				sp.setMau_sac(rs.getString("mau_sac"));
 				dssp.add(sp);
 			}
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -457,6 +468,7 @@ public class sanPhamBL {
 				sp.setMau_sac(rs.getString("mau_sac"));
 				dssp.add(sp);
 			}
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -490,6 +502,7 @@ public class sanPhamBL {
 				dssp.add(sp);
 		
 			}
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

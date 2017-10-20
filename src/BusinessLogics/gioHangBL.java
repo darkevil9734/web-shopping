@@ -59,4 +59,8 @@ public class gioHangBL {
 	public int countSoLuongMua() {
 		return danhSachHang.size();
 	}
+	
+	public void xoa(int id) {
+		danhSachHang.remove(id);
+	}
 }

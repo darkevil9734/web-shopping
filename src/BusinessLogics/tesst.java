@@ -7,8 +7,10 @@ public abstract class tesst {
 		gioHangBL test = new gioHangBL();
 		test.them(1, 1);
 		test.them(2, 1);
-		System.out.println(test.countSoLuongMua());
+		System.out.println("SL: " +test.countSoLuongMua());
 		
+		test.xoa(1);
+		System.out.println("SL: " +test.countSoLuongMua());
 	}
 
 }

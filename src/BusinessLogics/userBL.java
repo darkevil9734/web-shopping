@@ -7,9 +7,9 @@ public class userBL {
 	// insert new member
 	public static int dangKy(user thanhVien) {
 		int status=0;
-
+		Connection db = Database.connect();
 		try {
-			Connection db = Database.connect();
+			
 			PreparedStatement pst = db.prepareStatement("INSERT INTO user(username, password, ho_user, ten_user, sdt, email, dia_chi, quan, phuong, thanh_pho, nuoc, zip_code) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)");
 			
 			pst.setString(1, thanhVien.getUsername());
@@ -26,7 +26,7 @@ public class userBL {
 			pst.setString(12, thanhVien.getZip_code());
 			
 			status = pst.executeUpdate();
-			
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -61,6 +61,7 @@ public class userBL {
 				thanhVienDangNhap.setNuoc(rs.getString("nuoc"));
 				thanhVienDangNhap.setZip_code(rs.getString("zip_code"));
 			}
+			db.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -92,6 +93,7 @@ public class userBL {
 				thanhVienQuenMatKhau.setNuoc(rs.getString("nuoc"));
 				thanhVienQuenMatKhau.setZip_code(rs.getString("zip_code"));
 			}
+			db.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

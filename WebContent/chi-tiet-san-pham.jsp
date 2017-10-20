@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="f" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <c:if test="${sessionScope.gioHang != null}">
 	<jsp:include page="/gioHangServlet"></jsp:include>
 </c:if>
@@ -41,7 +42,7 @@
                   <div class="price">
                     Giá: 
                     <span class="new_price">
-                      ${chitiet.giaSanPham}
+                      <f:formatNumber type="number" value="${chitiet.giaSanPham}" /> 
                       <sup>
                         ₫
                       </sup>
@@ -291,42 +292,42 @@
                 </h3>
                  <ul>
                   <li>
-                    <a href="#">
+                    <a href="timTheoGiaSanPhamServlet?options=1">
                       Dưới 1 triệu
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoGiaSanPhamServlet?options=2">
                       Từ 1 - 3 triệu
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoGiaSanPhamServlet?options=3">
                       Từ 3 - 7 triệu
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoGiaSanPhamServlet?options=4">
                       Từ 7 - 10 triệu
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoHangSanPham?hang=Apple">
                       iPhone (Apple)
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoHangSanPham?hang=Samsung">
                       Samsung
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoHangSanPham?hang=Sony">
                       Sony
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="timTheoHangSanPham?hang=Oppo">
                       OPPO
                     </a>
                   </li>
@@ -342,8 +343,8 @@
                   </strong>
                 </h3>
                 
-                <form>
-                  <input class="email" type="text" name="" placeholder=" Email của bạn">
+                <form name="formEmail" onsubmit="return xacThuc()" action="ThanksServlet" method="post">
+                  <input class="email" type="text" name="email" placeholder=" Email của bạn">
 
                   <input class="submit" type="submit" value="Submit">
                 </form>

@@ -8,5 +8,5 @@
 	<jsp:include page="/Views/trang-dau.jsp"></jsp:include>
 </c:if>
 <jsp:include page="Views/quang-cao.jsp"></jsp:include>
-<jsp:include page="sanPhamMoiServlet"></jsp:include>
+<jsp:include page="/sanPhamMoiServlet"></jsp:include>
 <jsp:include page="Views/trang-cuoi.jsp"></jsp:include>

@@ -30,7 +30,7 @@
 							<input type="email" name="email" placeholder="Nhập email....">
 							<input type="submit" value="Gửi" class="button">
 						</form>
-						<script text="text/javascript">
+						<script>
 							function xacThuc() {
 							    var email_input = document.forms["formEmail"]["email"].value;
 							    var check_email = email_input.indexOf("@");
