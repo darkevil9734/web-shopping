@@ -118,11 +118,10 @@
                                     <div class="row">
                                        <div class="col-md-6 col-sm-6">
                                           <ul class="mega-menu-links">
-                                             <li><a href="sanphammoi.html">Sản Phẩm mới</a></li>
-                                             <li><a href="baoda.html">Bao da &amp; ốp lưng</a></li>
-                                             <li><a href="sacduphong.html"> Sạc dự phòng </a></li>
-                                             <li><a href="loa.html">Loa Bluetooth</a></li>
-                                             <li><a href="capsac.html">Cáp Sạc</a></li>
+                                             <li><a href="phuKien?loaiPK=1">Bao da &amp; ốp lưng</a></li>
+                                             <li><a href="phuKien?loaiPK=2"> Sạc dự phòng </a></li>
+                                             <li><a href="phuKien?loaiPK=3">Tai nghe</a></li>
+                                             
                                           </ul>
                                        </div>
                                     </div>
