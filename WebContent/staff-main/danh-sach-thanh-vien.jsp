@@ -15,6 +15,9 @@
 			}
 			td{
 				width: 200px;
+				
+			}
+			tr{
 				text-align: center;
 			}
 		</style>
