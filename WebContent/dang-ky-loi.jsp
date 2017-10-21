@@ -28,7 +28,7 @@
 		Đã xảy ra lỗi trong quá trình đăng ký, vui lòng kiểm tra lại
 	</div>
 	
-	<a href="dang-nhap.jsp" class="button-home">Về trang đăng ký</a>
+	<a href="dang-ky.jsp" class="button-home">Về trang đăng ký</a>
 	
 	<div class="code">
 		<span>4</span>

@@ -31,7 +31,7 @@ public class dangNhapServlet extends HttpServlet {
 			response.sendRedirect("trang-chu.jsp");
 		}
 		else {
-			response.sendRedirect("loi-dang-nhap.jsp");
+			response.sendRedirect("Views/loi-dang-nhap.jsp");
 		}
 	}
 

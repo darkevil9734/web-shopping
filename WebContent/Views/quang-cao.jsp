@@ -34,7 +34,7 @@
                            <h1>Bphone 2017</h1>
                         </div>
                         <div class="flat-caption caption3 formLeft delay500 text-center" style="">
-                           <p>Sản Phẩm được BKAV trang bị khả năng tự động phát nổ khi bị mất cắp.</p>
+                           <p>Sản Phẩm được BKAV vừa ra mắt.</p>
                         </div>
                         <div class="flat-button caption4 formLeft delay600 text-center" style=""><a class="more" href="#">Xem Chi Tiết</a></div>
                         <div class="flat-image formBottom delay200" data-bottom="true" style=""><img src="images/slider-image-03.png" alt=""></div>

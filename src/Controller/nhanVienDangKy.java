@@ -44,7 +44,7 @@ public class nhanVienDangKy extends HttpServlet {
 
 		}
 		else {
-			request.getRequestDispatcher("Views/loi.jsp").forward(request, response);
+			request.getRequestDispatcher("Views/dang-ky-loi.jsp").forward(request, response);
 
 		}
 	}

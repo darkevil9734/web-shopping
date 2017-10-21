@@ -54,7 +54,7 @@ public class dangKyServlet extends HttpServlet {
 		
 		int dangKyThanhVien = userBL.dangKy(thanhVien);
 		if(dangKyThanhVien != 0) {
-			request.getRequestDispatcher("Views/dang-ky-thanh-cong.jsp").forward(request, response);
+			request.getRequestDispatcher("dang-ky-thanh-cong.jsp").forward(request, response);
 		}
 		else {
 			request.getRequestDispatcher("dang-ky-loi.jsp").forward(request, response);
