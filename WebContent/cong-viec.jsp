@@ -93,10 +93,10 @@
 	                              <div class="project-item">
 	                                <a href="#" data-lightbox="image-1"><img src="staff-main/img/project-item-01.jpg" alt=""></a>
 	                                <div class="text-content">
-	                                  <h4>Thêm sản phẩm mới</h4>
-	                                  <p>Form nhập liệu để thêm sản phẩm mới.</p>
+	                                  <h4>Quản lý thành viên</h4>
+	                                  <p>Quản lý các thành viên hiện có.</p>
 	                                  <div class="primary-button">
-	                                    <a href="#"> Thêm sản phẩm</a>
+	                                    <a href="danhSachThanhVien"> Quản lý thành viên </a>
 	                                  </div>
 	                                </div>
 	                              </div>
@@ -105,10 +105,10 @@
 	                              <div class="project-item">
 	                                <a href="#" data-lightbox="image-1"><img src="staff-main/img/project-item-02.jpg" alt=""></a>
 	                                <div class="text-content">
-	                                  <h4>Xem toàn bộ sản phẩm hiện có </h4>
-	                                  <p>Bảng thống kê sản phẩm.</p>
+	                                  <h4>Quản lý sản phẩm </h4>
+	                                  <p>Quản lý sản phẩm hiện có.</p>
 	                                  <div class="primary-button">
-	                                    <a href="#">Thống kê</a>
+	                                    <a href="#">Tới trang quản lý sản phẩm</a>
 	                                  </div>
 	                                </div>
 	                              </div>
@@ -117,7 +117,7 @@
 	                              <div class="project-item">
 	                                <a href="#" data-lightbox="image-1"><img src="staff-main/img/project-item-03.jpg" alt=""></a>
 	                                <div class="text-content">
-	                                  <h4>Xem các đơn hàng hiện có</h4>
+	                                  <h4>Quản lý đơn hàng</h4>
 	                                  <p>Các đơn hàng khách đặt hàng sản phẩm.</p>
 	                                  <div class="primary-button">
 	                                    <a href="#">Xem đơn hàng</a>

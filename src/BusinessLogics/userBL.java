@@ -1,5 +1,7 @@
 package BusinessLogics;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import JavaBeans.user;
 
@@ -100,5 +102,37 @@ public class userBL {
 		
 		return thanhVienQuenMatKhau;		
 	}
-
+	
+	//read all
+	public static List<user> docTatCa(){
+		List<user> dstv = new ArrayList<user>();
+		try {
+			Connection db = Database.connect();
+			Statement stm = db.createStatement();
+			ResultSet rs = stm.executeQuery("select*from user");
+			
+			while(rs.next()) {
+				user thanhVien = new user();
+				thanhVien.setIduser(rs.getInt("iduser"));
+				thanhVien.setUsername(rs.getString("username"));
+				thanhVien.setPassword(rs.getString("password"));
+				thanhVien.setHo_user(rs.getString("ho_user"));
+				thanhVien.setTen_user(rs.getString("ten_user"));
+				thanhVien.setSdt(rs.getInt("sdt"));
+				thanhVien.setEmail(rs.getString("email"));
+				thanhVien.setDia_chi(rs.getString("dia_chi"));
+				thanhVien.setQuan(rs.getString("quan"));
+				thanhVien.setPhuong(rs.getString("phuong"));
+				thanhVien.setThanh_pho(rs.getString("thanh_pho"));
+				thanhVien.setNuoc(rs.getString("nuoc"));
+				thanhVien.setZip_code(rs.getString("zip_code"));
+				dstv.add(thanhVien);
+			}
+			db.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return dstv;
+	}
 }
