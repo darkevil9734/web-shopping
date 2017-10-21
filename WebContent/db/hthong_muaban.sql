@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 15, 2017 at 05:24 PM
+-- Generation Time: Oct 21, 2017 at 10:14 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -23,43 +23,23 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `giohang_sanpham`
---
-
-CREATE TABLE IF NOT EXISTS `giohang_sanpham` (
-  `ma_gio_hang` int(10) NOT NULL,
-  `ma_san_pham` int(10) NOT NULL,
-  PRIMARY KEY (`ma_gio_hang`,`ma_san_pham`),
-  KEY `ma_san_pham` (`ma_san_pham`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `gio_hang`
 --
 
 CREATE TABLE IF NOT EXISTS `gio_hang` (
-  `ma_gio_hang` int(10) NOT NULL AUTO_INCREMENT,
-  `ma_khach_hang` int(10) NOT NULL,
-  `phi_van_chuyen` int(11) NOT NULL,
-  PRIMARY KEY (`ma_gio_hang`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `khach_hang`
---
-
-CREATE TABLE IF NOT EXISTS `khach_hang` (
-  `ma_khach_hang` int(10) NOT NULL AUTO_INCREMENT,
-  `ho_khach_hang` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `ten_khach_hang` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `dia_chi` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `idgio_hang` int(11) NOT NULL AUTO_INCREMENT,
+  `iduser` int(11) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `ho_user` varchar(45) NOT NULL,
+  `ten_user` varchar(45) NOT NULL,
   `sdt` int(11) NOT NULL,
-  PRIMARY KEY (`ma_khach_hang`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=1 ;
+  `diaChi` varchar(45) NOT NULL,
+  `quan` varchar(45) NOT NULL,
+  `phuong` varchar(45) NOT NULL,
+  `chi_tiet` text NOT NULL,
+  PRIMARY KEY (`idgio_hang`),
+  KEY `user_giohang_idx` (`iduser`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -73,16 +53,54 @@ CREATE TABLE IF NOT EXISTS `nhan_vien` (
   `password` varchar(45) NOT NULL,
   `ho_nhan_vien` varchar(45) NOT NULL,
   `ten_nhan_vien` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
   `sdt` int(15) NOT NULL,
-  PRIMARY KEY (`idnhan_vien`)
+  PRIMARY KEY (`idnhan_vien`,`username`,`email`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `nhan_vien`
 --
 
-INSERT INTO `nhan_vien` (`idnhan_vien`, `username`, `password`, `ho_nhan_vien`, `ten_nhan_vien`, `sdt`) VALUES
-(1, 'admin', 'admin', 'Vũ ', 'Nguyên', 123456789);
+INSERT INTO `nhan_vien` (`idnhan_vien`, `username`, `password`, `ho_nhan_vien`, `ten_nhan_vien`, `email`, `sdt`) VALUES
+(1, 'admin', 'admin', 'Vũ ', 'Nguyên', 'darkevil9712@gmail.com', 123456789);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `phu_kien`
+--
+
+CREATE TABLE IF NOT EXISTS `phu_kien` (
+  `idphu_kien` int(11) NOT NULL AUTO_INCREMENT,
+  `ten_phu_kien` varchar(45) NOT NULL,
+  `loai_phu_kien` varchar(45) NOT NULL,
+  `hinh_phu_kien` varchar(45) NOT NULL,
+  `hang_phu_kien` varchar(45) NOT NULL,
+  `gia_phu_kien` int(11) NOT NULL,
+  PRIMARY KEY (`idphu_kien`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+
+--
+-- Dumping data for table `phu_kien`
+--
+
+INSERT INTO `phu_kien` (`idphu_kien`, `ten_phu_kien`, `loai_phu_kien`, `hinh_phu_kien`, `hang_phu_kien`, `gia_phu_kien`) VALUES
+(1, 'Ốp lưng Galaxy J7 Prime Nhựa hình thú', 'ốp lưng', 'galaxyj7.jpg', 'Osmia', 30000),
+(2, 'Ốp lưng iPhone 7 Nhựa dẻo hình thú', 'ốp lưng', 'iphone7.jpg', 'Cosano', 30000),
+(3, 'Ốp lưng iPhone 6 - 6s Nhựa Silicon Hươu vàng', 'ốp lưng', 'iphone6.jpg', 'đang cập nhật', 30000),
+(4, 'Ốp lưng Galaxy Note 8 Nhựa dẻo', 'ốp lưng', 'note8.jpg', 'Osmia', 190000),
+(5, 'Ốp lưng Galaxy S8 Nhựa dẻo', 'ốp lưng', 's8.jpg', 'Solid', 70000),
+(6, 'Pin sạc dự phòng 5.000 mAh', 'sạc dự phòng', 'sac1.jpg', 'eValu', 120000),
+(7, 'Pin sạc dự phòng 7.500 mAh', 'sạc dự phòng', 'sac2.jpg', 'eSaver', 250000),
+(8, 'Pin sạc dự phòng Polymer 5.000 mAh', 'sạc dự phòng', 'sac3.jpg', 'eValu', 350000),
+(9, 'Pin sạc dự phòng 10.000 mAh', 'sạc dự phòng', 'sac4.jpg', 'eValu', 300000),
+(10, 'Pin sạc dự phòng Polymer 5.000 mAh', 'sạc dự phòng', 'sac5.jpg', 'eSaver', 250000),
+(11, 'Tai nghe Apple Airpods', 'tai nghe', 'apple.jpg', 'Apple', 5000000),
+(12, 'Tai nghe Sony XBA-Z5', 'tai nghe', 'sony.jpg', 'Sony', 11200000),
+(13, 'Tai nghe Sony MDR-EX750BT', 'tai nghe', 'sony2.jpg', 'Sony', 2500000),
+(14, 'Tai nghe Beats Studio 3.0 Wireless', 'tai nghe', 'beats.jpg', 'Beats', 7500000),
+(15, 'Tai nghe Beats Tour 2017', 'tai nghe', 'beats1.jpg', 'Beats', 2000000);
 
 -- --------------------------------------------------------
 
@@ -92,9 +110,9 @@ INSERT INTO `nhan_vien` (`idnhan_vien`, `username`, `password`, `ho_nhan_vien`, 
 
 CREATE TABLE IF NOT EXISTS `san_pham` (
   `ma_san_pham` int(10) NOT NULL AUTO_INCREMENT,
-  `ten_san_pham` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ten_san_pham` varchar(100) NOT NULL,
   `hang_san_xuat` varchar(45) NOT NULL,
-  `gia_san_pham` int(11) NOT NULL,
+  `gia_san_pham` int(50) NOT NULL,
   `tinh_trang` varchar(20) NOT NULL,
   `hinh_anh_mo_phong` varchar(45) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `camera_truoc` text NOT NULL,
@@ -104,14 +122,14 @@ CREATE TABLE IF NOT EXISTS `san_pham` (
   `bao_mat` text NOT NULL,
   `mau_sac` text NOT NULL,
   PRIMARY KEY (`ma_san_pham`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=33 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=48 ;
 
 --
 -- Dumping data for table `san_pham`
 --
 
 INSERT INTO `san_pham` (`ma_san_pham`, `ten_san_pham`, `hang_san_xuat`, `gia_san_pham`, `tinh_trang`, `hinh_anh_mo_phong`, `camera_truoc`, `camera_sau`, `dung_luong_pin`, `tinh_nang`, `bao_mat`, `mau_sac`) VALUES
-(1, 'iPhone 7 plus 32Gb', 'Apple', 22490000, 'còn hàng', 'ip7plus.jpg', '7 MP', '12 MP Camera kép', '2900 mAh', 'Bảo mật nâng cao	Mở khóa bằng vân tay\nTính năng đặc biệt	Chống nước, chống bụi\n3D Touch\nGhi âm	Có, microphone chuyên dụng chống ồn\nRadio	Không\nXem phim	H.265, 3GP, MP4, AVI, WMV, H.264(MPEG4-AVC), DivX, WMV9, Xvid\nNghe nhạc	Lossless, Midi, MP3, WAV, WMA, AAC, eAAC+', 'vân tay', ''),
+(1, 'iPhone 7 plus 32Gb', 'Apple', 22490000, 'còn hàng', 'ip7plus.jpg', '7 MP', '12 MP Camera kép', '2900 mAh', 'Bảo mật nâng cao :	Mở khóa bằng vân tay <br/>\nTính năng đặc biệt	Chống nước, chống bụi <br/>\n3D Touch <br/>\nGhi âm	Có, microphone chuyên dụng chống ồn <br/>\nRadio	Không <br/>\nXem phim	H.265, 3GP, MP4, AVI, WMV, H.264(MPEG4-AVC), DivX, WMV9, Xvid <br/>\nNghe nhạc	Lossless, Midi, MP3, WAV, WMA, AAC, eAAC+ <br/>', 'vân tay', 'Đen, Đỏ, Vàng đồng'),
 (2, 'iPhone 6', 'Apple', 7690000, 'còn hàng', 'ip6.jpg', '', '', '', '', '', ''),
 (3, 'Nokia 216', 'Nokia', 760000, 'còn hàng', 'nokia216.jpg', '', '', '', '', '', ''),
 (4, 'Nokia 150 ', 'Nokia', 650000, 'hết hàng', 'nokia150.jpg', '', '', '', '', '', ''),
@@ -121,9 +139,9 @@ INSERT INTO `san_pham` (`ma_san_pham`, `ten_san_pham`, `hang_san_xuat`, `gia_san
 (8, 'Samsung Galaxy J2', 'Samsung', 2490000, 'hết hàng', 'galaxyj2.jpg', '', '', '', '', '', ''),
 (9, 'Asus Zenphone 2 Go', 'Asus', 1990000, 'còn hàng', 'asus2.jpg', '', '', '', '', '', ''),
 (10, 'Nokia 230', 'Nokia', 1250000, 'hết hàng', 'nokia230.jpg', '', '', '', '', '', ''),
-(12, ' Samsung Galaxy Note', 'Samsung', 22490000, 'còn hàng', 'sgn8.jpg', '8MP', '2 camera 12MP', '3300mAh', 'Chống nước, chống bụi', 'Mở khóa bằng khuôn mặt, Quét mồng mắt, Mở khóa bằng vân tay', 'Đen'),
+(12, ' Samsung Galaxy Note 8', 'Samsung', 22490000, 'còn hàng', 'sgn8.jpg', '8MP', '2 camera 12MP', '3300mAh', 'Chống nước, chống bụi', 'Mở khóa bằng khuôn mặt, Quét mồng mắt, Mở khóa bằng vân tay', 'Đen'),
 (13, 'Samsung Galaxy S8', 'Samsung', 18490000, 'còn hàng', 'sgs8.jpg', '8MP', '12MP', '3000mAh', 'Chống nước, chống bụi, Mặt kính 2.5D', 'Quét mồng mắt, Mở khóa bằng vân tay', 'Xanh dương, Đen'),
-(14, 'Samsung Galaxy C9 Pr', 'Samsung', 11490000, 'còn hàng', 'sgc9.jpg', '16MP', '16MP', '4000mAh', 'Không', 'Mở khóa bằng vân tay', 'Đen, Vàng đồng'),
+(14, 'Samsung Galaxy C9 Pro', 'Samsung', 11490000, 'còn hàng', 'sgc9.jpg', '16MP', '16MP', '4000mAh', 'Không', 'Mở khóa bằng vân tay', 'Đen, Vàng đồng'),
 (15, 'Samsung Galaxy Note ', 'Samsung', 9990000, 'còn hàng', 'sgn5.png', '5MP', '16MP', '3000mAh', 'Mặt kính 2.5D', 'Mở khóa bằng vân tay', 'Vàng đồng'),
 (16, 'Samsung Galaxy A7', 'Samsung', 9990000, 'còn hàng', 'sga7.jpg', '16MP', '16MP', '3600mAh', 'Mặt kính 2.5D, Chống nước, Chống bụi', 'Mở khóa bằng vân tay', 'Đen, Vàng đồng'),
 (17, 'Samsung Galaxy A5', 'Samsung', 7990000, 'còn hàng', 'sga5.jpg', '16MP', '16MP', '3000mAh', 'Mặt kính 2.5D, Chống nước, Chống bụi', 'Mở khóa bằng vân tay', 'Đen, Vàng đồng'),
@@ -140,7 +158,22 @@ INSERT INTO `san_pham` (`ma_san_pham`, `ten_san_pham`, `hang_san_xuat`, `gia_san
 (28, 'Vivo V7+', 'Vivo', 7990000, 'còn hàng', 'vv7+.jpg', '24MP', '16MP', '3225mAh', 'Đang cập nhật', 'Mở khóa bằng vân tay', 'Đen, Vàng đồng'),
 (29, 'Vivo V5s', 'Vivo', 6690000, 'còn hàng', 'vv5s.png', '20MP', '13MP', '3000mAh', 'Mặt kính 2.5D', 'Mở khóa bằng vân tay', 'Vàng đồng, Vàng Hồng'),
 (30, 'Vivo Y53', 'Vivo', 3390000, 'còn hàng', 'vy53.png', '5MP', '8MP', '2500mAh', 'Không', 'Không', 'Đen, Vàng đồng'),
-(32, 'Philips E181', 'Philips', 690000, 'còn hàng', 'philipsE181.jpg', 'VGA', 'không', '3100mAh', '2G, Bluetooth, pin lâu, 2 sim', 'không', 'đen, vàng');
+(32, 'Philips E181', 'Philips', 690000, 'còn hàng', 'philipsE181.jpg', 'VGA', 'không', '3100mAh', '2G, Bluetooth, pin lâu, 2 sim', 'không', 'đen, vàng'),
+(33, 'Ốp lưng Galaxy J7 Pro', 'Osmia', 30000, 'còn hàng', 'galaxyj7.jpg', '/', '/', '/', '/', '/', '/'),
+(34, 'Ốp lưng iPhone 7 Nhựa', 'Cosano', 30000, 'còn hàng', 'iphone7.jpg', '/', '/', '/', '/', '/', '/'),
+(35, 'Ốp lưng iPhone 6', 'đang cập nhật', 30000, 'còn hàng', 'iphone6.jpg', '/', '/', '/', '/', '/', '/'),
+(36, 'Ốp lưng Galaxy Note 8', 'Osmia', 190000, 'còn hàng', 'note8.jpg', '/', '/', '/', '/', '/', '/'),
+(37, 'Ốp lưng Galaxy S8 Nhựa', 'Solid', 70000, 'còn hàng', 's8.jpg', '/', '/', '/', '/', '/', '/'),
+(38, 'Pin sạc dự phòng 5000mAh', 'eValu', 120000, 'còn hàng', 'sac1.jpg', '/', '/', '/', '/', '/', '/'),
+(39, 'Pin sạc dự phòng 7500mAh', 'eSaver', 250000, 'còn hàng', 'sac2.jpg', '/', '/', '/', '/', '/', '/'),
+(40, 'Pin sạc dự phòng Polymer', 'eValu', 350000, 'còn hàng', 'sac3.jpg', '/', '/', '/', '/', '/', '/'),
+(41, 'Pin sạc dự phòng 10.000mAh', 'eValu', 300000, 'còn hàng', 'sac4.jpg', '/', '/', '/', '/', '/', '/'),
+(42, 'Pin sạc dự phòng Polymer', 'eSaver', 250000, 'còn hàng', 'sac5.jpg', '/', '/', '/', '/', '/', '/'),
+(43, 'Tai nghe Apple Airpod', 'Apple', 5000000, 'còn hàng', 'apple.jpg', '/', '/', '/', '/', '/', '/'),
+(44, 'Tai nghe Sony XBA-Z5', 'Sony', 11200000, 'còn hàng', 'sony.jpg', '/', '/', '/', '/', '/', '/'),
+(45, 'Tai nghe Sony MDR-EX', 'Sony', 2500000, 'còn hàng', 'sony2.jpg', '/', '/', '/', '/', '/', '/'),
+(46, 'Tai nghe Beats Studio', 'Beats', 7500000, 'còn hàng', 'beats.jpg', '/', '/', '/', '/', '/', '/'),
+(47, 'Tai nghe Beats Tour ', 'Beats', 2000000, 'còn hàng', 'beats1.jpg', '/', '/', '/', '/', '/', '/');
 
 -- --------------------------------------------------------
 
@@ -157,37 +190,31 @@ CREATE TABLE IF NOT EXISTS `user` (
   `sdt` int(11) NOT NULL,
   `email` varchar(45) NOT NULL,
   `dia_chi` varchar(45) NOT NULL,
+  `quan` varchar(45) NOT NULL,
+  `phuong` varchar(45) NOT NULL,
   `thanh_pho` varchar(45) NOT NULL,
   `nuoc` varchar(45) NOT NULL,
   `zip_code` varchar(45) NOT NULL,
   PRIMARY KEY (`iduser`,`username`,`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`iduser`, `username`, `password`, `ho_user`, `ten_user`, `sdt`, `email`, `dia_chi`, `thanh_pho`, `nuoc`, `zip_code`) VALUES
-(1, 'nguyenvana', '123456789', 'nguyen', 'van a', 123456789, 'nguyenvana@yahoo.com', '123 nguyen trai', 'ho chi minh', 'vietnam', '88888'),
-(2, 'abc', 'abc', 'abc', 'abc', 123, 'abc@abc.com', '1234 nguyen trai', 'ho chi minh', 'vietnam', '88888'),
-(5, 'abcd', 'nguyen', 'vu', 'nguyen', 1234567895, 'darkevil9712@gmail.com', '123 nguyen trai', 'hcm', 'vietnam', '88888');
+INSERT INTO `user` (`iduser`, `username`, `password`, `ho_user`, `ten_user`, `sdt`, `email`, `dia_chi`, `quan`, `phuong`, `thanh_pho`, `nuoc`, `zip_code`) VALUES
+(1, 'nguyenvana', '123456789', 'nguyen', 'van a', 123456789, 'nguyenvana@yahoo.com', '123 nguyen trai', '5', '3', 'ho chi minh', 'vietnam', '88888'),
+(6, 'test', 'test', 'vu', 'nguyen', 1234567890, 'darkevil9712@gmail.com', '123 nguyen trai', '5', '3', 'hcm', 'vietnam', '88888');
 
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `giohang_sanpham`
---
-ALTER TABLE `giohang_sanpham`
-  ADD CONSTRAINT `giohang_sanpham_ibfk_1` FOREIGN KEY (`ma_gio_hang`) REFERENCES `gio_hang` (`ma_gio_hang`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `giohang_sanpham_ibfk_2` FOREIGN KEY (`ma_san_pham`) REFERENCES `san_pham` (`ma_san_pham`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
 -- Constraints for table `gio_hang`
 --
 ALTER TABLE `gio_hang`
-  ADD CONSTRAINT `gio_hang_ibfk_1` FOREIGN KEY (`ma_gio_hang`) REFERENCES `khach_hang` (`ma_khach_hang`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `user_giohang` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
