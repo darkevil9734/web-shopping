@@ -127,7 +127,7 @@
               </div>
               <div class="clearfix">
               </div>
-              <div class="fb-comments" data-href="http://localhost:8080/web-mobile/xemChiTietSanPhamServlet?id=${chitiet.ma_san_pham}omments#configurator" data-numposts="10"></div>
+              <div style=""  class="fb-comments" data-href="http://localhost:8080/web-mobile/xemChiTietSanPhamServlet?id=${chitiet.ma_san_pham}omments#configurator" data-numposts="10"></div>
               <div id="productsDetails" class="hot-products">
                 <h3 class="title">
                   <strong>
@@ -364,11 +364,7 @@
                 <h3 class="title">
                   Facebook
                 </h3>
-                <span class="likebutton">
-                  <a href="#">
-                    <img src="images/fblike.png" alt="">
-                  </a>
-                </span>
+                <div class="fb-like" data-href="http://localhost:8080/web-mobile/xemChiTietSanPhamServlet?id=1" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                 <p>
                   69k Người like Dienthoaionline
                 </p>
@@ -407,7 +403,7 @@
                   </li>
                 </ul>
                 <div class="fbplug">
-                  <a href="#">
+                  <a href="https://www.facebook.com/groups/181413709094833/">
                     <span>
                       <img src="images/fbicon.png" alt="">
                     </span>
