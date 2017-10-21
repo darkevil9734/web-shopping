@@ -17,10 +17,10 @@
                      <div class="col-md-3 col-sm-6">
                         <h4 class="title">Hỗ<strong> Trợ</strong></h4>
                         <ul class="support">
-                           <li><a href="#">Các câu hỏi thường gặp ?</a></li>
-                           <li><a href="#">Phương thức thanh toán</a></li>
-                           <li><a href="#">Thông Tin Đặt Cọc</a></li>
-                           <li><a href="#">Thông tin về chúng tôi</a></li>
+                           <li><a href="cau-hoi.jsp">Các câu hỏi thường gặp ?</a></li>
+                           <li><a href="phuong-thuc-thanh-toan.jsp">Phương thức thanh toán</a></li>
+                           <li><a href="doi-tra.jsp">Thông Tin Đặt Cọc</a></li>
+                           <li><a href="contact.jsp">Thông tin về chúng tôi</a></li>
                         </ul>
                      </div>
                      <div class="col-md-3">

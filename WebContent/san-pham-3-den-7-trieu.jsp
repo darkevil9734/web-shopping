@@ -101,41 +101,7 @@
                 </div>
                 <div class="clearfix">
                 </div>
-                <div class="toolbar">
-                  <div class="sorter bottom">                  
-                    <div class="sort-by">
-                      Sắp xếp theo : 
-                      <select name="">
-                        <option value="Default" selected="">
-                          Chọn
-                        </option>
-                        <option value="Name">
-                          Tên
-                        </option>
-                        <option value="Price">
-                          Giá
-                        </option>
-                      </select>
-                    </div>
-                    <div class="limiter">
-                      Hiện: 
-                      <select name="">
-                        <option value="3" selected="">
-                          3
-                        </option>
-                        <option value="6">
-                          6
-                        </option>
-                        <option value="9">
-                          9
-                        </option>
-                      </select>
-                    </div>
-                  </div>
-                  
-                <div class="clearfix">
-                </div>
-              </div>
+                
             </div>
             </div>
             </div>
