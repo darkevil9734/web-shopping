@@ -1,4 +1,6 @@
-package BusinessLogics;
+package Test;
+
+import BusinessLogics.gioHangBL;
 
 public abstract class tesst {
 
