@@ -52,7 +52,13 @@
     <td colspan="2" class="hidden-xs"> </td> 
     <td class="hidden-xs text-center"><strong>Tổng:  <f:formatNumber type="number" value="${sessionScope.gioHang.tongTien()}"/> </strong>
     </td> 
-    <td><a href="xac-nhan-don-hang.jsp" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+    <td>
+    	<c:if test="${sessionScope.member != null }">
+    		<a href="xac-nhan-don-hang.jsp" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+    	</c:if>
+    	<c:if test="${sessionScope.member == null }">
+    		<a href="dang-nhap.jsp" onclick="alert('Vui lòng đăng nhập!')" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+    	</c:if>
     </td> 
    </tr> 
   </tfoot> 

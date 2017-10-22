@@ -108,7 +108,7 @@
 	                                  <h4>Quản lý sản phẩm </h4>
 	                                  <p>Quản lý sản phẩm hiện có.</p>
 	                                  <div class="primary-button">
-	                                    <a href="#">Tới trang quản lý sản phẩm</a>
+	                                    <a href="danhSachSanPham">Tới trang quản lý sản phẩm</a>
 	                                  </div>
 	                                </div>
 	                              </div>
@@ -120,7 +120,7 @@
 	                                  <h4>Quản lý đơn hàng</h4>
 	                                  <p>Các đơn hàng khách đặt hàng sản phẩm.</p>
 	                                  <div class="primary-button">
-	                                    <a href="#">Xem đơn hàng</a>
+	                                    <a href="danhSachHoaDon">Xem đơn hàng</a>
 	                                  </div>
 	                                </div>
 	                              </div>
@@ -149,7 +149,7 @@
 	                      <div class="row">
 	                        <div class="col-md-8">
 	                          <div class="contat-form">
-	                            <form id="contact" action="" method="post">
+	                            <form id="contact" action="phanHoiNhanVien" method="post">
 	                              <fieldset>
 	                                <input name="name" type="text" class="form-control" id="name" placeholder="Tên của bạn" required>
 	                              </fieldset>

@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class hoaDon implements Serializable{
 	private static final long serialVersionUID = 1L;
-	
+	private int id_giohang;
 	private int id_user;
 	private String email;
 	private String ho_user;
@@ -15,6 +15,13 @@ public class hoaDon implements Serializable{
 	private String quan;
 	private String phuong;
 	private String chiTiet;
+	
+	public int getId_giohang() {
+		return id_giohang;
+	}
+	public void setId_giohang(int id_giohang) {
+		this.id_giohang = id_giohang;
+	}
 	public int getId_user() {
 		return id_user;
 	}

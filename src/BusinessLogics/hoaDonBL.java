@@ -1,6 +1,8 @@
 package BusinessLogics;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import JavaBeans.hoaDon;
 
@@ -29,4 +31,6 @@ public class hoaDonBL {
 		
 		return status;
 	}
+	
+	
 }
