@@ -15,7 +15,7 @@
                         <h4 class="title">Địa <strong> Chỉ</strong></h4>
                         <p>Số 123, Quang Trung, HoChiMinh , Vietnam</p>
                         <p>Số Điện Thoại : 0909.113.911</p>
-                        <p>Email :<a href="mailto:testmailbaitap@gmail.com">testmailbaitap@gmail.com</a> </p>
+                        <p>Email :<a href='mailto:testmailbaitap@gmail.com'>testmailbaitap@gmail.com</a> </p>
                      </div>
                      <div class="col-md-3 col-sm-6">
                         <h4 class="title">Hỗ<strong> Trợ</strong></h4>

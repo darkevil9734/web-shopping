@@ -40,7 +40,8 @@
 	   <td class="actions" data-th="">
 	    <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
 	    </button> 
-	    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+	    <button formaction='xoaDonHang?id=${dssp.ma_san_pham}' formmethod="post" type="submit" class="btn btn-danger btn-sm">
+	    	<i class="fa fa-trash-o" ></i>
 	    </button>
 	   </td> 
 	  </tr> 
@@ -50,7 +51,8 @@
     <td><a href="trang-chu.jsp" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
     </td> 
     <td colspan="2" class="hidden-xs"> </td> 
-    <td class="hidden-xs text-center"><strong>Tổng:  <f:formatNumber type="number" value="${sessionScope.gioHang.tongTien()}"/> </strong>
+    <td class="hidden-xs text-center">
+    	<strong>Tổng:  <f:formatNumber type="number" value="${sessionScope.gioHang.tongTien()}"/> </strong>
     </td> 
     <td>
     	<c:if test="${sessionScope.member != null }">

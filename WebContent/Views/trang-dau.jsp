@@ -89,7 +89,7 @@
 			                                       </div>
 			                                       <div class="right">
 			                                          <p class="price"><f:formatNumber type="number" value="${spham_mua.getThanhTien()}" /> ₫</p>
-			                                          <a href="#" class="remove"><img src="images/remove.png" alt="remove"></a>
+			                                          <a href="xoaDonHang?id=${spham_mua.ma_san_pham}" class="remove"><img src="images/remove.png" alt="remove"></a>
 			                                       </div>
 		                                       
 	                                    </div>
