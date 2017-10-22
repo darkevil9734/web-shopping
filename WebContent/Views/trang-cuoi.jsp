@@ -2,6 +2,9 @@
     pageEncoding="UTF-8"%>
     </div>
 <div class="footer">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow92.js"></script>
+	
             <div class="footer-info">
                <div class="container">
                   <div class="row">
@@ -68,7 +71,7 @@
                </div>
             </div>
          </div>
-      </div>
+      
       <!-- Bootstrap core JavaScript==================================================-->
 	  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
