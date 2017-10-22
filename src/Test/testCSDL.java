@@ -3,6 +3,7 @@ package Test;
 import static org.junit.Assert.*;
 
 import java.sql.*;
+import java.util.List;
 
 import javax.ws.rs.BeanParam;
 
@@ -10,10 +11,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.sun.mail.imap.protocol.Item;
+
 import BusinessLogics.Database;
 import BusinessLogics.quanLyGioHang;
 import BusinessLogics.sanPhamBL;
 import BusinessLogics.userBL;
+import JavaBeans.sanPham;
 
 public class testCSDL {
 	Connection con;
@@ -52,5 +56,10 @@ public class testCSDL {
 		assertEquals(1 , quanLyGioHang.xemTatCa().size());
 	}
 	
+	@Test
+	public void TimSanPhamID() {
+		sanPham test = sanPhamBL.docTheoID(2);
+		assertTrue(test.getTenSanPham().equals("iPhone 6"));
+	}
 	
 }
