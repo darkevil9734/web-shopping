@@ -18,6 +18,7 @@ import BusinessLogics.quanLyGioHang;
 import BusinessLogics.sanPhamBL;
 import BusinessLogics.userBL;
 import JavaBeans.sanPham;
+import JavaBeans.user;
 
 public class testCSDL {
 	Connection con;
@@ -48,12 +49,12 @@ public class testCSDL {
 	@Test
 	public void findAllSanPham() {
 		// tổng cộng hiện tại là 45
-		assertEquals(45 , sanPhamBL.DocTatCa().size());
+		assertTrue(sanPhamBL.DocTatCa().size() == 45 );
 	}
 	
 	@Test
 	public void findAllGioHang() {
-		assertEquals(1 , quanLyGioHang.xemTatCa().size());
+		assertEquals(8 , quanLyGioHang.xemTatCa().size());
 	}
 	
 	@Test
@@ -70,8 +71,43 @@ public class testCSDL {
 	
 	@Test
 	public void timSanPhamTheoTen() {
-		List<sanPham> dssp = sanPhamBL.timTheoTen("iPhone");
-		assertTrue(dssp.size() == 2);
+		List<sanPham> dssp = sanPhamBL.timTheoTen("iphone");
+		assertTrue(dssp.size() == 4);
+	}
+	
+	@Test
+	public void dangKy() {
+		// test nếu nhập sót các trường dữ liệu khác thì báo lỗi
+		// test case pass nếu thông báo lỗi
+		String username = "abcde";
+		String password = "123456";
+		user u = new user();
+		u.setUsername(username);
+		u.setPassword(password);
+		
+		int them = userBL.dangKy(u);
+		assertTrue(them > 0);
+	}
+	
+	@Test
+	public void dangNhap() {
+		// đăng nhập đúng
+		String user = "test";
+		String pass = "test";
+		
+		user u = userBL.DocTheoUsernamePassword(user, pass);
+		assertTrue(u != null);
+	}
+	
+	@Test
+	public void dangNhapSai() {
+		// đăng nhập đúng
+		// Test case pass nếu thông báo lỗi
+		String user = "test";
+		String pass = "test1";
+		
+		user u = userBL.DocTheoUsernamePassword(user, pass);
+		assertTrue(u != null);
 	}
 	
 }
