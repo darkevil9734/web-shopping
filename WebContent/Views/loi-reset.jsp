@@ -24,11 +24,12 @@
 	<div id="js-foreground" class="background foreground"></div>
 	
 	<div class="error-content">
-		Lỗi <br />
-		Đã xảy ra lỗi trong quá trình gửi email, vui lòng thử lại sau.
+		Lỗi reset mật khẩu<br />
+		Đã xảy ra lỗi trong reset, chúng tôi không thể gửi mail cho bạn<br/>
+		Thử lại sau
 	</div>
 	
-	<a href="dang-ky.jsp" class="button-home">Về trang chủ</a>
+	
 	
 	<div class="code">
 		<span>4</span>

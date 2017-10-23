@@ -24,11 +24,11 @@
 	<div id="js-foreground" class="background foreground"></div>
 	
 	<div class="error-content">
-		Lỗi <br />
-		Đã xảy ra lỗi trong quá trình gửi email, vui lòng thử lại sau.
+		Lỗi đăng ký<br />
+		Đã xảy ra lỗi trong quá trình đăng nhập, vui lòng kiểm tra lại
 	</div>
 	
-	<a href="dang-ky.jsp" class="button-home">Về trang chủ</a>
+	
 	
 	<div class="code">
 		<span>4</span>
