@@ -34,7 +34,7 @@
 	    </div> 
 	   </td> 
 	   <td data-th="Price"><f:formatNumber type="number" value="${dssp.giaSanPham}" /> ₫</td> 
-	   <td data-th="Quantity"><input class="form-control text-center" value="${dssp.soLuongMua}" type="number">
+	   <td data-th="Quantity"><input class="form-control text-center" name="soLuongMua" value="${dssp.soLuongMua}" type="number">
 	   </td> 
 	   <td data-th="Subtotal" class="text-center"><f:formatNumber type="number" value="${dssp.getThanhTien()}" /> ₫</td> 
 	   <td class="actions" data-th="">

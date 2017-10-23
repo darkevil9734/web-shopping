@@ -11,6 +11,7 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeUtility;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -57,7 +58,7 @@ public class xacNhanDonHang extends HttpServlet {
 		System.out.println(thanhVienMuaHang.getIduser());
 		String kq = "";
 		for(sanPhamMua spm: listOfSp) {
-			kq += spm.getTenSanPham() + " - Số lượng " +spm.getSoLuongMua() +" - Thành tiền " + String.format("%,3d", spm.getThanhTien()) + "\n";
+			kq += spm.getTenSanPham() + " - Số lượng " +spm.getSoLuongMua() +" - Thành tiền " + String.format("%,3d", spm.getThanhTien()) + "<br/>";
 			System.out.println(kq);
 		}
 		hoaDon hd_mua = new hoaDon();
@@ -94,18 +95,19 @@ public class xacNhanDonHang extends HttpServlet {
 				try {
 
 					Message message = new MimeMessage(sessions);
+					
 					message.setFrom(new InternetAddress("testmailbaitap@gmail.com"));
 					message.setRecipients(Message.RecipientType.TO,
 						InternetAddress.parse(email));
 					message.setHeader("Content-Type", "text/plain; charset=UTF-8");
 					message.setSubject("Thông tin đơn hàng");
 					String noiDung = "Chào bạn, " + ten_user
-							+ "\n\n Cảm ơn bạn đã mua hàng của chúng tôi"
-							+ "\n\n Sau đây là chi tiết đơn hàng bạn đã mua: "
-							+ "\n\n " + kq
-							+ "\n\n BQL, VHN!";
-					message.setText(noiDung);
-
+							+ "<br/> Cảm ơn bạn đã mua hàng của chúng tôi"
+							+ "<br/> Sau đây là chi tiết đơn hàng bạn đã mua: "
+							+ "<br/> <br/>" + " <strong> " + kq + "</strong>"
+							+ "<br/> <br/> Ban Quản Lý, VHN!";
+					//message.setText(noiDung);
+					message.setContent(noiDung, "text/html; charset=utf-8");
 					Transport.send(message);
 					request.getRequestDispatcher("mua-thanh-cong.jsp").forward(request, response);
 				} catch (MessagingException e) {

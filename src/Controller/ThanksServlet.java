@@ -53,9 +53,9 @@ public class ThanksServlet extends HttpServlet {
 					InternetAddress.parse(email));
 				message.setSubject("Thanks for subscribe us");
 				message.setText("Dear " + email 
-					+ "\n\n Thank you for your attention, we hope you enjoy this website!"
-					+ "\n\n We will send to your mail our new products soon!"
-					+ "\n\n Admin, VHN!");
+					+ "<br/> Thank you for your attention, we hope you enjoy this website!"
+					+ "<br/> We will send to your mail our new products soon!"
+					+ "<br/> Admin, VHN!");
 
 				Transport.send(message);
 
