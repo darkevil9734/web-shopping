@@ -70,7 +70,8 @@ public class testCSDL {
 	
 	@Test
 	public void timSanPhamTheoTen() {
-		
+		List<sanPham> dssp = sanPhamBL.timTheoTen("iPhone");
+		assertTrue(dssp.size() == 2);
 	}
 	
 }
