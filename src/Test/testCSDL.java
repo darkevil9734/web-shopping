@@ -14,9 +14,11 @@ import org.junit.Test;
 import com.sun.mail.imap.protocol.Item;
 
 import BusinessLogics.Database;
+import BusinessLogics.nhanVienBL;
 import BusinessLogics.quanLyGioHang;
 import BusinessLogics.sanPhamBL;
 import BusinessLogics.userBL;
+import JavaBeans.nhanVien;
 import JavaBeans.sanPham;
 import JavaBeans.user;
 
@@ -90,7 +92,7 @@ public class testCSDL {
 	}
 	
 	@Test
-	public void dangNhap() {
+	public void dangNhapUser() {
 		// đăng nhập đúng
 		String user = "test";
 		String pass = "test";
@@ -100,7 +102,7 @@ public class testCSDL {
 	}
 	
 	@Test
-	public void dangNhapSai() {
+	public void dangNhapUserSai() {
 		// đăng nhập đúng
 		// Test case pass nếu thông báo lỗi
 		String user = "test";
@@ -110,4 +112,23 @@ public class testCSDL {
 		assertTrue(u != null);
 	}
 	
+	@Test
+	public void dangKyNhanVien() {
+		String user = "abc";
+		String pass = "abc";
+		nhanVien nv = new nhanVien();
+		nv.setUsername(user);
+		nv.setPassword(pass);
+		int them = nhanVienBL.dangKyNhanVien(nv);
+		
+		assertTrue(them > 0); // sẽ báo lỗi, vì thiếu vào dữ liệu --> pass
+	}
+	
+	@Test
+	public void dangNhapNhanVien() {
+		String user = "admin";
+		String pass = "admin";
+		nhanVien nv = nhanVienBL.docTheoUsernamePassword(user, pass);
+		assertTrue(nv != null);
+	}
 }
