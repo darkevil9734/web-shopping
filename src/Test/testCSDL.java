@@ -5,13 +5,8 @@ import static org.junit.Assert.*;
 import java.sql.*;
 import java.util.List;
 
-import javax.ws.rs.BeanParam;
-
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.sun.mail.imap.protocol.Item;
 
 import BusinessLogics.Database;
 import BusinessLogics.nhanVienBL;
@@ -56,7 +51,7 @@ public class testCSDL {
 	
 	@Test
 	public void findAllGioHang() {
-		assertEquals(8 , quanLyGioHang.xemTatCa().size());
+		assertEquals(10 , quanLyGioHang.xemTatCa().size());
 	}
 	
 	@Test
