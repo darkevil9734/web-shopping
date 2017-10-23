@@ -62,4 +62,15 @@ public class testCSDL {
 		assertTrue(test.getTenSanPham().equals("iPhone 6"));
 	}
 	
+	@Test
+	public void timSanPhamTheoHang() {
+		List<sanPham> dssp = sanPhamBL.timKiemTheoHang("Apple");
+		assertTrue(dssp.size() == 3);
+	}
+	
+	@Test
+	public void timSanPhamTheoTen() {
+		
+	}
+	
 }
