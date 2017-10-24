@@ -479,7 +479,7 @@ public class sanPhamBL {
 		return status;
 	}
 
-	public static List<sanPham> timTheoDungLuongPin(String dungLuongPin){
+	public static List<sanPham> timTheoDungLuongPin(int dungLuongPin){
 		List<sanPham> dssp = new ArrayList<sanPham>();
 		try {
 			Connection db = Database.connect();

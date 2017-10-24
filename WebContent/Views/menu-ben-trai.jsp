@@ -71,7 +71,7 @@
                     </a>
                   </li>                  
                   <li>
-                    <a href="xiaomi.html">
+                    <a href="timTheoDungLuongPin">
                       Pin khủng (&gt;3000 mAh)
                     </a>
                   </li>
