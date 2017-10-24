@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import BusinessLogics.Database;
+import BusinessLogics.gioHangBL;
 import BusinessLogics.nhanVienBL;
 import BusinessLogics.quanLyGioHang;
 import BusinessLogics.sanPhamBL;
@@ -125,5 +126,64 @@ public class testCSDL {
 		String pass = "admin";
 		nhanVien nv = nhanVienBL.docTheoUsernamePassword(user, pass);
 		assertTrue(nv != null);
+	}
+	
+	@Test
+	public void userQuenMatKhau() {
+		String user = "test1";
+		String mail = "darkevil9712@gmail.com";
+		
+		user u = userBL.ResetPassword(user, mail);
+		assertTrue(u != null);
+	}
+	
+	@Test
+	public void nvQuenMatKhau() {
+		String user = "admin";
+		String email = "admin";
+		
+		nhanVien nv = nhanVienBL.ResetPassword(user, email);
+		assertTrue(nv != null);
+	}
+	
+	@Test
+	public void testThemGioHang() {
+		gioHangBL gh = new gioHangBL();
+		gh.them(1, 1);
+		gh.them(1, 2);
+		assertTrue(gh.countSoLuongMua() == 1);
+	}
+	
+	@Test
+	public void testXoaSPham_GioHang() {
+		gioHangBL gh = new gioHangBL();
+		gh.them(1, 2);
+		gh.them(2, 1);
+		gh.them(1, 3);
+		gh.them(3, 1);
+		gh.xoa(1);
+		assertTrue(gh.countSoLuongMua()==2);
+	}
+	
+	@Test
+	public void testTinhTongTienMua() {
+		gioHangBL gh = new gioHangBL();
+		gh.them(1, 1);
+		gh.them(2, 1);
+		assertTrue(gh.tongTien() == 30180000);
+	}
+	
+	@Test
+	public void testTinhTongTienKhiXoaBot() {
+		gioHangBL gh = new gioHangBL();
+		gh.them(1, 1);
+		gh.them(2, 1);
+		gh.xoa(2);
+		assertTrue(gh.tongTien() == 30180000);
+	}
+	
+	@Test
+	public void test() {
+		
 	}
 }
