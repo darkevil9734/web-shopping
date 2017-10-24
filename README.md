@@ -10,8 +10,8 @@ Photo Editor: Photoshop CC <br/>
 Database: MySQL Workbench <br/>
 
 Công cụ kiểm thử:
-JUnit Test 4
-JMeter
-WebServer Stress Tools
-<br/>
+JUnit Test 4 <br/>
+JMeter <br/>
+WebServer Stress Tools <br/>
+<br/><br/>
 Template tham khảo trang chủ nhân viên: templatemo
