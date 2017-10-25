@@ -7,3 +7,4 @@ G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\bin\Debug\We
 G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\bin\Debug\WebDriver.xml
 G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.exe
 G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.pdb
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.Properties.Resources.resources

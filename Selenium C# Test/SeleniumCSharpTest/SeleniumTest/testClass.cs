@@ -18,23 +18,32 @@ namespace SeleniumTest
 
         public void moTrangChu()
         {
+            setUp();
             driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/trang-chu.jsp");
         }
         
         public void moTrangDangNhap()
         {
+            setUp();
             driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/dang-nhap.jsp");
 
         }
 
+        public void dongTrinhDuyet()
+        {
+            driver.Close();
+        }
+
         public void moTrangDangKy()
         {
+            setUp();
             driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/dang-ky.jsp");
         }
 
         // khi chưa có hàng trong giỏ
         public void event_click_gio_hang()
         {
+            setUp();
 
         }
     }

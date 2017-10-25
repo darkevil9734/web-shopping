@@ -28,5 +28,11 @@ namespace SeleniumTest
             testClass testTrangChu = new testClass();
             testTrangChu.moTrangChu();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            testClass dongWeb = new testClass();
+            dongWeb.dongTrinhDuyet();
+        }
     }
 }
