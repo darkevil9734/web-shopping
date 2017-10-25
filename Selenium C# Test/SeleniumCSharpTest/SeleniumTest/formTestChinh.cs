@@ -19,7 +19,14 @@ namespace SeleniumTest
 
         private void formTestChinh_Load(object sender, EventArgs e)
         {
+            testClass test = new testClass();
+            test.setUp();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            testClass testTrangChu = new testClass();
+            testTrangChu.moTrangChu();
         }
     }
 }

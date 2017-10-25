@@ -1,0 +1,9 @@
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.formTestChinh.resources
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.csproj.GenerateResource.Cache
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\bin\Debug\SeleniumTest.exe.config
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\bin\Debug\SeleniumTest.exe
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\bin\Debug\SeleniumTest.pdb
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\bin\Debug\WebDriver.dll
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\bin\Debug\WebDriver.xml
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.exe
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.pdb
