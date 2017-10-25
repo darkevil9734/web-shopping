@@ -40,11 +40,30 @@ namespace SeleniumTest
             driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/dang-ky.jsp");
         }
 
+        // khi chưa nhập chữ vào khung tìm
+        public void event_click_tim_kiem()
+        {
+            setUp();
+            driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/trang-chu.jsp");
+            driver.FindElement(By.ClassName("search-submit")).Click();
+        }
+
         // khi chưa có hàng trong giỏ
         public void event_click_gio_hang()
         {
             setUp();
-
+            driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/trang-chu.jsp");
+            driver.FindElement(By.ClassName("cart-icon")).Click();
         }
+
+        // khi chưa nhập gì mà submit
+        public void event_click_email_bottom()
+        {
+            setUp();
+            driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/trang-chu.jsp");
+            driver.FindElement(By.ClassName("button")).Click();
+        }
+
+
     }
 }

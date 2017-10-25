@@ -34,5 +34,23 @@ namespace SeleniumTest
             testClass dongWeb = new testClass();
             dongWeb.dongTrinhDuyet();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            testClass searchNull = new testClass();
+            searchNull.event_click_tim_kiem();
+        }
+
+        private void btnNullCart_Click(object sender, EventArgs e)
+        {
+            testClass cartNull = new testClass();
+            cartNull.event_click_gio_hang();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            testClass emailNull = new testClass();
+            emailNull.event_click_email_bottom();
+        }
     }
 }
