@@ -29,7 +29,7 @@ public class testGiaoDien {
 	public void moTrangDangNhap() throws Exception {
 		System.setProperty("webdriver.chrome.driver", "F:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe");
 		try {
-			ChromeOptions options = new ChromeOptions();
+			ChromeOptions options =	 new ChromeOptions();
 			options.addArguments("--disable-notifications");
 			WebDriver driver = new ChromeDriver(options);
 			driver.get("http://localhost:8080/web-mobile/dang-nhap.jsp");
