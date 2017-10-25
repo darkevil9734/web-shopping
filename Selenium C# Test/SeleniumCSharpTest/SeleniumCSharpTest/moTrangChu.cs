@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace SeleniumCSharpTest
 {
-    class Program
+    class moTrangChu
     {
-        
         static void Main(string[] args)
         {
-            IWebDriver driver = new ChromeDriver(@"F:/Program Files (x86)/Google/Chrome/Application/");
-            driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/trang-chu.jsp");
+            testClass test = new testClass();
+            test.setUp();
+            test.moTrangChu();
 
-            
+
         }
     }
 }
