@@ -19,7 +19,8 @@ namespace SeleniumTest
 
         private void formTestTrangChu_Load(object sender, EventArgs e)
         {
-
+            testTrangChu trangChu = new testTrangChu();
+            trangChu.setUp();
         }
     }
 }

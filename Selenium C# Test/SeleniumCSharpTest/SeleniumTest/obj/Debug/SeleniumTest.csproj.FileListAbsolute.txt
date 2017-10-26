@@ -9,3 +9,8 @@ G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\Se
 G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.pdb
 G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.Properties.Resources.resources
 G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.csprojResolveAssemblyReference.cache
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.formTestTrangChu.resources
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.testTrangDangKy.resources
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.testTrangDangNhap.resources
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.testTrangGopY.resources
+G:\demo\web-mobile\Selenium C# Test\SeleniumCSharpTest\SeleniumTest\obj\Debug\SeleniumTest.testTrangNhanVien.resources

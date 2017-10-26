@@ -19,13 +19,13 @@ namespace SeleniumTest
 
         private void formTestChinh_Load(object sender, EventArgs e)
         {
-            testTrangChu test = new testTrangChu();
-            test.setUp();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            formTestTrangChu trangchu = new formTestTrangChu();
+            trangchu.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -36,22 +36,26 @@ namespace SeleniumTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            testTrangDangNhap login = new testTrangDangNhap();
+            login.Show();
         }
 
         private void btnNullCart_Click(object sender, EventArgs e)
         {
-            
+            testTrangDangKy register = new testTrangDangKy();
+            register.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+            testTrangGopY gopy = new testTrangGopY();
+            gopy.Show();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            
+            testTrangNhanVien staff = new testTrangNhanVien();
+            staff.Show();
         }
     }
 }
