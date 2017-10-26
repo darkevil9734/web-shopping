@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2017 at 05:32 PM
+-- Generation Time: Oct 25, 2017 at 07:23 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `hthong_muaban`
 --
-CREATE DATABASE IF NOT EXISTS `hthong_muaban` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `hthong_muaban`;
 
 -- --------------------------------------------------------
 
@@ -39,16 +37,17 @@ CREATE TABLE IF NOT EXISTS `gio_hang` (
   `quan` varchar(45) NOT NULL,
   `phuong` varchar(45) NOT NULL,
   `chi_tiet` text NOT NULL,
-  PRIMARY KEY (`idgio_hang`),
+  PRIMARY KEY (`idgio_hang`,`iduser`),
   KEY `user_giohang_idx` (`iduser`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `gio_hang`
 --
 
 INSERT INTO `gio_hang` (`idgio_hang`, `iduser`, `email`, `ho_user`, `ten_user`, `sdt`, `diaChi`, `quan`, `phuong`, `chi_tiet`) VALUES
-(1, 6, 'darkevil9712@gmail.com', 'vu', 'vu', 1234567890, '123 nguyen trai', '5', '3', 'Nokia 150  - Số lượng 1 - Thành tiền 650,000\nNokia 216 - Số lượng 1 - Thành tiền 760,000\niPhone 6 - Số lượng 1 - Thành tiền 7,690,000\niPhone 7 plus 32Gb - Số lượng 1 - Thành tiền 22,490,000\n');
+(12, 6, 'darkevil9712@gmail.com', 'vu', 'vu', 1234567890, '123 nguyen trai', '5', '3', 'iPhone 7 plus 32Gb - Số lượng 1 - Thành tiền 22,490,000<br/>'),
+(13, 6, 'darkevil9712@gmail.com', 'vu', 'vu', 1234567890, '123 nguyen trai', '5', '3', 'Nokia 216 - Số lượng 1 - Thành tiền 760,000<br/>iPhone 7 plus 32Gb - Số lượng 1 - Thành tiền 22,490,000<br/>');
 
 -- --------------------------------------------------------
 
@@ -168,21 +167,21 @@ INSERT INTO `san_pham` (`ma_san_pham`, `ten_san_pham`, `hang_san_xuat`, `gia_san
 (29, 'Vivo V5s', 'Vivo', 6690000, 'còn hàng', 'vv5s.png', '20MP', '13MP', '3000mAh', 'Mặt kính 2.5D', 'Mở khóa bằng vân tay', 'Vàng đồng, Vàng Hồng'),
 (30, 'Vivo Y53', 'Vivo', 3390000, 'còn hàng', 'vy53.png', '5MP', '8MP', '2500mAh', 'Không', 'Không', 'Đen, Vàng đồng'),
 (32, 'Philips E181', 'Philips', 690000, 'còn hàng', 'philipsE181.jpg', 'VGA', 'không', '3100mAh', '2G, Bluetooth, pin lâu, 2 sim', 'không', 'đen, vàng'),
-(33, 'Ốp lưng Galaxy J7 Pro', 'Osmia', 30000, 'còn hàng', 'galaxyj7.jpg', 'không', 'không', 'không', 'Làm bằng nhựa dẻo <br/> Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
-(34, 'Ốp lưng iPhone 7 Nhựa', 'Cosano', 30000, 'còn hàng', 'iphone7.jpg', 'không', 'không', 'không', 'Làm bằng nhựa dẻo <br/>\r Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
-(35, 'Ốp lưng iPhone 6', 'đang cập nhật', 30000, 'còn hàng', 'iphone6.jpg', 'không', 'không', 'không', 'Làm bằng nhựa dẻo <br/> Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
-(36, 'Ốp lưng Galaxy Note 8', 'Osmia', 190000, 'còn hàng', 'note8.jpg', 'không', 'không', 'không', 'Làm bằng nhựa dẻo <br/> Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
-(37, 'Ốp lưng Galaxy S8 Nhựa', 'Solid', 70000, 'còn hàng', 's8.jpg', 'không', 'không', 'không', 'Làm bằng nhựa dẻo <br/> Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
+(33, 'Ốp lưng Galaxy J7 Pro', 'Osmia', 30000, 'còn hàng', 'galaxyj7.jpg', 'không', 'không', '0', 'Làm bằng nhựa dẻo <br/> Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
+(34, 'Ốp lưng iPhone 7 Nhựa', 'Cosano', 30000, 'còn hàng', 'iphone7.jpg', 'không', 'không', '0', 'Làm bằng nhựa dẻo <br/>\r Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
+(35, 'Ốp lưng iPhone 6', 'đang cập nhật', 30000, 'còn hàng', 'iphone6.jpg', 'không', 'không', '0', 'Làm bằng nhựa dẻo <br/> Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
+(36, 'Ốp lưng Galaxy Note 8', 'Osmia', 190000, 'còn hàng', 'note8.jpg', 'không', 'không', '0', 'Làm bằng nhựa dẻo <br/> Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
+(37, 'Ốp lưng Galaxy S8 Nhựa', 'Solid', 70000, 'còn hàng', 's8.jpg', 'không', 'không', '0', 'Làm bằng nhựa dẻo <br/> Giúp bảo vệ điện thoại tốt hơn', 'không', '/'),
 (38, 'Pin sạc dự phòng 5000mAh', 'eValu', 120000, 'còn hàng', 'sac1.jpg', 'không', 'không', 'không', 'Dung lượng pin 5000mAh <br/> Tương thích mọi loại điện thoại', 'không', '/'),
 (39, 'Pin sạc dự phòng 7500mAh', 'eSaver', 250000, 'còn hàng', 'sac2.jpg', 'không', 'không', 'không', 'Dung lượng pin 7500mAh <br/> Tương thích mọi loại điện thoại', 'không', '/'),
 (40, 'Pin sạc dự phòng Polymer', 'eValu', 350000, 'còn hàng', 'sac3.jpg', 'không', 'không', 'không', 'Dung lượng pin 5000mAh <br/> Tương thích mọi loại điện thoại', 'không', '/'),
 (41, 'Pin sạc dự phòng 10.000mAh', 'eValu', 300000, 'còn hàng', 'sac4.jpg', 'không', 'không', 'không', 'Dung lượng pin khủng 10.000mAh <br/> Tương thích mọi loại điện thoại', 'không', '/'),
 (42, 'Pin sạc dự phòng Polymer', 'eSaver', 250000, 'còn hàng', 'sac5.jpg', 'không', 'không', 'không', 'Dung lượng pin 5000mAh <br/> Tương thích mọi loại điện thoại', 'không', '/'),
-(43, 'Tai nghe Apple Airpod', 'Apple', 5000000, 'còn hàng', 'apple.jpg', 'không', 'không', 'không', 'Tai nghe không dây của Apple chính hãng <br/> Tương thích với các đời iPhone chạy iOS 8 trở lên', 'không', '/'),
-(44, 'Tai nghe Sony XBA-Z5', 'Sony', 11200000, 'còn hàng', 'sony.jpg', 'không', 'không', 'không', 'Tai nghe khủng của Sony, <br/> Chuyên về âm thanh và phân tích các dải tần số âm thanh <br/> Giúp hài lòng các tín đồ về âm nhạc', 'không', '/'),
-(45, 'Tai nghe Sony MDR-EX', 'Sony', 2500000, 'còn hàng', 'sony2.jpg', 'không', 'không', 'không', 'Tai nghe khủng của Sony, <br/> Chuyên về âm thanh và phân tích các dải tần số âm thanh <br/> Giúp hài lòng các tín đồ về âm nhạc', 'không', '/'),
-(46, 'Tai nghe Beats Studio', 'Beats', 7500000, 'còn hàng', 'beats.jpg', 'không', 'không', 'không', 'Tai nghe Headphone đến từ Mỹ <br/> Thương hiệu đã được Apple liên kết để tạo ra những sản phẩm tai nghe chất lương <br/> ', 'không', '/'),
-(47, 'Tai nghe Beats Tour ', 'Beats', 2000000, 'còn hàng', 'beats1.jpg', 'không', 'không', 'không', 'Tai nghe In-Ear đến từ Mỹ <br/> Thương hiệu đã được Apple liên kết để tạo ra những sản phẩm tai nghe chất lương <br/> ', 'không', '/');
+(43, 'Tai nghe Apple Airpod', 'Apple', 5000000, 'còn hàng', 'apple.jpg', 'không', 'không', '0', 'Tai nghe không dây của Apple chính hãng <br/> Tương thích với các đời iPhone chạy iOS 8 trở lên', 'không', '/'),
+(44, 'Tai nghe Sony XBA-Z5', 'Sony', 11200000, 'còn hàng', 'sony.jpg', 'không', 'không', '0', 'Tai nghe khủng của Sony, <br/> Chuyên về âm thanh và phân tích các dải tần số âm thanh <br/> Giúp hài lòng các tín đồ về âm nhạc', 'không', '/'),
+(45, 'Tai nghe Sony MDR-EX', 'Sony', 2500000, 'còn hàng', 'sony2.jpg', 'không', 'không', '0', 'Tai nghe khủng của Sony, <br/> Chuyên về âm thanh và phân tích các dải tần số âm thanh <br/> Giúp hài lòng các tín đồ về âm nhạc', 'không', '/'),
+(46, 'Tai nghe Beats Studio', 'Beats', 7500000, 'còn hàng', 'beats.jpg', 'không', 'không', '0', 'Tai nghe Headphone đến từ Mỹ <br/> Thương hiệu đã được Apple liên kết để tạo ra những sản phẩm tai nghe chất lương <br/> ', 'không', '/'),
+(47, 'Tai nghe Beats Tour ', 'Beats', 2000000, 'còn hàng', 'beats1.jpg', 'không', 'không', '0', 'Tai nghe In-Ear đến từ Mỹ <br/> Thương hiệu đã được Apple liên kết để tạo ra những sản phẩm tai nghe chất lương <br/> ', 'không', '/');
 
 -- --------------------------------------------------------
 
@@ -205,7 +204,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `nuoc` varchar(45) NOT NULL,
   `zip_code` varchar(45) NOT NULL,
   PRIMARY KEY (`iduser`,`username`,`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `user`
@@ -214,7 +213,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO `user` (`iduser`, `username`, `password`, `ho_user`, `ten_user`, `sdt`, `email`, `dia_chi`, `quan`, `phuong`, `thanh_pho`, `nuoc`, `zip_code`) VALUES
 (1, 'nguyenvana', '123456789', 'nguyen', 'van a', 123456789, 'nguyenvana@yahoo.com', '123 nguyen trai', '5', '3', 'ho chi minh', 'vietnam', '88888'),
 (6, 'test', 'test', 'vu', 'nguyen', 1234567890, 'darkevil9712@gmail.com', '123 nguyen trai', '5', '3', 'hcm', 'vietnam', '88888'),
-(7, 'abcdef', '123456789', 'Vu', 'Nguyen', 1234567890, 'darkevil9712@gmail.com', '123 nguyen trai', '5', '3', 'hcm', 'vietnam', '88888');
+(7, 'abcdef', '123456789', 'Vu', 'Nguyen', 1234567890, 'darkevil9712@gmail.com', '123 nguyen trai', '5', '3', 'hcm', 'vietnam', '88888'),
+(8, 'abcdefghi', '123456789', 'vu', 'nguyen', 1234567898, 'darkevil9712@gmail.com', '123 nguyen trai', '5', '3', 'hcm', 'vietnam', '88888');
 
 --
 -- Constraints for dumped tables

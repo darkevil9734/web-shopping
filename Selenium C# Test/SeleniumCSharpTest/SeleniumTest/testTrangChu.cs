@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SeleniumTest
 {
-    class testClass
+    class testTrangChu
     {
         public static IWebDriver driver;
         public void setUp()
@@ -63,7 +63,6 @@ namespace SeleniumTest
             driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/trang-chu.jsp");
             driver.FindElement(By.ClassName("button")).Click();
         }
-
-
+        
     }
 }
