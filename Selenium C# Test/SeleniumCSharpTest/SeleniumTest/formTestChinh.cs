@@ -25,8 +25,7 @@ namespace SeleniumTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            testTrangChu testTrangChu = new testTrangChu();
-            testTrangChu.moTrangChu();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -37,20 +36,22 @@ namespace SeleniumTest
 
         private void button3_Click(object sender, EventArgs e)
         {
-            testTrangChu searchNull = new testTrangChu();
-            searchNull.event_click_tim_kiem();
+            
         }
 
         private void btnNullCart_Click(object sender, EventArgs e)
         {
-            testTrangChu cartNull = new testTrangChu();
-            cartNull.event_click_gio_hang();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            testTrangChu emailNull = new testTrangChu();
-            emailNull.event_click_email_bottom();
+            
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }

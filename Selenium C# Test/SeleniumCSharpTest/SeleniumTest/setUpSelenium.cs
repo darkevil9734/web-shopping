@@ -9,6 +9,8 @@ namespace SeleniumTest
 {
     interface setUpSelenium
     {
-        void setUp(IWebDriver driver);
+        void setUp();
+
+        void closeDriver();
     }
 }

@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="formTestTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTestTrangChu.Designer.cs">
+      <DependentUpon>formTestTrangChu.cs</DependentUpon>
+    </Compile>
     <Compile Include="formTestChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,7 +68,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="testClass.cs" />
+    <Compile Include="setUpSelenium.cs" />
+    <Compile Include="testChucNangTrangChu.cs" />
+    <Compile Include="testTrangChu.cs" />
+    <Compile Include="testTrangDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testTrangDangKy.Designer.cs">
+      <DependentUpon>testTrangDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testTrangDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testTrangDangNhap.Designer.cs">
+      <DependentUpon>testTrangDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testTrangGopY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testTrangGopY.Designer.cs">
+      <DependentUpon>testTrangGopY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testTrangNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testTrangNhanVien.Designer.cs">
+      <DependentUpon>testTrangNhanVien.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -72,9 +104,24 @@
     <EmbeddedResource Include="formTestChinh.resx">
       <DependentUpon>formTestChinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formTestTrangChu.resx">
+      <DependentUpon>formTestTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testTrangDangKy.resx">
+      <DependentUpon>testTrangDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testTrangDangNhap.resx">
+      <DependentUpon>testTrangDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testTrangGopY.resx">
+      <DependentUpon>testTrangGopY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testTrangNhanVien.resx">
+      <DependentUpon>testTrangNhanVien.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
