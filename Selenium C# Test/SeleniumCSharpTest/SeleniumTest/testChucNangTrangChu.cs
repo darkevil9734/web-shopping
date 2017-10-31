@@ -28,11 +28,9 @@ namespace SeleniumTest
             setUp();
             driver.Navigate().GoToUrl("http://localhost:8080/web-mobile/trang-chu.jsp");
             String tim_input = "iphone";
-            //driver.FindElement(By.ClassName("search-input")).Clear();
 
-            driver.FindElement(By.ClassName("search-input")).SendKeys(tim_input);
-            
-            driver.FindElement(By.ClassName("search-submit")).Click();
+            testTrangChu search = new testTrangChu();
+            search.test_value_search();
         }
     }
 }

@@ -6,6 +6,7 @@ public class hoaDon implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private int id_giohang;
 	private int id_user;
+	private int ma_san_pham;
 	private String email;
 	private String ho_user;
 	private String ten_user;
@@ -16,6 +17,12 @@ public class hoaDon implements Serializable{
 	private String phuong;
 	private String chiTiet;
 	
+	public int getMa_san_pham() {
+		return ma_san_pham;
+	}
+	public void setMa_san_pham(int ma_san_pham) {
+		this.ma_san_pham = ma_san_pham;
+	}
 	public int getId_giohang() {
 		return id_giohang;
 	}

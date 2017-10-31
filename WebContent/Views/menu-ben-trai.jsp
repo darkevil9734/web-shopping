@@ -92,22 +92,22 @@
                 </h3>
                 <ul>
                   <li>
-                    <a href="timTheoMauSac?mauSac=Đỏ" class="red-bg">
+                    <a href="timTheoMauSac?mauSac=đỏ" class="red-bg">
                       light red
                     </a>
                   </li>
                   <li>
-                    <a href="timTheoMauSac?mauSac=Vàng" class=" yellow-bg">
+                    <a href="timTheoMauSac?mauSac=vàng" class=" yellow-bg">
                       yellow"
                     </a>
                   </li>
                   <li>
-                    <a href="timTheoMauSac?mauSac=Đen" class="black-bg ">
+                    <a href="timTheoMauSac?mauSac=đen" class="black-bg ">
                       black
                     </a>
                   </li>
                   <li>
-                    <a href="timTheoMauSac?mauSac=Hồng" class="pink-bg">
+                    <a href="timTheoMauSac?mauSac=hồng" class="pink-bg">
                       pink
                     </a>
                   </li>

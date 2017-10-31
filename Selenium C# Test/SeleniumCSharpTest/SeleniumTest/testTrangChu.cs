@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -64,5 +65,18 @@ namespace SeleniumTest
             driver.FindElement(By.ClassName("button")).Click();
         }
         
+        public void test_value_search()
+        {
+            setUp();
+            Actions actions = new Actions(driver);
+            IWebElement searchButton = driver.FindElement(By.ClassName("search-submit"));
+            actions.MoveToElement(searchButton);
+
+            IWebElement searchInput = driver.FindElement(By.ClassName("search-input"));
+            String search_input_value = "iphone";
+            actions.MoveToElement(searchInput).SendKeys(search_input_value);
+            actions.MoveToElement(searchButton).Click();
+
+        }
     }
 }

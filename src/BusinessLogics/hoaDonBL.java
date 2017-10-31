@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import JavaBeans.hoaDon;
+import JavaBeans.themSanPhamMua;
 
 public class hoaDonBL {
 	public static int themHoaDon(hoaDon hd) {
@@ -32,5 +33,21 @@ public class hoaDonBL {
 		return status;
 	}
 	
-	
+	public static int themSPMua(themSanPhamMua spm) {
+		int status =0;
+		String sql = "insert into giohang_sanpham(idgio_hang,ma_san_pham) values(?,?)";
+		try {
+			Connection db = Database.connect();
+			PreparedStatement pst = db.prepareStatement(sql);
+			pst.setInt(1, spm.getIdgio_hang());
+			pst.setInt(2, spm.getMa_san_pham());
+			
+			status = pst.executeUpdate();
+		}
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return status;
+	}
 }

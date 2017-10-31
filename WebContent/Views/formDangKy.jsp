@@ -178,7 +178,7 @@
 								var zipCode_input = document.forms["form-dang-ky"]["txtZipCode"].value;
 								// variable telephone regex: 
 								var regEx = /^0(1\d{9}|9\d{8})$/;
-                      			
+                      			var regExUser = /[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/;
 								// check empty 
 								var check_email = email_input.indexOf("@");
 							    var check_email_dot = email_input.lastIndexOf(".");
@@ -205,6 +205,9 @@
 							    else if(regEx.test(soDienThoai_input) == false){
 							    	alert("Số điện thoại không hợp lệ");
 							    	return false;
+							    }
+							    else if(regExUser.test(email_input) == true){
+
 							    }
 							}
 					  </script>
