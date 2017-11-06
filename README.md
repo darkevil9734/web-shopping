@@ -1,5 +1,5 @@
 # Bài tập
-![](hinhghichu.jpg "title") <br/>
+![](hinh-ghi-chu.jpg "title") <br/>
 Web bán điện thoại online <br/>
 Trên môi trường JSP/Servlet <br/>
 Mô hình MVC <br/>
@@ -15,5 +15,6 @@ JUnit Test 4 <br/>
 JMeter <br/>
 WebServer Stress Tools <br/>
 Selenium trên C# và JavaSwing <br/>
+
 <br/><br/>
 Template tham khảo trang chủ nhân viên: templatemo
