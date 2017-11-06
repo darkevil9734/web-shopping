@@ -127,11 +127,13 @@ public class mainTest extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMoTrangChuActionPerformed
 
     private void btnMoTrangDangNhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMoTrangDangNhapActionPerformed
-        
+        Login log = new Login();
+        log.setVisible(true);
     }//GEN-LAST:event_btnMoTrangDangNhapActionPerformed
 
     private void btnMoTrangDangKyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMoTrangDangKyActionPerformed
-                
+        Register reg = new Register();
+        reg.setVisible(true);
     }//GEN-LAST:event_btnMoTrangDangKyActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
