@@ -1,5 +1,5 @@
 # Bài tập
-![](hinhghichu.jpg "title") <br/>
+![](ghi-chu.jpg "title") <br/>
 Web bán điện thoại online <br/>
 Trên môi trường JSP/Servlet <br/>
 Mô hình MVC <br/>
