@@ -17,7 +17,7 @@ public class testGiaoDien {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
 			WebDriver driver = new ChromeDriver(options);
-			driver.get("http://localhost:8080/web-mobile/trang-chu.jsp");
+			driver.get("http://localhost:11769/web-mobile/trang-chu.jsp");
 			//driver.manage().window().maximize();
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -32,7 +32,7 @@ public class testGiaoDien {
 			ChromeOptions options =	 new ChromeOptions();
 			options.addArguments("--disable-notifications");
 			WebDriver driver = new ChromeDriver(options);
-			driver.get("http://localhost:8080/web-mobile/dang-nhap.jsp");
+			driver.get("http://localhost:11769/web-mobile/dang-nhap.jsp");
 			//driver.manage().window().maximize();
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -40,6 +40,19 @@ public class testGiaoDien {
 		}	
 	}
 	
-	
+	@Test
+	public void moTrangDangKy() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "F:/Program Files (x86)/Google/Chrome/Application/chromedriver.exe");
+		try {
+			ChromeOptions options =	 new ChromeOptions();
+			options.addArguments("--disable-notifications");
+			WebDriver driver = new ChromeDriver(options);
+			driver.get("http://localhost:11769/web-mobile/dang-ky.jsp");
+			//driver.manage().window().maximize();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}	
+	}
 	
 }

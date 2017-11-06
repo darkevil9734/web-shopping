@@ -32,16 +32,24 @@ public class mainTest extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnMoTrangChu = new javax.swing.JButton();
+        btnMoTrangDangNhap = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("G:\\test.png")); // NOI18N
 
-        jButton1.setText("Mở trang chủ");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnMoTrangChu.setText("Mở trang chủ");
+        btnMoTrangChu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnMoTrangChuActionPerformed(evt);
+            }
+        });
+
+        btnMoTrangDangNhap.setText("Mở trang đăng nhập");
+        btnMoTrangDangNhap.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMoTrangDangNhapActionPerformed(evt);
             }
         });
 
@@ -55,8 +63,10 @@ public class mainTest extends javax.swing.JFrame {
                         .addGap(89, 89, 89)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(69, 69, 69)
+                        .addComponent(btnMoTrangChu, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(77, 77, 77)
+                        .addComponent(btnMoTrangDangNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(103, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -64,23 +74,34 @@ public class mainTest extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(78, 78, 78)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addGap(88, 88, 88)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnMoTrangChu, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnMoTrangDangNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnMoTrangChuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMoTrangChuActionPerformed
         // TODO add your handling code here:
-        testGiaoDien test = new testGiaoDien();
+        testGiaoDien testHomePage = new testGiaoDien();
         try {
-            test.moTrangChu();
+            testHomePage.moTrangChu();
         } catch (Exception ex) {
             Logger.getLogger(mainTest.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnMoTrangChuActionPerformed
+
+    private void btnMoTrangDangNhapActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMoTrangDangNhapActionPerformed
+        testGiaoDien testLogin = new testGiaoDien();
+        try {
+            testLogin.moTrangDangNhap();
+        } catch (Exception ex) {
+            Logger.getLogger(mainTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnMoTrangDangNhapActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,7 +139,8 @@ public class mainTest extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnMoTrangChu;
+    private javax.swing.JButton btnMoTrangDangNhap;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
