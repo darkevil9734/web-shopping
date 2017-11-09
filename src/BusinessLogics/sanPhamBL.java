@@ -551,7 +551,7 @@ public class sanPhamBL {
 		try {
 			Connection db = Database.connect();
 			Statement stm = db.createStatement();
-			ResultSet rs = stm.executeQuery("select*from hthong_muaban.san_pham where ");
+			ResultSet rs = stm.executeQuery("select*from hthong_muaban.san_pham where tinh_nang like '%"+nhucau+"%'");
 			
 			while(rs.next()) {
 				sanPham sp = new sanPham();

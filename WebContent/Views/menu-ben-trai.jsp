@@ -7,50 +7,50 @@
                 </h3>
                 <ul>
                   <li>
-                    <a href="xiaomi.html">
+                    <a href="timTheoNhuCau?opt=1">
                       2 SIM
                     </a>
                   </li>
                   <li>
-                    <a href="sony.html">
+                    <a href="timTheoNhuCau?opt=2">
                       Nghe nhạc
                     </a>
                   </li>
                   <li>
-                    <a href="oppo.html">
+                    <a href="timTheoNhuCau?opt=3">
                       Chụp Ảnh
                     </a>
                   </li>
                   <li>
-                    <a href="apple.html">
+                    <a href="timTheoNhuCau?opt=4">
                       Giải Trí
                     </a>
                   </li>
                   <li>
-                    <a href="samsung.html">
+                    <a href="timTheoNhuCau?opt=5">
                       Trên 8 MP
                     </a>
                   </li>
                   
                   <li>
-                    <a href="xiaomi.html">
+                    <a href="timTheoNhuCau?opt=6">
                       hỗ trợ 4G
                     </a>
                   </li>
                   <li>
-                    <a href="sony.html">
+                    <a href="timTheoNhuCau?opt=7">
                       Xem Phim
                     </a>
                   </li>
                   <li>
-                    <a href="samsung.html">
+                    <a href="timTheoNhuCau?opt=8">
                       Màn hình lớn
                     </a>
                   </li>
                   
                   
                   <li>
-                    <a href="sony.html">
+                    <a href="timTheoNhuCau?opt=9">
                       Sạc pin nhanh
                     </a>
                   </li>
