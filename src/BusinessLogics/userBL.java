@@ -137,12 +137,12 @@ public class userBL {
 	}
 	
 	//check user tồn tại
-	public static user kiemTraUser(String username) {
+	public static user kiemTraUser(String username, String email) {
 		user nd = null;
 		Connection db = Database.connect();
 		try {
 			Statement stm = db.createStatement();
-			String sql = "select*from user u where u.username = '"+username+"'";
+			String sql = "select*from user u where u.username = '"+username+"' and u.email = '"+email+"'";
 			ResultSet rs = stm.executeQuery(sql);
 			
 			while(rs.next()) {

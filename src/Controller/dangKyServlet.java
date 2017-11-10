@@ -40,20 +40,23 @@ public class dangKyServlet extends HttpServlet {
 		user thanhVien = new user();
 		
 		thanhVien.setUsername(username);
-		thanhVien.setPassword(password);
-		thanhVien.setHo_user(ho_user);
-		thanhVien.setTen_user(ten_user);
-		thanhVien.setSdt(sdt);
 		thanhVien.setEmail(email);
-		thanhVien.setDia_chi(dia_chi);
-		thanhVien.setQuan(quan);
-		thanhVien.setPhuong(phuong);
-		thanhVien.setThanh_pho(thanh_pho);
-		thanhVien.setNuoc(nuoc);
-		thanhVien.setZip_code(zip_code);
 		
-		thanhVien = userBL.kiemTraUser(username);
+		thanhVien = userBL.kiemTraUser(username, email);
 		if(thanhVien == null) {
+			thanhVien = new user();
+			thanhVien.setUsername(username);
+			thanhVien.setPassword(password);
+			thanhVien.setHo_user(ho_user);
+			thanhVien.setTen_user(ten_user);
+			thanhVien.setSdt(sdt);
+			thanhVien.setEmail(email);
+			thanhVien.setDia_chi(dia_chi);
+			thanhVien.setQuan(quan);
+			thanhVien.setPhuong(phuong);
+			thanhVien.setThanh_pho(thanh_pho);
+			thanhVien.setNuoc(nuoc);
+			thanhVien.setZip_code(zip_code);
 			int dangKyThanhVien = userBL.dangKy(thanhVien);
 			if(dangKyThanhVien != 0) {
 				request.getRequestDispatcher("dang-ky-thanh-cong.jsp").forward(request, response);
