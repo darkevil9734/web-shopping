@@ -133,59 +133,7 @@
               </div>
             </div>
             <div class="col-md-3">
-              <div class="special-deal leftbar">
-                <h4 class="title">
-                  Sản Phẩm 
-                  <strong>
-                    Đặc Biệt
-                  </strong>
-                </h4>
-                <div class="special-item">
-                  <div class="product-image">
-                    <a href="#">
-                      <img src="images/products/thum/products-08.png" alt="">
-                    </a>
-                  </div>
-                  <div class="product-info">
-                    <p>
-                        Iphone 7Plus Red
-                    </p>
-                    <h5 class="price">
-                     22.490.000₫
-                    </h5>
-                  </div>
-                </div>
-                <div class="special-item">
-                  <div class="product-image">
-                    <a href="#">
-                      <img src="images/products/thum/products-02.png" alt="">
-                    </a>
-                  </div>
-                  <div class="product-info">
-                    <p>
-                     Samsung galaxy s8 
-                    </p>
-                    <h5 class="price">
-                      17.500.000₫
-                    </h5>
-                  </div>
-                </div>
-                <div class="special-item">
-                  <div class="product-image">
-                    <a href="#">
-                      <img src="images/products/thum/products-03.png" alt="">
-                    </a>
-                  </div>
-                  <div class="product-info">
-                    <p>
-                      Sony Xperia XZ Premium
-                    </p>
-                    <h5 class="price">
-                      17.000.000₫
-                    </h5>
-                  </div>
-                </div>
-              </div>
+              
               <div class="clearfix">
               </div>
               <div class="product-tag leftbar">
@@ -238,6 +186,7 @@
                   </li>
                 </ul>
               </div>
+              <jsp:include page="sanPhamNoiBat"/>
               <div class="clearfix">
               </div>
               <div class="get-newsletter leftbar">

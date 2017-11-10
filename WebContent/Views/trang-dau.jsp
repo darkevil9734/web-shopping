@@ -37,7 +37,7 @@
                            </div>
                            <div class="col-md-6">
                               <ul class="topmenu">
-                                 <li><a href="contact.html">Giới Thiệu</a></li>
+                                 <li><a href="contact.jsp">Giới Thiệu</a></li>
                                  <li><a href="contact.jsp">Góp Ý</a></li>
                                  <li><a href="#">Xin chào ${sessionScope.member.ten_user}</a></li>
 

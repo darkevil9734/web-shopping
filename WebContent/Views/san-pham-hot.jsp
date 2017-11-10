@@ -29,7 +29,7 @@
 	                                <div class="thumbnail"><a href="xemChiTietSanPhamServlet?id=${sp.ma_san_pham}"><img src="Views/productIMG/${sp.hinh_dai_dien}" alt="Product Name"></a></div>
 	                                <div class="productname">${sp.tenSanPham }</div>
 	                                <h4 class="price"><f:formatNumber type="number" value="${sp.giaSanPham}"/>₫</h4>
-	                                <div class="button_group"><button formaction="themGioHang?id=${sp.ma_san_pham}" class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+	                                <div class="button_group"><button onclick="javascript:location.href='themGioHang?id=${sp.ma_san_pham}'" formmethod="post" class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
 	                             </div>
 	                     </div>
                      </c:forEach>
@@ -42,7 +42,7 @@
 	                                <div class="thumbnail"><a href="xemChiTietSanPhamServlet?id=${sphot.ma_san_pham}"><img src="Views/productIMG/${sphot.hinh_dai_dien}" alt="Product Name"></a></div>
 	                                <div class="productname">${sphot.tenSanPham }</div>
 	                                <h4 class="price"><f:formatNumber type="number" value="${sphot.giaSanPham}"/>₫</h4>
-	                                <div class="button_group"><button class="button add-cart" type="button">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
+	                                <div class="button_group"><button onclick="javascript:location.href='themGioHang?id=${sphot.ma_san_pham}'" class="button add-cart" type="submit">Mua</button><button class="button compare" type="button"><i class="fa fa-exchange"></i></button><button class="button wishlist" type="button"><i class="fa fa-heart-o"></i></button></div>
 	                             </div>
 	                     </div>
                      </c:forEach>
