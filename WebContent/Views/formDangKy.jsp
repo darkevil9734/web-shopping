@@ -206,8 +206,9 @@
 							    	alert("Số điện thoại không hợp lệ");
 							    	return false;
 							    }
-							    else if(regExUser.test(email_input) == true){
-
+							    else if(password_input.length <= 6){
+							    	alert("Mật khẩu yếu, yêu cầu phải lớn hơn 6 ký tự");
+							    	return false;
 							    }
 							}
 					  </script>
