@@ -52,14 +52,22 @@ public class dangKyServlet extends HttpServlet {
 		thanhVien.setNuoc(nuoc);
 		thanhVien.setZip_code(zip_code);
 		
-		int dangKyThanhVien = userBL.dangKy(thanhVien);
-		if(dangKyThanhVien != 0) {
-			request.getRequestDispatcher("dang-ky-thanh-cong.jsp").forward(request, response);
+		thanhVien = userBL.kiemTraUser(username);
+		if(thanhVien == null) {
+			int dangKyThanhVien = userBL.dangKy(thanhVien);
+			if(dangKyThanhVien != 0) {
+				request.getRequestDispatcher("dang-ky-thanh-cong.jsp").forward(request, response);
+			}
+			else {
+				request.getRequestDispatcher("dang-ky-loi.jsp").forward(request, response);
+
+			}
 		}
 		else {
-			request.getRequestDispatcher("dang-ky-loi.jsp").forward(request, response);
-
+			request.getRequestDispatcher("loi-dang-ky.jsp").forward(request, response);
 		}
+		
+		
 	}
 
 

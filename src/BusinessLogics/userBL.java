@@ -135,4 +135,36 @@ public class userBL {
 		}
 		return dstv;
 	}
+	
+	//check user tồn tại
+	public static user kiemTraUser(String username) {
+		user nd = null;
+		Connection db = Database.connect();
+		try {
+			Statement stm = db.createStatement();
+			String sql = "select*from user u where u.username = '"+username+"'";
+			ResultSet rs = stm.executeQuery(sql);
+			
+			while(rs.next()) {
+				nd = new user();
+				nd.setIduser(rs.getInt("iduser"));
+				nd.setUsername(rs.getString("username"));
+				nd.setPassword(rs.getString("password"));
+				nd.setHo_user(rs.getString("ho_user"));
+				nd.setTen_user(rs.getString("ten_user"));
+				nd.setSdt(rs.getInt("sdt"));
+				nd.setEmail(rs.getString("email"));
+				nd.setDia_chi(rs.getString("dia_chi"));
+				nd.setQuan(rs.getString("quan"));
+				nd.setPhuong(rs.getString("phuong"));
+				nd.setThanh_pho(rs.getString("thanh_pho"));
+				nd.setNuoc(rs.getString("nuoc"));
+				nd.setZip_code(rs.getString("zip_code"));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return nd;
+	}
 }

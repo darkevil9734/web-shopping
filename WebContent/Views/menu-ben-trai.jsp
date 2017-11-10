@@ -56,17 +56,17 @@
                   </li>
                   <li>
                     </li><li>
-                    <a href="apple.html">
+                    <a href="timTheoNhuCau?opt=10">
                       Bảo mật vân tay
                     </a>
                   </li>
                   <li>
-                    <a href="samsung.html">
+                    <a href="timTheoNhuCau?opt=11">
                        Chống nước, bụi
                     </a>
                   </li>
                   <li>
-                    <a href="apple.html">
+                    <a href="timTheoNhuCau?opt=12">
                       Viền màn hình mỏng
                     </a>
                   </li>                  
@@ -77,7 +77,7 @@
                   </li>
                   
                   <li>
-                    <a href="apple.html">
+                    <a href="timTheoNhuCau?opt=10">
                       Bảo mật vân tay
                     </a>
                   </li>
@@ -92,22 +92,22 @@
                 </h3>
                 <ul>
                   <li>
-                    <a href="timTheoMauSac?mauSac=đỏ" class="red-bg">
+                    <a href="timTheoMauSac?mauSac=1" class="red-bg">
                       light red
                     </a>
                   </li>
                   <li>
-                    <a href="timTheoMauSac?mauSac=vàng" class=" yellow-bg">
+                    <a href="timTheoMauSac?mauSac=2" class=" yellow-bg">
                       yellow"
                     </a>
                   </li>
                   <li>
-                    <a href="timTheoMauSac?mauSac=đen" class="black-bg ">
+                    <a href="timTheoMauSac?mauSac=3" class="black-bg ">
                       black
                     </a>
                   </li>
                   <li>
-                    <a href="timTheoMauSac?mauSac=hồng" class="pink-bg">
+                    <a href="timTheoMauSac?mauSac=4" class="pink-bg">
                       pink
                     </a>
                   </li>

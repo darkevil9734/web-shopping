@@ -21,8 +21,28 @@ public class timTheoMauSac extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String mauSac = request.getParameter("mauSac");
-		List<sanPham> timTheoMauSac = sanPhamBL.timTheoMauSac(mauSac);
+		int opt = Integer.parseInt(request.getParameter("mauSac"));
+		String mauSac = null;
+		List<sanPham> timTheoMauSac = null;
+		switch(opt) {
+			case 1:
+				mauSac = "đỏ";
+				timTheoMauSac = sanPhamBL.timTheoMauSac(mauSac);
+				break;
+			case 2:
+				mauSac = "vàng";
+				timTheoMauSac = sanPhamBL.timTheoMauSac(mauSac);
+				break;
+			case 3:
+				mauSac = "đen";
+				timTheoMauSac = sanPhamBL.timTheoMauSac(mauSac);
+				break;
+			case 4:
+				mauSac = "hồng";
+				timTheoMauSac = sanPhamBL.timTheoMauSac(mauSac);
+				break;
+		}
+		
 		if(timTheoMauSac != null) {
 			System.out.println(timTheoMauSac.size());
 			request.setAttribute("timTheoMauSac", timTheoMauSac);

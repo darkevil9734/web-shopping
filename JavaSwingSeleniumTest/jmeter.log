@@ -1,44 +1,44 @@
-2017-11-09 23:20:22,362 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
-2017-11-09 23:20:22,375 INFO o.a.j.JMeter: Loading user properties from: F:\JMeter Testing\apache-jmeter-3.3\bin\user.properties
-2017-11-09 23:20:22,376 INFO o.a.j.JMeter: Loading system properties from: F:\JMeter Testing\apache-jmeter-3.3\bin\system.properties
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: Copyright (c) 1998-2017 The Apache Software Foundation
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: Version 3.3 r1808647
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: java.version=1.8.0_144
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: os.name=Windows 8.1
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: os.arch=amd64
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: os.version=6.3
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: file.encoding=Cp1252
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: Max memory     =3616538624
-2017-11-09 23:20:22,383 INFO o.a.j.JMeter: Available Processors =8
-2017-11-09 23:20:22,388 INFO o.a.j.JMeter: Default Locale=English (United States)
-2017-11-09 23:20:22,388 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
-2017-11-09 23:20:22,388 INFO o.a.j.JMeter: JMeterHome=F:\JMeter Testing\apache-jmeter-3.3
-2017-11-09 23:20:22,388 INFO o.a.j.JMeter: user.dir  =G:\demo\web-mobile\JavaSwingSeleniumTest
-2017-11-09 23:20:22,389 INFO o.a.j.JMeter: PWD       =G:\demo\web-mobile\JavaSwingSeleniumTest
-2017-11-09 23:20:31,492 INFO o.a.j.JMeter: IP: 192.168.188.2 Name: Nguyen FullName: Nguyen
-2017-11-09 23:20:31,658 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: javax.swing.plaf.metal.MetalLookAndFeel [Metal, CrossPlatform]
-2017-11-09 23:20:31,663 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
-2017-11-09 23:20:32,306 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2017-11-09 23:20:32,306 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2017-11-09 23:20:33,640 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.assertions.BSFAssertion
-2017-11-09 23:20:34,166 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.extractor.BSFPostProcessor
-2017-11-09 23:20:34,206 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.modifiers.BSFPreProcessor
-2017-11-09 23:20:34,248 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2017-11-09 23:20:34,248 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2017-11-09 23:20:34,248 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2017-11-09 23:20:34,248 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2017-11-09 23:20:34,248 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2017-11-09 23:20:34,248 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2017-11-09 23:20:34,637 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
-2017-11-09 23:20:34,637 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file F:\JMeter Testing\apache-jmeter-3.3\bin\proxyserver.jks
-2017-11-09 23:20:34,798 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.java.sampler.BSFSampler
-2017-11-09 23:20:34,838 INFO o.a.j.s.FileServer: Default base='G:\demo\web-mobile\JavaSwingSeleniumTest'
-2017-11-09 23:20:34,930 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.config.MongoSourceElement
-2017-11-09 23:20:34,930 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.sampler.MongoScriptSampler
-2017-11-09 23:20:35,372 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.timers.BSFTimer
-2017-11-09 23:20:35,454 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.visualizers.BSFListener
-2017-11-09 23:20:35,739 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2017-11-09 23:20:35,739 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
-2017-11-09 23:20:35,739 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2017-11-09 23:20:35,739 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2017-11-10 11:35:26,382 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2017-11-10 11:35:26,406 INFO o.a.j.JMeter: Loading user properties from: F:\JMeter Testing\apache-jmeter-3.3\bin\user.properties
+2017-11-10 11:35:26,407 INFO o.a.j.JMeter: Loading system properties from: F:\JMeter Testing\apache-jmeter-3.3\bin\system.properties
+2017-11-10 11:35:26,411 INFO o.a.j.JMeter: Copyright (c) 1998-2017 The Apache Software Foundation
+2017-11-10 11:35:26,411 INFO o.a.j.JMeter: Version 3.3 r1808647
+2017-11-10 11:35:26,411 INFO o.a.j.JMeter: java.version=1.8.0_144
+2017-11-10 11:35:26,412 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2017-11-10 11:35:26,412 INFO o.a.j.JMeter: os.name=Windows 8.1
+2017-11-10 11:35:26,412 INFO o.a.j.JMeter: os.arch=amd64
+2017-11-10 11:35:26,412 INFO o.a.j.JMeter: os.version=6.3
+2017-11-10 11:35:26,412 INFO o.a.j.JMeter: file.encoding=Cp1252
+2017-11-10 11:35:26,412 INFO o.a.j.JMeter: Max memory     =3616538624
+2017-11-10 11:35:26,412 INFO o.a.j.JMeter: Available Processors =8
+2017-11-10 11:35:26,416 INFO o.a.j.JMeter: Default Locale=English (United States)
+2017-11-10 11:35:26,416 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2017-11-10 11:35:26,416 INFO o.a.j.JMeter: JMeterHome=F:\JMeter Testing\apache-jmeter-3.3
+2017-11-10 11:35:26,416 INFO o.a.j.JMeter: user.dir  =G:\demo\web-mobile\JavaSwingSeleniumTest
+2017-11-10 11:35:26,416 INFO o.a.j.JMeter: PWD       =G:\demo\web-mobile\JavaSwingSeleniumTest
+2017-11-10 11:35:26,417 INFO o.a.j.JMeter: IP: 192.168.188.2 Name: Nguyen FullName: Nguyen
+2017-11-10 11:35:26,657 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: javax.swing.plaf.metal.MetalLookAndFeel [Metal, CrossPlatform]
+2017-11-10 11:35:26,660 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2017-11-10 11:35:27,167 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2017-11-10 11:35:27,168 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2017-11-10 11:35:28,011 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.assertions.BSFAssertion
+2017-11-10 11:35:28,421 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.extractor.BSFPostProcessor
+2017-11-10 11:35:28,499 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.modifiers.BSFPreProcessor
+2017-11-10 11:35:28,523 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2017-11-10 11:35:28,523 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2017-11-10 11:35:28,523 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2017-11-10 11:35:28,523 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2017-11-10 11:35:28,523 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2017-11-10 11:35:28,523 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2017-11-10 11:35:28,837 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2017-11-10 11:35:28,837 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file F:\JMeter Testing\apache-jmeter-3.3\bin\proxyserver.jks
+2017-11-10 11:35:28,961 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.java.sampler.BSFSampler
+2017-11-10 11:35:28,990 INFO o.a.j.s.FileServer: Default base='G:\demo\web-mobile\JavaSwingSeleniumTest'
+2017-11-10 11:35:29,048 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.config.MongoSourceElement
+2017-11-10 11:35:29,048 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.sampler.MongoScriptSampler
+2017-11-10 11:35:29,475 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.timers.BSFTimer
+2017-11-10 11:35:29,495 INFO o.a.j.g.u.MenuFactory: Skipping org.apache.jmeter.visualizers.BSFListener
+2017-11-10 11:35:29,623 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2017-11-10 11:35:29,623 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2017-11-10 11:35:29,623 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2017-11-10 11:35:29,623 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
