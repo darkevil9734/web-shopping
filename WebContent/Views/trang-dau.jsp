@@ -27,7 +27,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-md-2 col-sm-2">
-                     <div class="logo"><a href="trang-chu.jsp"><img src="images/logo2.png" alt="DTO" "=""></a></div>
+                     <div class="logo"><a href="trang-chu"><img src="images/logo2.png" alt="DTO" "=""></a></div>
                   </div>
                   <div class="col-md-10 col-sm-10">
                      <div class="header_top">
@@ -37,8 +37,8 @@
                            </div>
                            <div class="col-md-6">
                               <ul class="topmenu">
-                                 <li><a href="contact.jsp">Giới Thiệu</a></li>
-                                 <li><a href="contact.jsp">Góp Ý</a></li>
+                                 <li><a href="contact">Giới Thiệu</a></li>
+                                 <li><a href="contact">Góp Ý</a></li>
                                  <li><a href="#">Xin chào ${sessionScope.member.ten_user}</a></li>
 
                               </ul>
@@ -46,8 +46,8 @@
                            <div class="col-md-3">
                               <ul class="usermenu">
                               	<c:if test="${sessionScope.member == null}">
-                              		<li><a href='dang-nhap.jsp' class='log'>Đăng Nhập</a></li>
-           	                        <li><a href='dang-ky.jsp' class='reg'>Đăng Ký</a></li>
+                              		<li><a href='dang-nhap' class='log'>Đăng Nhập</a></li>
+           	                        <li><a href='dang-ky' class='reg'>Đăng Ký</a></li>
                               	</c:if>
                               	<c:if test="${sessionScope.member != null}">
                                 	<li><a href='dangXuatServlet' class='reg'>Đăng xuất</a></li>
@@ -129,7 +129,7 @@
                               <li><a href="timTheoHangSanPham?hang=Oppo">Oppo</a></li>
                               <li><a href="timTheoHangSanPham?hang=Nokia">Nokia</a></li> 
                               <li><a href="timTheoHangSanPham?hang=Samsung">Samsung</a></li>
-                              <li><a href="contact.jsp">Liên hệ chúng tôi</a></li>
+                              <li><a href="contact">Liên hệ chúng tôi</a></li>
                            </ul>
                         </div>
                      </div>
