@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no,minimal-ui">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=latin,latin-ext">
 		<link rel="stylesheet" type="text/css" href="https://cdn.travel.sygic.com/travel.sygic.com_lp/css/404.css?37750a7a7f99e67e0704f8ca9c6666c455ce76ef">
-		<title>	404 Not found</title>
+		<title>	Lỗi đăng nhập</title>
 		
 	<script type="text/javascript" src="https://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script></head>
 	<body>
@@ -29,7 +29,7 @@
 	Bạn nhập sai tên hoặc mật khẩu, vui lòng kiểm tra lại.
 </div>
 
-<a href="dang-nhap.jsp" class="button-home">Về trang đăng nhập</a>
+<a href="dang-nhap" class="button-home">Về trang đăng nhập</a>
 
 <div class="code">
 	<span>4</span>

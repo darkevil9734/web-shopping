@@ -28,7 +28,7 @@
 		
 	</div>
 	
-	<a href="trang-chu.jsp" class="button-home">Về trang chủ</a>
+	<a href="trang-chu" class="button-home">Về trang chủ</a>
 	
 	</body>
 </html>

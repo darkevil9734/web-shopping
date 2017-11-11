@@ -43,4 +43,36 @@
 	    <servlet-name>contact.jsp</servlet-name>
 	    <url-pattern>/contact</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>cau-hoi.jsp</servlet-name>
+	    <jsp-file>/cau-hoi.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>cau-hoi.jsp</servlet-name>
+	    <url-pattern>/cau-hoi</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>doi-tra.jsp</servlet-name>
+	    <jsp-file>/doi-tra.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>doi-tra.jsp</servlet-name>
+	    <url-pattern>/doi-tra</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>phuong-thuc-thanh-toan.jsp</servlet-name>
+	    <jsp-file>/phuong-thuc-thanh-toan.jsp</jsp-file>
+	</servlet>
+	
+	<servlet-mapping>
+	    <servlet-name>phuong-thuc-thanh-toan.jsp</servlet-name>
+	    <url-pattern>/phuong-thuc-thanh-toan</url-pattern>
+	</servlet-mapping>
+	
+	
 </web-app>
