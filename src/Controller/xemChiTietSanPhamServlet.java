@@ -11,6 +11,7 @@ import BusinessLogics.sanPhamBL;
 import JavaBeans.sanPham;
 
 @WebServlet("/xemChiTietSanPhamServlet")
+
 public class xemChiTietSanPhamServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
