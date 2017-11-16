@@ -62,12 +62,11 @@ public class dangKyServlet extends HttpServlet {
 				request.getRequestDispatcher("dang-ky-thanh-cong.jsp").forward(request, response);
 			}
 			else {
-				request.getRequestDispatcher("dang-ky-loi.jsp").forward(request, response);
-
+				response.sendRedirect("dang-ky-loi.jsp");
 			}
 		}
 		else {
-			request.getRequestDispatcher("loi-dang-ky.jsp").forward(request, response);
+			response.sendRedirect("loi-dang-ky.jsp");
 		}
 		
 		
