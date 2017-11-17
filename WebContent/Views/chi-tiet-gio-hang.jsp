@@ -38,10 +38,12 @@
 	   </td> 
 	   <td data-th="Subtotal" class="text-center"><f:formatNumber type="number" value="${dssp.getThanhTien()}" /> ₫</td> 
 	   <td class="actions" data-th="">
-	    <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
-	    </button> 
-	    <button formaction='xoaDonHang?id=${dssp.ma_san_pham}' formmethod="post" type="submit" class="btn btn-danger btn-sm">
+	     
+	    <button onclick=" alert('Bạn có muốn xóa món hàng này?');
+	    	javascript:location.href='xoaDonHang?id=${dssp.ma_san_pham}';" formmethod="post" type="submit" class="btn btn-danger btn-sm">
+	    
 	    	<i class="fa fa-trash-o" ></i>
+	    	
 	    </button>
 	   </td> 
 	  </tr> 
