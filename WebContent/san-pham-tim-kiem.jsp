@@ -8,7 +8,11 @@
 <c:if test="${sessionScope.gioHang == null}">
 	<jsp:include page="/Views/trang-dau.jsp"></jsp:include>
 </c:if>
-
+<c:if test="${size == 0 }">
+	<script>
+		alert("Không tìm thấy sản phẩm!");
+	</script>
+</c:if>
 <div class="container_fullwidth">
         <div class="container">
           <div class="row">

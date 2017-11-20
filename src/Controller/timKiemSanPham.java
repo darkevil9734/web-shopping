@@ -28,6 +28,8 @@ public class timKiemSanPham extends HttpServlet {
 		if(dssp_theoTen != null) {
 			System.out.println(dssp_theoTen.size());
 			request.setAttribute("dssp_ten", dssp_theoTen);
+			int size = dssp_theoTen.size();
+			request.setAttribute("size", size);
 			request.getRequestDispatcher("san-pham-tim-kiem.jsp").forward(request, response);
 		}
 		else {
