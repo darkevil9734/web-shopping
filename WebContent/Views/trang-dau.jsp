@@ -75,7 +75,10 @@
 							 </script>
                            </li>
                            <li class="option-cart">
-                              <a href="<c:if test='${sessionScope.gioHang != null}'>xemGioHangServlet</c:if>" class="cart-icon">cart <span class="cart_no">${sessionScope.gioHang.countSoLuongMua()}</span></a>
+                              <a 
+	                              	<c:if test='${sessionScope.gioHang.countSoLuongMua() == 0}' > onclick="alert('Không có sản phẩm trong giỏ'); return false;" </c:if>
+	                              	<c:if test='${sessionScope.gioHang == null}' > onclick="alert('Không có sản phẩm trong giỏ'); return false;" </c:if>	
+                           		 href="<c:if test='${sessionScope.gioHang != null}'>xemGioHangServlet</c:if>" class="cart-icon">cart <span class="cart_no">${sessionScope.gioHang.countSoLuongMua()}</span></a>
                               <ul class="option-cart-item">
                               <c:forEach items="${spm}" var="spham_mua">
                                  <li>
@@ -88,7 +91,16 @@
 			                                       </div>
 			                                       <div class="right">
 			                                          <p class="price"><f:formatNumber type="number" value="${spham_mua.getThanhTien()}" /> ₫</p>
-			                                          <a onclick="alert('Bạn có muốn xóa sản phẩm này ?')" href="xoaDonHang?id=${spham_mua.ma_san_pham}" class="remove"><img src="images/remove.png" alt="remove"></a>
+			                                          <a onclick="return xacNhanDelete();" href="xoaDonHang?id=${spham_mua.ma_san_pham}" class="remove"><img src="images/remove.png" alt="remove"></a>
+			                                          <script type="text/javascript">
+															function xacNhanDelete() {
+																var x = confirm("Bạn có muốn xóa sản phẩm này ?");
+																  if (x)
+																      return true;
+																  else
+																    return false;
+															}
+			                                          </script>
 			                                       </div>
 		                                       
 	                                    </div>

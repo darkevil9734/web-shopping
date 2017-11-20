@@ -39,11 +39,19 @@
 	   <td data-th="Subtotal" class="text-center"><f:formatNumber type="number" value="${dssp.getThanhTien()}" /> ₫</td> 
 	   <td class="actions" data-th="">
 	     
-	    <button onclick=" alert('Bạn có muốn xóa món hàng này?');
+	    <button onclick=" return xacThucDelete();
 	    	javascript:location.href='xoaDonHang?id=${dssp.ma_san_pham}';" formmethod="post" type="submit" class="btn btn-danger btn-sm">
 	    
 	    	<i class="fa fa-trash-o" ></i>
-	    	
+	    	<script type="text/javascript">
+	    		function xacThucDelete() {
+	    			var x = confirm("Bạn có muốn xóa sản phẩm này ?");
+					if (x)
+						return true;
+					return false;
+				}
+		    	
+	    	</script>
 	    </button>
 	   </td> 
 	  </tr> 

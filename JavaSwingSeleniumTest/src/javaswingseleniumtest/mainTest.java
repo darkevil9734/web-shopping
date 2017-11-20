@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -158,6 +159,7 @@ public class mainTest extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
+            JOptionPane.showMessageDialog(this, "Bạn vui lòng chờ trong giây lát!!");
             File file = new File("F:\\JMeter Testing\\apache-jmeter-3.3\\bin\\ApacheJMeter.jar");
             Desktop.getDesktop().open(file);
         } catch (IOException ex) {

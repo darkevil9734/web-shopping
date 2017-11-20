@@ -34,25 +34,25 @@ public class testCSDL {
 	
 	@Test
 	public void findAllUser() {
-		// tổng cộng hiện tại là 3
-		assertEquals(3 , userBL.docTatCa().size());
+		// tổng cộng hiện tại là 2
+		assertEquals(2 , userBL.docTatCa().size());
 	}
 	
 	@Test
 	public void findAllSanPhamFail() {
-		// tổng cộng hiện tại là 45
+		// tổng cộng hiện tại là 47
 		assertEquals(3 , sanPhamBL.DocTatCa().size());
 	}
 	
 	@Test
 	public void findAllSanPham() {
-		// tổng cộng hiện tại là 45
-		assertTrue(sanPhamBL.DocTatCa().size() == 45 );
+		// tổng cộng hiện tại là 47
+		assertTrue(sanPhamBL.DocTatCa().size() == 47 );
 	}
 	
 	@Test
 	public void findAllGioHang() {
-		assertEquals(10 , quanLyGioHang.xemTatCa().size());
+		assertEquals(4 , quanLyGioHang.xemTatCa().size());
 	}
 	
 	@Test

@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7597" started-at="2017-10-25T06:09:21Z" finished-at="2017-10-25T06:09:29Z">
+  <suite name="Default suite" duration-ms="26624" started-at="2017-11-20T15:23:11Z" finished-at="2017-11-20T15:23:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7597" started-at="2017-10-25T06:09:21Z" finished-at="2017-10-25T06:09:29Z">
+    <test name="Default test" duration-ms="26624" started-at="2017-11-20T15:23:11Z" finished-at="2017-11-20T15:23:38Z">
       <class name="Test.testGiaoDien">
-        <test-method status="PASS" signature="moTrangChu()[pri:0, instance:Test.testGiaoDien@3e6fa38a]" name="moTrangChu" duration-ms="4101" started-at="2017-10-25T13:09:21Z" finished-at="2017-10-25T13:09:25Z">
+        <test-method status="PASS" signature="moTrangChu()[pri:0, instance:Test.testGiaoDien@3e6fa38a]" name="moTrangChu" duration-ms="4858" started-at="2017-11-20T22:23:11Z" finished-at="2017-11-20T22:23:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moTrangChu -->
-        <test-method status="PASS" signature="moTrangDangNhap()[pri:0, instance:Test.testGiaoDien@3e6fa38a]" name="moTrangDangNhap" duration-ms="3478" started-at="2017-10-25T13:09:25Z" finished-at="2017-10-25T13:09:29Z">
+        <test-method status="PASS" signature="moTrangDangKy()[pri:0, instance:Test.testGiaoDien@3e6fa38a]" name="moTrangDangKy" duration-ms="4299" started-at="2017-11-20T22:23:16Z" finished-at="2017-11-20T22:23:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- moTrangDangKy -->
+        <test-method status="PASS" signature="moTrangDangNhap()[pri:0, instance:Test.testGiaoDien@3e6fa38a]" name="moTrangDangNhap" duration-ms="4024" started-at="2017-11-20T22:23:20Z" finished-at="2017-11-20T22:23:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moTrangDangNhap -->
+        <test-method status="PASS" signature="testNutGioHang()[pri:0, instance:Test.testGiaoDien@3e6fa38a]" name="testNutGioHang" duration-ms="4861" started-at="2017-11-20T22:23:24Z" finished-at="2017-11-20T22:23:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNutGioHang -->
+        <test-method status="PASS" signature="testNutSearch()[pri:0, instance:Test.testGiaoDien@3e6fa38a]" name="testNutSearch" duration-ms="4303" started-at="2017-11-20T22:23:29Z" finished-at="2017-11-20T22:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNutSearch -->
+        <test-method status="PASS" signature="userLogin()[pri:0, instance:Test.testGiaoDien@3e6fa38a]" name="userLogin" duration-ms="4253" started-at="2017-11-20T22:23:33Z" finished-at="2017-11-20T22:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
       </class> <!-- Test.testGiaoDien -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
