@@ -79,11 +79,14 @@ public class userBL {
 	public static user ResetPassword(String username, String email) {
 		user thanhVienQuenMatKhau = null;
 		Connection db = Database.connect();
-		Statement stm;
+		PreparedStatement pst = null;
 		
 		try {
-			stm = db.createStatement();
-			ResultSet rs = stm.executeQuery("select*from hthong_muaban.user where username = '"+username+"' and email = '"+email+"'");
+			String sql = "select*from hthong_muaban.user where username = ? and email = ? ";
+			pst = db.prepareStatement(sql);
+			pst.setString(1, username);
+			pst.setString(2, email);
+			ResultSet rs = pst.executeQuery();
 			
 			while(rs.next()) {
 				thanhVienQuenMatKhau = new user();
