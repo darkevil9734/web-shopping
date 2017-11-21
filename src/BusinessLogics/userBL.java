@@ -41,11 +41,14 @@ public class userBL {
 	public static user DocTheoUsernamePassword(String username, String password) {
 		user thanhVienDangNhap = null;
 		Connection db = Database.connect();
-		Statement stm;
+		PreparedStatement pst = null;
 		
 		try {
-			stm = db.createStatement();
-			ResultSet rs = stm.executeQuery("SELECT * FROM hthong_muaban.user where username = '"+username+"'  and password = '"+password+"';");
+			String sql = "SELECT * FROM hthong_muaban.user where username = ?  and password = ?";
+			pst = db.prepareStatement(sql);
+			pst.setString(1, username);
+			pst.setString(2, password);
+			ResultSet rs = pst.executeQuery();
 			
 			
 			if (rs.next()) {

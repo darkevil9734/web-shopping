@@ -90,7 +90,7 @@ public class testCSDL {
 	@Test
 	public void dangNhapUser() {
 		// đăng nhập đúng
-		String user = "test";
+		String user = "test   ";
 		String pass = "test";
 		
 		user u = userBL.DocTheoUsernamePassword(user, pass);
